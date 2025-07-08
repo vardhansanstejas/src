@@ -1,0 +1,85 @@
+/********************************************************************
+* Copyright (C) 2006 Aricent Inc . All Rights Reserved
+*
+* Description: This file contains sizing related MACROS
+*
+*******************************************************************/
+#ifndef _SR_SZ_H_
+#define _SR_SZ_H_
+enum {
+    MAX_SR_INTF_SIZING_ID,
+	MAX_SR_RTR_SIZING_ID,
+	MAX_SR_RTR_NH_SIZING_ID,
+	MAX_SR_QDEPTH_SIZING_ID,
+	MAX_SR_RTINFO_SIZING_ID,
+	MAX_SR_RLFA_PATH_SIZING_ID,
+	MAX_SR_TE_RTR_LIST_SIZING_ID,
+	MAX_SR_TE_RTR_SIZING_ID,
+	MAX_SR_PEER_ADJ_SIZING_ID,
+    MAX_SR_OSPFV6_NBR_SIZING_ID,
+    MAX_SR_TE_RT_ENTRY_SIZING_ID,
+    MAX_SR_OSPFV4_NBR_SIZING_ID,
+    MAX_SR_STATIC_ENTRY_SIZING_ID,
+    MAX_ST_STATIC_LBL_SIZING_ID,
+    MAX_SR_AREA_LINK_INFO_SIZING_ID,
+    MAX_SR_EXT_LINK_LSA_INFO_SIZING_ID,
+    MAX_SR_OSPF_LSA_SIZING_ID,
+    MAX_SR_OSPF_RI_LSA_SIZING_ID,
+	MAX_SR_TILFA_PATH_SIZING_ID,
+    MAX_SR_TILFA_ADJ_SIZING_ID,
+    MAX_SR_LFA_NODE_SIZING_ID,
+    MAX_SR_LFA_ADJ_SIZING_ID,
+    MAX_SR_LFA_ADJ_LIST_NODE_SIZING_ID,
+    MAX_SR_GR_FTN_TNL_DB_SIZING_ID,
+    MAX_SR_GR_ILM_TNL_DB_SIZING_ID,
+    MAX_SR_RTR_DELAY_RT_INFO_SIZING_ID,
+    SR_MAX_SIZING_ID
+};
+
+#ifdef  _SRSZ_C
+tMemPoolId SrMemPoolIds [SR_MAX_SIZING_ID];
+INT4  SrSizingMemCreateMemPools(VOID);
+VOID  SrSizingMemDeleteMemPools(VOID);
+INT4  SrSzRegisterModuleSizingParams (CHR1 *pu1ModName);
+#else  /*  _SRSZ_C  */
+extern tMemPoolId SrMemPoolIds[ ];
+extern INT4  SrSizingMemCreateMemPools(VOID);
+extern VOID  SrSizingMemDeleteMemPools(VOID);
+extern INT4  SrSzRegisterModuleSizingParams (CHR1 *pu1ModName);
+#endif /*  _SRSZ_C  */
+
+#ifdef  _SRSZ_C
+tFsModSizingParams SrSizingParams [] = {
+{"tSrSidInterfaceInfo","SR_MAX_NUM_SID",sizeof(tSrSidInterfaceInfo), SR_MAX_NUM_SID, SR_MAX_NUM_SID,0},
+{"tSrRtrInfo","SR_MAX_RTR_SID",sizeof(tSrRtrInfo), SR_MAX_RTR_SID, SR_MAX_RTR_SID,0},
+{"tSrRtrNextHopInfo","SR_MAX_RTR_NH",sizeof(tSrRtrNextHopInfo), SR_MAX_RTR_NH, SR_MAX_RTR_NH,0},
+{"tSrQMsg","SR_MAX_QDEPTH",sizeof(tSrQMsg), SR_MAX_QDEPTH, SR_MAX_QDEPTH,0},
+{"tSrRouteEntryInfo","SR_MAX_IP_RT_ENTRIES",sizeof(tSrRouteEntryInfo), SR_MAX_IP_RT_ENTRIES, SR_MAX_IP_RT_ENTRIES,0},
+{"tSrRlfaPathInfo","SR_MAX_RLFA_PATH_ENTRIES",sizeof(tSrRlfaPathInfo), SR_MAX_RLFA_PATH_ENTRIES, SR_MAX_RLFA_PATH_ENTRIES,0},
+{"tSrTeRtrListEntry","SR_MAX_TE_RTR_LIST_ENTRIES",sizeof(tSrTeRtrListEntry), SR_MAX_TE_RTR_LIST_ENTRIES, SR_MAX_TE_RTR_LIST_ENTRIES,0},
+{"tSrRtrEntry","SR_MAX_TE_RTR_ENTRIES",sizeof(tSrRtrEntry), SR_MAX_TE_RTR_ENTRIES, SR_MAX_TE_RTR_ENTRIES,0},
+{"tAdjSidNode","SR_MAX_PEER_ADJ_ENTRIES",sizeof(tAdjSidNode),SR_MAX_PEER_ADJ_ENTRIES,SR_MAX_PEER_ADJ_ENTRIES,0},
+{"tSrV6OspfNbrInfo","SR_MAX_OSPFV6_NBRS",sizeof(tSrV6OspfNbrInfo),SR_MAX_OSPFV6_NBRS,SR_MAX_OSPFV6_NBRS,0},
+{"tSrTeRtEntryInfo","SR_MAX_TE_RT_ENTRIES",sizeof(tSrTeRtEntryInfo),SR_MAX_TE_RT_ENTRIES,SR_MAX_TE_RT_ENTRIES,0},
+{"tSrV4OspfNbrInfo","SR_MAX_OSPFV4_NBRS",sizeof(tSrV4OspfNbrInfo),SR_MAX_OSPFV4_NBRS,SR_MAX_OSPFV4_NBRS,0},
+{"tSrStaticEntryInfo","SR_MAX_STATIC_ENTRIES",sizeof(tSrStaticEntryInfo),SR_MAX_STATIC_ENTRIES,SR_MAX_STATIC_ENTRIES,0},
+{"tStaticSrLbl","SR_MAX_STATICLBL_ENTRIES",sizeof(tStaticSrLbl),SR_MAX_STATICLBL_ENTRIES,SR_MAX_STATICLBL_ENTRIES,0},
+{"tareaLinkInfo","SR_MAX_AREA_LINK_INFO_ENTRIES",sizeof(tareaLinkInfo),SR_MAX_AREA_LINK_INFO_ENTRIES,SR_MAX_AREA_LINK_INFO_ENTRIES,0},
+{"tSrExtLinkLSAInfo","SR_MAX_LINK_LSA_INFO_ENTRIES",sizeof(tSrExtLinkLSAInfo),SR_MAX_LINK_LSA_INFO_ENTRIES,SR_MAX_LINK_LSA_INFO_ENTRIES,0},
+{"tOspfSrLsa","SR_MAX_OSPF_LSA_ENTRIES",sizeof(tOspfSrLsa),SR_MAX_OSPF_LSA_ENTRIES,SR_MAX_OSPF_LSA_ENTRIES,0},
+{"tSrOsRiLsInfo","SR_MAX_RTR_INFO_LSA_ENTRIES",sizeof(tSrOsRiLsInfo),SR_MAX_RTR_INFO_LSA_ENTRIES,SR_MAX_RTR_INFO_LSA_ENTRIES,0},
+{"tSrTilfaPathInfo","SR_MAX_TILFA_PATH_ENTRIES",sizeof(tSrTilfaPathInfo), SR_MAX_TILFA_PATH_ENTRIES, SR_MAX_TILFA_PATH_ENTRIES,0},
+{"tSrTilfaAdjInfo","SR_MAX_TILFA_ADJ_ENTRIES",sizeof(tSrTilfaAdjInfo), SR_MAX_TILFA_ADJ_ENTRIES, SR_MAX_TILFA_ADJ_ENTRIES,0},
+{"tSrLfaNodeInfo","SR_MAX_LFA_NODE_ENTRIES",sizeof(tSrLfaNodeInfo), SR_MAX_LFA_NODE_ENTRIES, SR_MAX_LFA_NODE_ENTRIES,0},
+{"tSrLfaAdjInfo","SR_MAX_LFA_ADJ_ENTRIES",sizeof(tSrLfaAdjInfo), SR_MAX_TILFA_ADJ_ENTRIES, SR_MAX_TILFA_ADJ_ENTRIES,0},
+{"tSrAdjLfaListNode","SR_MAX_LFA_ADJ_ENTRIES",sizeof(tSrAdjLfaListNode), SR_MAX_TILFA_ADJ_ENTRIES, SR_MAX_TILFA_ADJ_ENTRIES,0},
+{"tSrTnlIfTable", "SR_MAX_FTN_TABLE_SET_ENTRIES", sizeof(tSrTnlIfTable),SR_MAX_FTN_TABLE_SET_ENTRIES, SR_MAX_FTN_TABLE_SET_ENTRIES, 0 },
+{"tSrTnlIfTable", "SR_MAX_ILM_TABLE_SET_ENTRIES", sizeof(tSrTnlIfTable),SR_MAX_ILM_TABLE_SET_ENTRIES, SR_MAX_ILM_TABLE_SET_ENTRIES, 0 },
+{"tSrDelayRtInfo", "SR_MAX_DELAY_ROUTE_ENTRIES", sizeof(tSrDelayRtInfo),SR_MAX_DELAY_ROUTE_ENTRIES, SR_MAX_DELAY_ROUTE_ENTRIES, 0 },
+{"\0","\0",0,0,0,0}
+};
+#else  /*  _SRSZ_C  */
+extern tFsModSizingParams SrSizingParams [];
+#endif /*  _SRSZ_C  */
+
+#endif

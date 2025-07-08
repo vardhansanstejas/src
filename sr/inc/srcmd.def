@@ -1,0 +1,659 @@
+DEFINE GROUP : SR_GLOBAL_CFG_CMD
+
+   COMMAND : segment-routing mpls
+   ACTION  :
+       {
+             cli_process_sr_cmd (CliHandle, SR_CLI_MPLS);
+       }
+   SYNTAX  : segment-routing mpls
+   PRVID   : 15
+   HELP    : Enable SR for the router
+   CXT_HELP: segment-routing Configure SR module. |
+             mpls  Enable SR mpls |
+             <CR> Enter configuration mode for segment-routing
+
+   COMMAND : no segment-routing mpls
+   ACTION  :
+       {
+             cli_process_sr_cmd(CliHandle, SR_CLI_MPLS_DESTROY);
+       }
+   SYNTAX  : no segment-routing mpls
+   PRVID   : 15
+   HELP    : Disable SR for the router
+   CXT_HELP: no Negate a command or set its defaults |
+             segment-routing Disables segment-routing |
+             mpls  Disables SR mpls |
+             <CR> Disables segment-routing for the router
+
+END GROUP
+
+DEFINE GROUP : SR_PRVEXEC_CMD 
+
+   COMMAND : show segment-routing configurations
+   ACTION  :
+       {
+             cli_process_sr_cmd (CliHandle, SR_SHOW_CONFIG, NULL);
+       }
+   SYNTAX  : show segment-routing configurations
+   PRVID   : 15              
+   HELP    : Displays the configurations of Segment Routing module
+   CXT_HELP: show	Display configurations |
+			 segment-routing Display Segment Routing Information|
+			 configurations  Display Segment Routing configurations |
+             <CR> Show Segment Routing Configurations 
+
+   COMMAND : show segment-routing sid-table
+   ACTION  :
+       {
+             cli_process_sr_cmd (CliHandle, SR_SHOW_SID_TABLE, NULL);
+       }
+   SYNTAX  : show segment-routing sid-table
+   PRVID   : 15              
+   HELP    : Displays the SID information of Segment Routing
+   CXT_HELP: show	Display configurations |
+			 segment-routing Display Segment Routing Information |
+			 sid-table  Display Segment Routing SID Database Information |
+             <CR> Show Segment Routing SID Table Details
+
+   COMMAND : show segment-routing route [<ucast_addr> {<integer(1-32)> | <ip_mask>}]
+   ACTION  :
+       {
+	     UINT4 u4Mask = ~0;
+
+             /* Prefix */
+             if ($3 != NULL)
+             {
+                if($4 != NULL)
+                {
+                    u4Mask = u4Mask << (32 - *(UINT4*)$4);
+                }
+                else
+                {
+                    u4Mask = *(UINT4*)$5;
+                }
+             }
+	     cli_process_sr_cmd (CliHandle, SR_SHOW_ROUTE, $3, u4Mask, NULL);
+       }
+   SYNTAX  : show segment-routing route [prefix {mask-length | mask}]
+   PRVID   : 15
+   HELP    : Displays the routes learnt via Segment Routing
+   CXT_HELP: show       Display configurations |
+                      segment-routing Display Segment Routing Information |
+                      route  Display Segment Routing Route and its nexthop information |
+                      A.B.C.D Destination prefix|
+                      (1-32) Mask length|
+                      A.B.C.D Destination mask|
+          <CR> Show Segment Routing Route information for the configured prefix.
+
+   COMMAND : show segment-routing peer-info
+   ACTION  :
+       {
+             cli_process_sr_cmd (CliHandle, SR_SHOW_PEER_TABLE, NULL);
+       }
+   SYNTAX  : show segment-routing peer-info
+   PRVID   : 15              
+   HELP    : Displays the Peer information for Dynamic Segment Routing
+   CXT_HELP: show	Display |
+			 segment-routing Segment Routing |
+			 peer-info  Display Peer Info for Dynamic Segment Routing |
+             <CR> Show Segment Routing Peer Configuration
+
+   COMMAND : show segment-routing peer-info-detail
+   ACTION :
+       {
+             cli_process_sr_cmd (CliHandle, SR_SHOW_PEER_TABLE_DETAIL, NULL);
+       }
+   SYNTAX : show segment-routing peer-info-detail
+   PRVID : 15
+   HELP : Displays the detailed Peer information for Dynamic Segment Routing
+   CXT_HELP: show Display |
+    segment-routing Segment Routing |
+    peer-info-detail Display the detailed Peer Info for Dynamic Segment Routing |
+               <CR> Show Segment Routing Peer Configuration
+
+   COMMAND : debug segment-routing {all | ctrl | entry-exit | mgmt | main | util | failure | resource}
+   ACTION  :
+             {
+                 UINT4 u4Value = 0;
+                 if ($2 != NULL)
+                 {
+                     u4Value |= CLI_SR_ALL_TRC;
+                 }
+                 else if ($3 != NULL)
+                 {
+                     u4Value |= CLI_SR_CTRL_TRC;
+                 }
+                 else if ($4 != NULL)
+                 {
+                     u4Value |= CLI_SR_FN_ENTRY_EXIT_TRC;
+                 }
+                 else if ($5 != NULL)
+                 {
+                     u4Value |= CLI_SR_MGMT_TRC;
+                 }
+                 else if ($6 != NULL)
+                 {
+                     u4Value |= CLI_SR_MAIN_TRC;
+                 }
+                 else if ($7 != NULL)
+                 {
+                     u4Value |= CLI_SR_UTIL_TRC;
+                 }
+                 else if ($8 != NULL)
+                 {
+                     u4Value |= CLI_SR_FAIL_TRC;
+                 }
+                 else if ($9 != NULL)
+                 {
+                     u4Value |= CLI_SR_RESOURCE_TRC;
+                 }
+                 cli_process_sr_cmd (CliHandle, SR_CLI_DEBUG, u4Value, NULL);
+             }
+   SYNTAX  : debug segment-routing {all | ctrl | entry-exit | mgmt | main | util | failure | resource}
+   PRVID   : 15
+   HELP    : Enables debug logs for Segment Routing
+   CXT_HELP: debug     Debug-logs |
+             segment-routing    Enable debug-logs for SR |
+             all All resources |
+             ctrl  control plane related traces |
+             entry-exit entry/exit traces |
+             mgmt management related traces |
+             main main related traces |
+             util util related traces |
+             failure all failure traces |
+             resource  memory resource traces |
+             <CR> Enable Debug for Segment Routing
+
+   COMMAND :  no debug segment-routing {all | ctrl | entry-exit | mgmt | main | util | failure | resource}
+   ACTION  :
+              {
+                  UINT4 u4Value = 0;
+                  if ($3 != NULL)
+                  {
+                      u4Value |= CLI_SR_ALL_TRC;
+                  }
+                  else if ($4 != NULL)
+                  {
+                      u4Value |= CLI_SR_CTRL_TRC;
+                  }
+                  else if ($5 != NULL)
+                  {
+                      u4Value |= CLI_SR_FN_ENTRY_EXIT_TRC;
+                  }
+                  else if ($6 != NULL)
+                  {
+                      u4Value |= CLI_SR_MGMT_TRC;
+                  }
+                  else if ($7 != NULL)
+                  {
+                      u4Value |= CLI_SR_MAIN_TRC;
+                  }
+                  else if ($8 != NULL)
+                  {
+                      u4Value |= CLI_SR_UTIL_TRC;
+                  }
+                  else if ($9 != NULL)
+                  {
+                      u4Value |= CLI_SR_FAIL_TRC;
+                  }
+                  else if ($10 != NULL)
+                  {
+                      u4Value |= CLI_SR_RESOURCE_TRC;
+                  }
+
+                  cli_process_sr_cmd (CliHandle, SR_CLI_NO_DEBUG, u4Value, NULL);
+             }
+   SYNTAX  : no debug segment-routing {all | ctrl | entry-exit | mgmt | main | util | failure | resource}
+   PRVID   : 15
+   HELP    : Disables debug logs for Segment Routing
+   CXT_HELP: no  Negate a command or set its defaults |
+             debug  Debug-logs |
+             segment-routing    Disables debug-logs for SR |
+             all All resources |
+             ctrl  control plane related traces |
+             entry-exit entry/exit traces |
+             mgmt management related traces |
+             main main related traces |
+             util util related traces |
+             failure all failure traces |
+             resource  memory resource traces |
+             <CR> Disable Debug for Segment Routing
+
+   COMMAND : show ospf segment-routing capability
+   ACTION  :
+       {
+             cli_process_sr_cmd (CliHandle, SR_SHOW_OSPF_SR_CAPABILITY);
+       }
+   SYNTAX  : show ospf segment-routing capability
+   PRVID   : 15
+   HELP    : Display the capability of all other routers in the network
+   CXT_HELP: show Displays the configuration/statistics/general information|
+             ospf OSPF Process |
+             segment-routing Segment-Routing related information|
+             capability Capability related information|
+             <CR> Displays the capability of all other routers in the network.
+
+END GROUP
+
+
+DEFINE GROUP : SR_LOCAL_CFG_CMD
+
+   COMMAND : segment-routing address-family {ipv4 | ipv6}
+   ACTION  :
+       {
+             if( $2 != NULL)
+             {
+                cli_process_sr_cmd (CliHandle, SR_CLI_ADDR_FAMILY, SR_CLI_IPV4, SR_ENABLE, NULL);
+             }
+             else
+             {
+                cli_process_sr_cmd (CliHandle, SR_CLI_ADDR_FAMILY, SR_CLI_IPV6, SR_ENABLE, NULL);
+             }
+       }
+   SYNTAX  : segment-routing address-family {ipv4 | ipv6}
+   PRVID   : 15
+   HELP    : SR address-family configuration.
+   CXT_HELP: segment-routing  Configure Address-family for SR |
+             address-family Configure address-family. |
+             ipv4  ipv4 address-family |
+             ipv6  ipv6 address-family |
+             <CR> Enter configuration mode for SR address-family.
+
+   COMMAND : no segment-routing address-family {ipv4 | ipv6}
+   ACTION  :
+       {
+             if( $3 != NULL)
+             {
+                cli_process_sr_cmd (CliHandle, SR_CLI_ADDR_FAMILY, SR_CLI_IPV4, SR_DISABLE, NULL);
+             }
+             else
+             {
+                cli_process_sr_cmd (CliHandle, SR_CLI_ADDR_FAMILY, SR_CLI_IPV6, SR_DISABLE, NULL);
+             }
+       }
+   SYNTAX  : no segment-routing address-family {ipv4 | ipv6}
+   PRVID   : 15
+   HELP    : SR address-family configuration.
+   CXT_HELP: no  revert address-family configuration. |
+             segment-routing Configure Address-family for SR |
+             address-family Configure address-family. |
+             ipv4  ipv4 address-family |
+             ipv6  ipv6 address-family |
+             <CR> Enter configuration mode for SR address-family.
+   COMMAND : exit
+   ACTION  : CliChangePath("..");
+   SYNTAX  : exit
+   HELP    : To go to the global configuration mode.
+   CXT_HELP: exit Exit from segment-routing Configuration mode |
+             <CR> To go the global configuration mode.
+
+END GROUP
+DEFINE GROUP : SR_AFI_CFG_CMD
+
+   COMMAND : exit
+   ACTION  : CliChangePath("..");
+   SYNTAX  : exit
+   HELP    : To go to the global configuration mode.
+   CXT_HELP: exit Exit from segment-routing Configuration mode |
+             <CR> To go the global configuration mode.
+
+   COMMAND : no shutdown
+   ACTION  :
+       {
+             cli_process_sr_cmd (CliHandle, SR_CLI_ADMIN_UP, NULL);
+       }
+   SYNTAX  : no shutdown
+   HELP    : To make the segment-routing state as Admin Up
+   CXT_HELP: no shutdown Negate a command or set its defaults |
+             shutdown Enables the SR Admin Status |
+	     <CR> Enables the SR Admin Status
+
+   COMMAND : shutdown
+   ACTION  :
+       {
+             cli_process_sr_cmd (CliHandle, SR_CLI_ADMIN_DOWN, NULL);
+       }
+   SYNTAX  : shutdown
+   HELP    : To make the segment-routing state as Admin Down
+   CXT_HELP: shutdown Disables the SR Admin Status |
+             <CR> Disable the SR Admin Status
+
+   COMMAND : srgb label range min <integer> max <integer>
+   ACTION  :
+       {
+             UINT4 u4MinLabel = 0;
+             UINT4 u4MaxLabel = 0;
+
+             if(($4 != NULL) || ($6 != NULL))
+             {
+                u4MinLabel = *(UINT4 *) $4;
+                u4MaxLabel = *(UINT4 *) $6;
+
+                if(u4MinLabel >= u4MaxLabel)
+                {
+                   CliPrintf (CliHandle,
+                    "%% Min SRGB should be less than  Max SRGB value\n");
+                }
+                cli_process_sr_cmd (CliHandle, SR_CLI_SRGB, $4, $6, NULL);
+
+             }
+       }
+   SYNTAX  : srgb label range min <integer> max <integer>
+   HELP    : global SRGB configuration SID value | default (700000-708000)
+   CXT_HELP: srgb SRGB configuration|
+             label Labels to be given as SRGB range|
+             range Range of SRGB|
+             min Minimum label range of SRGB|
+             DYNsrlabelrange|
+             max Maximum label range of SRGB|
+             DYNsrlabelrange|
+             <CR> Set SRGB Range for Segment Routing
+
+   COMMAND : no srgb configuration
+   ACTION  :
+       {
+             cli_process_sr_cmd (CliHandle, SR_CLI_NO_SRGB, NULL);
+       }
+   SYNTAX  : no srgb configuration
+   HELP    : Revert to Default values for SRGB configuration
+   CXT_HELP: no Revert to default SRGB configuration |
+             srgb Revert SRGB configuration|
+             configuration Revert to default SRGB configuration |
+             <CR> Reset Segment Routing SRGB Values
+
+
+   COMMAND : segment-routing add sid type {{Node-SID sid-value {absolute | relative} <integer> net <random_str>} | {Adj-SID sid-value <integer> net <random_str> {<ip_mask> | <short (0-128)>}}}
+   ACTION  :
+       {
+             UINT4 u4SidType = 0;
+             UINT4 u4SidIndex = 0;
+             if($4 != NULL)
+             {
+                if($6 != NULL)
+                {
+                   u4SidType = SR_SID_NODE;
+                   u4SidIndex = SR_SID_ABS_INDEX;
+                   cli_process_sr_cmd (CliHandle,SR_CLI_ADD_PREFIX_SID,
+                        u4SidType,u4SidIndex,$8,$10,NULL,NULL);
+                }
+                else if ($7 != NULL)
+                {
+                   u4SidType = SR_SID_NODE;
+                   u4SidIndex = SR_SID_REL_INDEX;
+                   cli_process_sr_cmd (CliHandle,SR_CLI_ADD_PREFIX_SID,
+                        u4SidType,u4SidIndex,$8,$10,NULL,NULL);
+                }
+                else
+                {
+                   CliPrintf (CliHandle,
+                        "\r%% Absolute/Relative field not valid for Node Adjacency\r\n");
+                }
+             }
+             else if($11 != 0)
+             {
+                u4SidType = SR_SID_ADJACENCY;
+                u4SidIndex = SR_SID_ABS_INDEX;   
+                cli_process_sr_cmd (CliHandle,SR_CLI_ADD_PREFIX_SID,
+                    u4SidType,u4SidIndex,$13,$15,$16,$17,NULL);
+             }
+       }
+   SYNTAX : segment-routing add sid type {{Node-SID sid-value {absolute | relative} <integer> net <random_str>} | {Adj-SID sid-value <integer> net <random_str> {<ip_mask> | <short (0-128)>}}}
+   HELP : segment-routing add sid type {{Node-SID sid-value {absolute | relative} <integer> net <random_str>} | {Adj-SID sid-value <integer> net <random_str> {<ip_mask> | <short (0-128)>}}}
+   CXT_HELP: segment-routing Segment Routing Configuration |
+             add                           add SID|
+             sid                           SID|
+             type                          Type of SID - Node or Adjacency|
+             Node-SID                      Node SID |
+             sid-value                     SID identifier |
+             absolute                      Actual label value |
+             relative                      Index for Node |
+             <integer>                     Value of SID. (Relative:(1-8000) , Absolute:Within SRGB Range. Default SRGB Range: 700000-708000) |
+             net                           Node SID: Network Prefix |
+             <random_str>                  IP address (Must be Loopback Ip Address(A.A.A.A for V2 and AAAA::BB for V3)|
+             Adj-SID                       Adjacency SID |
+             sid-value                     SID identifier |
+             <integer>                     Value of SID. Range:Adj-SID(700000-750000, Excluding SRGB Range)|
+             net                           Adj-SID: Next Hop Prefix|
+             <random_str>                  IP address |
+             <ip_mask>                     Subnet mask for IPv4|
+             <short (0-128)>               Prefix length for IPv6 |
+             <CR>                          Add SID for Segment Routing
+
+   COMMAND : segment-routing del sid net <random_str> [{<ip_mask> | <short (0-128)>}]
+   ACTION  :
+       {
+             if(($4 != NULL) && ($5 != NULL))
+             {
+                cli_process_sr_cmd (CliHandle,SR_CLI_DEL_PREFIX_SID,
+                      $4,$5,NULL);
+             }
+             else if (($4 != NULL) && ($6 != NULL))
+             {
+                cli_process_sr_cmd (CliHandle,SR_CLI_DEL_PREFIX_SID,
+                      $4,$6,NULL);
+             }
+             else if(($4 != NULL) && ($5 == NULL))
+             {
+                cli_process_sr_cmd (CliHandle,SR_CLI_DEL_PREFIX_SID,
+                    $4,NULL,NULL);
+             }
+             else if($4 == NULL)
+             {
+                CliPrintf (CliHandle,
+                    "%% IP address not provided\n");
+             }
+       }
+   SYNTAX  : segment-routing del sid net <random_str> [{<ip_mask> | <short (0-128)>}]
+   HELP    : segment-routing del sid net <random_str> [{<ip_mask> | <short (0-128)>}]
+   CXT_HELP: segment-routing       Segment Routing Configuration |
+             del                   Delete SID |
+             sid                   SID |
+             net                   Network Prefix |
+             <random_str>          IP address |
+             <ip_mask>             Subnet mask for IPv4|
+             <short (0-128)>       Prefix Length for IPv6|
+             <CR> Delete SID for Segment Routing
+
+   COMMAND : segment-routing static binding <random_str> <ip_mask> [id <integer(1-255)>] nexthop <random_str> label-stack <integer> [<integer>] [<integer>] [<integer>] [<integer>] [<integer>] [<integer>]
+   ACTION  : 
+       {
+             UINT4 u4CommandMode = SR_CLI_ADD_STATIC_BINDING;
+             UINT1 u1LspId = 0;
+
+	     if(($3 == NULL) || ($4 == NULL))
+         {
+             CliPrintf (CliHandle,
+                     "\r%% FEC and MASK required for creating static SR binding.\r\n");
+             return CLI_FAILURE;
+         }
+
+	     if(($7 == NULL) || ($8 == NULL))
+         {
+             CliPrintf (CliHandle,
+                     "\r%% Next Hop required for creating static SR binding.\r\n");
+             return CLI_FAILURE;
+         }
+
+         if (($5 != NULL) && ($6 != NULL))
+         {
+             u1LspId = *(UINT1 *)$6;
+         }
+ 
+	     if($9 != NULL)
+         {
+             if($10 == NULL) 
+             {	
+                 CliPrintf (CliHandle,
+                         "\r%% Label Stack cannot be empty\r\n");
+             }
+             else if($11 == NULL)
+             {
+                 cli_process_sr_cmd (CliHandle, u4CommandMode,
+                         $3,$4,u1LspId,$8,$10,NULL);
+             }
+             else if($12 == NULL)
+             {
+                 cli_process_sr_cmd (CliHandle, u4CommandMode,
+                         $3,$4,u1LspId,$8,$10,$11,NULL);
+             }
+             else if($13 == NULL)
+             {
+                 cli_process_sr_cmd (CliHandle, u4CommandMode,
+                         $3,$4,u1LspId,$8,$10,$11,$12,NULL);
+             }
+             else if($14 == NULL)
+             {
+                 cli_process_sr_cmd (CliHandle, u4CommandMode,
+                         $3,$4,u1LspId,$8,$10,$11,$12,$13,NULL);
+             }
+             else if($15 == NULL)
+             {
+                 cli_process_sr_cmd (CliHandle, u4CommandMode,
+                         $3,$4,u1LspId,$8,$10,$11,$12,$13,$14,NULL);
+             }
+             else if($16 == NULL)
+             {
+                 cli_process_sr_cmd (CliHandle, u4CommandMode,
+                         $3,$4,u1LspId,$8,$10,$11,$12,$13,$14,$15,NULL);
+             }
+             else
+             {
+                 cli_process_sr_cmd (CliHandle, u4CommandMode,
+                         $3,$4,u1LspId,$8,$10,$11,$12,$13,$14,$15,$16,NULL);
+             }
+         }
+       }
+   SYNTAX  : segment-routing static binding <random_str> <ip_mask> [id <integer(1-255)>] nexthop <random_str> label-stack <integer> [<integer>] [<integer>] [<integer>] [<integer>] [<integer>] [<integer>]
+   HELP    : segment-routing static binding <random_str> <ip_mask> [id <integer>] nexthop <random_str> label-stack <label> [<label>] [<label>] [<label>] [<label>] [<label>] [<label>]	
+   CXT_HELP: segment-routing Segment Routing Configuration |
+  	     static To create a static binding of labels with next hop for a Destination Prefix |
+             binding To create a static binding of labels with next hop for a Destination Prefix |
+             <random_str> Destination Address |
+             <ip_mask> Subnet mask|
+             id LSP Id for static binding to be used in case of multiple LSPs to same destination  |
+             <integer(1-255)> Id |
+             nexthop  Next Hop Address|
+	     <random_str> Next Hop Address |
+             label-stack Label Stack Entry|
+             DYNsrlabelrange|
+             DYNsrlabelrange|
+             DYNsrlabelrange|
+             DYNsrlabelrange|
+             DYNsrlabelrange|
+             DYNsrlabelrange|
+             DYNsrlabelrange|
+             <CR> Create Static Binding for Segment Routing
+
+
+   COMMAND : no segment-routing static binding <random_str> <ip_mask> [id <integer(1-255)>] nexthop <random_str> label-stack <integer> [<integer>] [<integer>] [<integer>] [<integer>] [<integer>] [<integer>]
+   ACTION  : 
+       {
+             UINT4 u4CommandMode = SR_CLI_DEL_STATIC_BINDING;
+             UINT1 u1LspId = 0;
+
+	     if(($4 == NULL) || ($5 == NULL))
+         {
+             CliPrintf (CliHandle,
+                     "\r%% FEC and MASK required for creating static SR binding.\r\n");
+             return CLI_FAILURE;
+         }
+
+	     if(($8 == NULL) || ($9 == NULL))
+         {
+             CliPrintf (CliHandle,
+                     "\r%% Next Hop required for creating static SR binding.\r\n");
+             return CLI_FAILURE;
+         }
+
+	     if(($6 != NULL) && ($7 != NULL))
+         {
+             u1LspId = *(UINT1 *)$7;
+         }
+
+	     if($10 != NULL)
+         {
+             if($11 == NULL) 
+             {	
+                 CliPrintf (CliHandle,
+                         "\r%% Label Stack cannot be empty\r\n");
+             }
+             else if($12 == NULL)
+             {
+                 cli_process_sr_cmd (CliHandle, u4CommandMode,
+                         $4,$5,u1LspId,$9,$11,NULL);
+             }
+             else if($13 == NULL)
+             {
+                 cli_process_sr_cmd (CliHandle, u4CommandMode,
+                         $4,$5,u1LspId,$9,$11,$12,NULL);
+             }
+             else if($14 == NULL)
+             {
+                 cli_process_sr_cmd (CliHandle, u4CommandMode,
+                         $4,$5,u1LspId,$9,$11,$12,$13,NULL);
+             }
+             else if($15 == NULL)
+             {
+                 cli_process_sr_cmd (CliHandle, u4CommandMode,
+                         $4,$5,u1LspId,$9,$11,$12,$13,$14,NULL);
+             }
+             else if($16 == NULL)
+             {
+                 cli_process_sr_cmd (CliHandle, u4CommandMode,
+                         $4,$5,u1LspId,$9,$11,$12,$13,$14,$15,NULL);
+             }
+             else if($17 == NULL)
+             {
+                 cli_process_sr_cmd (CliHandle, u4CommandMode,
+                         $4,$5,u1LspId,$9,$11,$12,$13,$14,$15,$16,NULL);
+             }
+             else
+             {
+                 cli_process_sr_cmd (CliHandle, u4CommandMode,
+                         $4,$5,u1LspId,$9,$11,$12,$13,$14,$15,$16,$17,NULL);
+             }
+         }
+       }
+   SYNTAX  : no segment-routing static binding <random_str> <ip_mask> [id <integer(1-255)>] nexthop <random_str> label-stack <integer> [<integer>] [<integer>] [<integer>] [<integer>] [<integer>] [<integer>]
+   HELP    : no segment-routing static binding <random_str> <ip_mask> [id <integer(1-255)>] nexthop <random_str> label-stack <label> [<label>] [<label>] [<label>] [<label>] [<label>] [<label>]	
+   CXT_HELP: no To delete |
+             segment-routing Segment Routing Configuration |
+	         static To delete a static binding of labels with next hop for a Destination Prefix |
+             binding To delete a static binding of labels with next hop for a Destination Prefix |
+             <random_str> Destination Address |
+             <ip_mask> Subnet mask|
+             id LSP Id for static binding to be used in case of multiple LSPs to same destination  |
+             <integer(1-255)> LSP Id |
+             nexthop  Next Hop Address|
+             <random_str> Next Hop Address |
+             label-stack Label Stack Entry|
+             DYNsrlabelrange|
+             DYNsrlabelrange|
+             DYNsrlabelrange|
+             DYNsrlabelrange|
+             DYNsrlabelrange|
+             DYNsrlabelrange|
+             DYNsrlabelrange|
+             <CR> Delete Static Binding for Segment Routing
+
+   COMMAND : segment-routing alternate {enable | disable}
+   ACTION  :
+       {
+             if ($2 != NULL)
+             {
+                cli_process_sr_cmd (CliHandle, SR_ALT_CAPABILITY, SR_ALT_ENABLE, NULL);
+             }
+             else
+             {
+                cli_process_sr_cmd (CliHandle, SR_ALT_CAPABILITY, SR_ALT_DISABLE, NULL);
+             }
+       }
+   SYNTAX  : segment-routing alternate {enable | disable}
+   HELP    : SR alternate route capability configuration.
+   CXT_HELP: segment-routing Configure LFA capability for SR routes |
+             alternate  configure alternate route capability |
+             enable  enable SR alternate route capability |
+             disable disable SR alternate route capability |
+             <CR> Set the LFA capability for SR routes.
+
+END GROUP

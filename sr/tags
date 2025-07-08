@@ -1,0 +1,1701 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ADJ_SID_B_FLAG	inc/srdef.h	307;"	d
+ADJ_SID_G_FLAG	inc/srdef.h	310;"	d
+ADJ_SID_INDEX_SUB_TLV_LEN	inc/srdef.h	294;"	d
+ADJ_SID_LABEL_SUB_TLV_LEN	inc/srdef.h	293;"	d
+ADJ_SID_L_FLAG	inc/srdef.h	309;"	d
+ADJ_SID_P_FLAG	inc/srdef.h	311;"	d
+ADJ_SID_SUB_TLV_LEN	inc/srdef.h	299;"	d
+ADJ_SID_SUB_TLV_TYPE	inc/srdef.h	288;"	d
+ADJ_SID_TLV	inc/srdef.h	238;"	d
+ADJ_SID_V_FLAG	inc/srdef.h	308;"	d
+AREA_SCOPE_OPQ_LSA_MASK	inc/srdef.h	246;"	d
+AdjIp	inc/srtdefs.h	/^    tGenU4Addr    AdjIp;         \/* Interface IP of P Adj to Q *\/$/;"	m	struct:_SrLfaAdjInfo
+AdjIp	inc/srtdefs.h	/^ tGenU4Addr    AdjIp;                 \/* Interface IP of P Adj to Q *\/$/;"	m	struct:_SrTilfaAdjInfo
+AltRlfaNxtHop	inc/srtdefs.h	/^    tIp6Addr            AltRlfaNxtHop; \/*Alternate Next hop of RLFA route *\/$/;"	m	struct:_SrNetIpv6LfaRtInfo
+C_FLAGS	Makefile	/^C_FLAGS          = ${CC_FLAGS} ${TOTAL_OPNS} ${INCLUDES}$/;"	m
+DEPENDENCIES	Makefile	/^DEPENDENCIES =  \\$/;"	m
+DynamicNextHop	inc/srtdefs.h	/^    tGenU4Addr              DynamicNextHop;$/;"	m	struct:_SrStaticEntryInfo
+EXTERNAL_DEPENDENCIES	Makefile	/^EXTERNAL_DEPENDENCIES = \\$/;"	m
+EXT_LINK_LSA_OPQ_TYPE	inc/srdef.h	236;"	d
+EXT_PREFIX_A_FLAG	inc/srdef.h	281;"	d
+EXT_PREFIX_LSA_OPQ_TYPE	inc/srdef.h	235;"	d
+EXT_PREFIX_N_FLAG	inc/srdef.h	282;"	d
+FLUSHED_LSA	inc/srdef.h	145;"	d
+Fec	inc/srtdefs.h	/^    tSrFec      Fec;$/;"	m	struct:_SrInSegInfo
+FrrIlmNexthop	inc/srtdefs.h	/^    tGenU4Addr         FrrIlmNexthop;         \/*SR FRR ILM nexthop*\/$/;"	m	struct:_SrTeRtEntryInfo
+FsLabelStackIndexNext	inc/fssrdb.h	/^UINT4 FsLabelStackIndexNext [ ] ={1,3,6,1,4,1,2076,163,1,0,20};$/;"	v
+FsLabelStackIndexNextGet	src/fssrwr.c	/^FsLabelStackIndexNextGet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsRouterListIndexNext	inc/fssrdb.h	/^UINT4 FsRouterListIndexNext [ ] ={1,3,6,1,4,1,2076,163,1,0,6};$/;"	v
+FsRouterListIndexNextGet	src/fssrwr.c	/^FsRouterListIndexNextGet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrAlgo	inc/fssrdb.h	/^UINT4 FsSrAlgo [ ] ={1,3,6,1,4,1,2076,163,1,0,4,1,9};$/;"	v
+FsSrAlgoGet	src/fssrwr.c	/^FsSrAlgoGet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrAlgoSet	src/fssrwr.c	/^FsSrAlgoSet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrAlgoTest	src/fssrwr.c	/^FsSrAlgoTest (UINT4 *pu4Error, tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrDebugFlag	inc/fssrdb.h	/^UINT4 FsSrDebugFlag [ ] ={1,3,6,1,4,1,2076,163,1,0,5};$/;"	v
+FsSrDebugFlagDep	src/fssrwr.c	/^FsSrDebugFlagDep (UINT4 *pu4Error, tSnmpIndexList * pSnmpIndexList,$/;"	f
+FsSrDebugFlagGet	src/fssrwr.c	/^FsSrDebugFlagGet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrDebugFlagSet	src/fssrwr.c	/^FsSrDebugFlagSet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrDebugFlagTest	src/fssrwr.c	/^FsSrDebugFlagTest (UINT4 *pu4Error, tSnmpIndex * pMultiIndex,$/;"	f
+FsSrFlags	inc/fssrdb.h	/^UINT4 FsSrFlags [ ] ={1,3,6,1,4,1,2076,163,1,0,4,1,7};$/;"	v
+FsSrFlagsGet	src/fssrwr.c	/^FsSrFlagsGet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrFlagsSet	src/fssrwr.c	/^FsSrFlagsSet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrFlagsTest	src/fssrwr.c	/^FsSrFlagsTest (UINT4 *pu4Error, tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrGlobalAdminStatus	inc/fssrdb.h	/^UINT4 FsSrGlobalAdminStatus [ ] ={1,3,6,1,4,1,2076,163,1,0,15};$/;"	v
+FsSrGlobalAdminStatusDep	src/fssrwr.c	/^FsSrGlobalAdminStatusDep (UINT4 *pu4Error, tSnmpIndexList * pSnmpIndexList,$/;"	f
+FsSrGlobalAdminStatusGet	src/fssrwr.c	/^FsSrGlobalAdminStatusGet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrGlobalAdminStatusSet	src/fssrwr.c	/^FsSrGlobalAdminStatusSet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrGlobalAdminStatusTest	src/fssrwr.c	/^FsSrGlobalAdminStatusTest (UINT4 *pu4Error, tSnmpIndex * pMultiIndex,$/;"	f
+FsSrIpv4AddrFamily	inc/fssrdb.h	/^UINT4 FsSrIpv4AddrFamily [ ] ={1,3,6,1,4,1,2076,163,1,0,16};$/;"	v
+FsSrIpv4AddrFamilyDep	src/fssrwr.c	/^FsSrIpv4AddrFamilyDep (UINT4 *pu4Error, tSnmpIndexList * pSnmpIndexList,$/;"	f
+FsSrIpv4AddrFamilyGet	src/fssrwr.c	/^FsSrIpv4AddrFamilyGet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrIpv4AddrFamilySet	src/fssrwr.c	/^FsSrIpv4AddrFamilySet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrIpv4AddrFamilyTest	src/fssrwr.c	/^FsSrIpv4AddrFamilyTest (UINT4 *pu4Error, tSnmpIndex * pMultiIndex,$/;"	f
+FsSrIpv6AddrFamily	inc/fssrdb.h	/^UINT4 FsSrIpv6AddrFamily [ ] ={1,3,6,1,4,1,2076,163,1,0,17};$/;"	v
+FsSrIpv6AddrFamilyDep	src/fssrwr.c	/^FsSrIpv6AddrFamilyDep (UINT4 *pu4Error, tSnmpIndexList * pSnmpIndexList,$/;"	f
+FsSrIpv6AddrFamilyGet	src/fssrwr.c	/^FsSrIpv6AddrFamilyGet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrIpv6AddrFamilySet	src/fssrwr.c	/^FsSrIpv6AddrFamilySet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrIpv6AddrFamilyTest	src/fssrwr.c	/^FsSrIpv6AddrFamilyTest (UINT4 *pu4Error, tSnmpIndex * pMultiIndex,$/;"	f
+FsSrMTID	inc/fssrdb.h	/^UINT4 FsSrMTID [ ] ={1,3,6,1,4,1,2076,163,1,0,4,1,8};$/;"	v
+FsSrMTIDGet	src/fssrwr.c	/^FsSrMTIDGet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrMTIDSet	src/fssrwr.c	/^FsSrMTIDSet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrMTIDTest	src/fssrwr.c	/^FsSrMTIDTest (UINT4 *pu4Error, tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrMode	inc/fssrdb.h	/^UINT4 FsSrMode [ ] ={1,3,6,1,4,1,2076,163,1,0,1};$/;"	v
+FsSrModeDep	src/fssrwr.c	/^FsSrModeDep (UINT4 *pu4Error, tSnmpIndexList * pSnmpIndexList,$/;"	f
+FsSrModeGet	src/fssrwr.c	/^FsSrModeGet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrModeSet	src/fssrwr.c	/^FsSrModeSet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrModeTest	src/fssrwr.c	/^FsSrModeTest (UINT4 *pu4Error, tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrSIDAddrType	inc/fssrdb.h	/^UINT4 FsSrSIDAddrType [ ] ={1,3,6,1,4,1,2076,163,1,0,4,1,4};$/;"	v
+FsSrSIDMask	inc/fssrdb.h	/^UINT4 FsSrSIDMask [ ] ={1,3,6,1,4,1,2076,163,1,0,4,1,6};$/;"	v
+FsSrSIDNetIp	inc/fssrdb.h	/^UINT4 FsSrSIDNetIp [ ] ={1,3,6,1,4,1,2076,163,1,0,4,1,5};$/;"	v
+FsSrSIDRowStatus	inc/fssrdb.h	/^UINT4 FsSrSIDRowStatus [ ] ={1,3,6,1,4,1,2076,163,1,0,4,1,11};$/;"	v
+FsSrSIDRowStatusGet	src/fssrwr.c	/^FsSrSIDRowStatusGet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrSIDRowStatusSet	src/fssrwr.c	/^FsSrSIDRowStatusSet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrSIDRowStatusTest	src/fssrwr.c	/^FsSrSIDRowStatusTest (UINT4 *pu4Error, tSnmpIndex * pMultiIndex,$/;"	f
+FsSrSIDTableDep	src/fssrwr.c	/^FsSrSIDTableDep (UINT4 *pu4Error, tSnmpIndexList * pSnmpIndexList,$/;"	f
+FsSrSIDTableINDEX	inc/fssrdb.h	/^UINT1 FsSrSIDTableINDEX [] = {SNMP_DATA_TYPE_INTEGER ,SNMP_DATA_TYPE_OCTET_PRIM ,SNMP_DATA_TYPE_UNSIGNED32};$/;"	v
+FsSrSIDType	inc/fssrdb.h	/^UINT4 FsSrSIDType [ ] ={1,3,6,1,4,1,2076,163,1,0,4,1,1};$/;"	v
+FsSrSIDTypeGet	src/fssrwr.c	/^FsSrSIDTypeGet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrSIDTypeSet	src/fssrwr.c	/^FsSrSIDTypeSet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrSIDTypeTest	src/fssrwr.c	/^FsSrSIDTypeTest (UINT4 *pu4Error, tSnmpIndex * pMultiIndex,$/;"	f
+FsSrSIDValue	inc/fssrdb.h	/^UINT4 FsSrSIDValue [ ] ={1,3,6,1,4,1,2076,163,1,0,4,1,3};$/;"	v
+FsSrSIDValueGet	src/fssrwr.c	/^FsSrSIDValueGet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrSIDValueSet	src/fssrwr.c	/^FsSrSIDValueSet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrSIDValueTest	src/fssrwr.c	/^FsSrSIDValueTest (UINT4 *pu4Error, tSnmpIndex * pMultiIndex,$/;"	f
+FsSrSidIndexType	inc/fssrdb.h	/^UINT4 FsSrSidIndexType [ ] ={1,3,6,1,4,1,2076,163,1,0,4,1,2};$/;"	v
+FsSrSidIndexTypeGet	src/fssrwr.c	/^FsSrSidIndexTypeGet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrSidIndexTypeSet	src/fssrwr.c	/^FsSrSidIndexTypeSet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrSidIndexTypeTest	src/fssrwr.c	/^FsSrSidIndexTypeTest (UINT4 *pu4Error, tSnmpIndex * pMultiIndex,$/;"	f
+FsSrTeDestAddr	inc/fssrdb.h	/^UINT4 FsSrTeDestAddr [ ] ={1,3,6,1,4,1,2076,163,1,0,7,1,2};$/;"	v
+FsSrTeDestAddrType	inc/fssrdb.h	/^UINT4 FsSrTeDestAddrType [ ] ={1,3,6,1,4,1,2076,163,1,0,7,1,1};$/;"	v
+FsSrTeDestMask	inc/fssrdb.h	/^UINT4 FsSrTeDestMask [ ] ={1,3,6,1,4,1,2076,163,1,0,7,1,3};$/;"	v
+FsSrTeOptRouterId	inc/fssrdb.h	/^UINT4 FsSrTeOptRouterId [ ] ={1,3,6,1,4,1,2076,163,1,0,8,1,4};$/;"	v
+FsSrTeOptRouterIdGet	src/fssrwr.c	/^FsSrTeOptRouterIdGet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrTeOptRouterIdSet	src/fssrwr.c	/^FsSrTeOptRouterIdSet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrTeOptRouterIdTest	src/fssrwr.c	/^FsSrTeOptRouterIdTest (UINT4 *pu4Error, tSnmpIndex * pMultiIndex,$/;"	f
+FsSrTeOptRtrAddrType	inc/fssrdb.h	/^UINT4 FsSrTeOptRtrAddrType [ ] ={1,3,6,1,4,1,2076,163,1,0,8,1,3};$/;"	v
+FsSrTeOptRtrAddrTypeSet	src/fssrwr.c	/^FsSrTeOptRtrAddrTypeSet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrTeOptRtrAddrTypeTest	src/fssrwr.c	/^FsSrTeOptRtrAddrTypeTest (UINT4 *pu4Error, tSnmpIndex * pMultiIndex,$/;"	f
+FsSrTePathRowStatus	inc/fssrdb.h	/^UINT4 FsSrTePathRowStatus [ ] ={1,3,6,1,4,1,2076,163,1,0,7,1,6};$/;"	v
+FsSrTePathRowStatusGet	src/fssrwr.c	/^FsSrTePathRowStatusGet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrTePathRowStatusSet	src/fssrwr.c	/^FsSrTePathRowStatusSet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrTePathRowStatusTest	src/fssrwr.c	/^FsSrTePathRowStatusTest (UINT4 *pu4Error, tSnmpIndex * pMultiIndex,$/;"	f
+FsSrTePathTableDep	src/fssrwr.c	/^FsSrTePathTableDep (UINT4 *pu4Error, tSnmpIndexList * pSnmpIndexList,$/;"	f
+FsSrTePathTableINDEX	inc/fssrdb.h	/^UINT1 FsSrTePathTableINDEX [] = {SNMP_DATA_TYPE_OCTET_PRIM ,SNMP_DATA_TYPE_UNSIGNED32 ,SNMP_DATA_TYPE_OCTET_PRIM ,SNMP_DATA_TYPE_INTEGER};$/;"	v
+FsSrTeRouterId	inc/fssrdb.h	/^UINT4 FsSrTeRouterId [ ] ={1,3,6,1,4,1,2076,163,1,0,7,1,4};$/;"	v
+FsSrTeRouterIndex	inc/fssrdb.h	/^UINT4 FsSrTeRouterIndex [ ] ={1,3,6,1,4,1,2076,163,1,0,8,1,2};$/;"	v
+FsSrTeRouterListIndex	inc/fssrdb.h	/^UINT4 FsSrTeRouterListIndex [ ] ={1,3,6,1,4,1,2076,163,1,0,7,1,5};$/;"	v
+FsSrTeRouterListIndexGet	src/fssrwr.c	/^FsSrTeRouterListIndexGet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrTeRouterListIndexSet	src/fssrwr.c	/^FsSrTeRouterListIndexSet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrTeRouterListIndexTest	src/fssrwr.c	/^FsSrTeRouterListIndexTest (UINT4 *pu4Error, tSnmpIndex * pMultiIndex,$/;"	f
+FsSrTeRtrListIndex	inc/fssrdb.h	/^UINT4 FsSrTeRtrListIndex [ ] ={1,3,6,1,4,1,2076,163,1,0,8,1,1};$/;"	v
+FsSrTeRtrListTableDep	src/fssrwr.c	/^FsSrTeRtrListTableDep (UINT4 *pu4Error, tSnmpIndexList * pSnmpIndexList,$/;"	f
+FsSrTeRtrListTableINDEX	inc/fssrdb.h	/^UINT1 FsSrTeRtrListTableINDEX [] = {SNMP_DATA_TYPE_UNSIGNED32 ,SNMP_DATA_TYPE_UNSIGNED32};$/;"	v
+FsSrTeRtrRowStatus	inc/fssrdb.h	/^UINT4 FsSrTeRtrRowStatus [ ] ={1,3,6,1,4,1,2076,163,1,0,8,1,5};$/;"	v
+FsSrTeRtrRowStatusGet	src/fssrwr.c	/^FsSrTeRtrRowStatusGet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrTeRtrRowStatusSet	src/fssrwr.c	/^FsSrTeRtrRowStatusSet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrTeRtrRowStatusTest	src/fssrwr.c	/^FsSrTeRtrRowStatusTest (UINT4 *pu4Error, tSnmpIndex * pMultiIndex,$/;"	f
+FsSrV4AlternateStatus	inc/fssrdb.h	/^UINT4 FsSrV4AlternateStatus [ ] ={1,3,6,1,4,1,2076,163,1,0,10};$/;"	v
+FsSrV4AlternateStatusDep	src/fssrwr.c	/^FsSrV4AlternateStatusDep (UINT4 *pu4Error, tSnmpIndexList * pSnmpIndexList,$/;"	f
+FsSrV4AlternateStatusGet	src/fssrwr.c	/^FsSrV4AlternateStatusGet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrV4AlternateStatusSet	src/fssrwr.c	/^FsSrV4AlternateStatusSet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrV4AlternateStatusTest	src/fssrwr.c	/^FsSrV4AlternateStatusTest (UINT4 *pu4Error, tSnmpIndex * pMultiIndex,$/;"	f
+FsSrV4MaxSrGbValue	inc/fssrdb.h	/^UINT4 FsSrV4MaxSrGbValue [ ] ={1,3,6,1,4,1,2076,163,1,0,3};$/;"	v
+FsSrV4MaxSrGbValueDep	src/fssrwr.c	/^FsSrV4MaxSrGbValueDep (UINT4 *pu4Error, tSnmpIndexList * pSnmpIndexList,$/;"	f
+FsSrV4MaxSrGbValueGet	src/fssrwr.c	/^FsSrV4MaxSrGbValueGet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrV4MaxSrGbValueSet	src/fssrwr.c	/^FsSrV4MaxSrGbValueSet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrV4MaxSrGbValueTest	src/fssrwr.c	/^FsSrV4MaxSrGbValueTest (UINT4 *pu4Error, tSnmpIndex * pMultiIndex,$/;"	f
+FsSrV4MinSrGbValue	inc/fssrdb.h	/^UINT4 FsSrV4MinSrGbValue [ ] ={1,3,6,1,4,1,2076,163,1,0,2};$/;"	v
+FsSrV4MinSrGbValueDep	src/fssrwr.c	/^FsSrV4MinSrGbValueDep (UINT4 *pu4Error, tSnmpIndexList * pSnmpIndexList,$/;"	f
+FsSrV4MinSrGbValueGet	src/fssrwr.c	/^FsSrV4MinSrGbValueGet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrV4MinSrGbValueSet	src/fssrwr.c	/^FsSrV4MinSrGbValueSet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrV4MinSrGbValueTest	src/fssrwr.c	/^FsSrV4MinSrGbValueTest (UINT4 *pu4Error, tSnmpIndex * pMultiIndex,$/;"	f
+FsSrV4Status	inc/fssrdb.h	/^UINT4 FsSrV4Status [ ] ={1,3,6,1,4,1,2076,163,1,0,9};$/;"	v
+FsSrV4StatusDep	src/fssrwr.c	/^FsSrV4StatusDep (UINT4 *pu4Error, tSnmpIndexList * pSnmpIndexList,$/;"	f
+FsSrV4StatusGet	src/fssrwr.c	/^FsSrV4StatusGet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrV4StatusSet	src/fssrwr.c	/^FsSrV4StatusSet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrV4StatusTest	src/fssrwr.c	/^FsSrV4StatusTest (UINT4 *pu4Error, tSnmpIndex * pMultiIndex,$/;"	f
+FsSrV6AlternateStatus	inc/fssrdb.h	/^UINT4 FsSrV6AlternateStatus [ ] ={1,3,6,1,4,1,2076,163,1,0,13};$/;"	v
+FsSrV6AlternateStatusDep	src/fssrwr.c	/^FsSrV6AlternateStatusDep (UINT4 *pu4Error, tSnmpIndexList * pSnmpIndexList,$/;"	f
+FsSrV6AlternateStatusGet	src/fssrwr.c	/^FsSrV6AlternateStatusGet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrV6AlternateStatusSet	src/fssrwr.c	/^FsSrV6AlternateStatusSet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrV6AlternateStatusTest	src/fssrwr.c	/^FsSrV6AlternateStatusTest (UINT4 *pu4Error, tSnmpIndex * pMultiIndex,$/;"	f
+FsSrV6MaxSrGbValue	inc/fssrdb.h	/^UINT4 FsSrV6MaxSrGbValue [ ] ={1,3,6,1,4,1,2076,163,1,0,12};$/;"	v
+FsSrV6MaxSrGbValueDep	src/fssrwr.c	/^FsSrV6MaxSrGbValueDep (UINT4 *pu4Error, tSnmpIndexList * pSnmpIndexList,$/;"	f
+FsSrV6MaxSrGbValueGet	src/fssrwr.c	/^FsSrV6MaxSrGbValueGet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrV6MaxSrGbValueSet	src/fssrwr.c	/^FsSrV6MaxSrGbValueSet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrV6MaxSrGbValueTest	src/fssrwr.c	/^FsSrV6MaxSrGbValueTest (UINT4 *pu4Error, tSnmpIndex * pMultiIndex,$/;"	f
+FsSrV6MinSrGbValue	inc/fssrdb.h	/^UINT4 FsSrV6MinSrGbValue [ ] ={1,3,6,1,4,1,2076,163,1,0,11};$/;"	v
+FsSrV6MinSrGbValueDep	src/fssrwr.c	/^FsSrV6MinSrGbValueDep (UINT4 *pu4Error, tSnmpIndexList * pSnmpIndexList,$/;"	f
+FsSrV6MinSrGbValueGet	src/fssrwr.c	/^FsSrV6MinSrGbValueGet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrV6MinSrGbValueSet	src/fssrwr.c	/^FsSrV6MinSrGbValueSet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrV6MinSrGbValueTest	src/fssrwr.c	/^FsSrV6MinSrGbValueTest (UINT4 *pu4Error, tSnmpIndex * pMultiIndex,$/;"	f
+FsSrV6Status	inc/fssrdb.h	/^UINT4 FsSrV6Status [ ] ={1,3,6,1,4,1,2076,163,1,0,14};$/;"	v
+FsSrV6StatusDep	src/fssrwr.c	/^FsSrV6StatusDep (UINT4 *pu4Error, tSnmpIndexList * pSnmpIndexList,$/;"	f
+FsSrV6StatusGet	src/fssrwr.c	/^FsSrV6StatusGet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrV6StatusSet	src/fssrwr.c	/^FsSrV6StatusSet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrV6StatusTest	src/fssrwr.c	/^FsSrV6StatusTest (UINT4 *pu4Error, tSnmpIndex * pMultiIndex,$/;"	f
+FsSrWeight	inc/fssrdb.h	/^UINT4 FsSrWeight [ ] ={1,3,6,1,4,1,2076,163,1,0,4,1,10};$/;"	v
+FsSrWeightGet	src/fssrwr.c	/^FsSrWeightGet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrWeightSet	src/fssrwr.c	/^FsSrWeightSet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsSrWeightTest	src/fssrwr.c	/^FsSrWeightTest (UINT4 *pu4Error, tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsStaticLabelStackIndex	inc/fssrdb.h	/^UINT4 FsStaticLabelStackIndex [ ] ={1,3,6,1,4,1,2076,163,1,0,18,1,1};$/;"	v
+FsStaticSrDestAddr	inc/fssrdb.h	/^UINT4 FsStaticSrDestAddr [ ] ={1,3,6,1,4,1,2076,163,1,0,19,1,1};$/;"	v
+FsStaticSrDestAddrType	inc/fssrdb.h	/^UINT4 FsStaticSrDestAddrType [ ] ={1,3,6,1,4,1,2076,163,1,0,19,1,3};$/;"	v
+FsStaticSrDestMask	inc/fssrdb.h	/^UINT4 FsStaticSrDestMask [ ] ={1,3,6,1,4,1,2076,163,1,0,19,1,2};$/;"	v
+FsStaticSrLabelIndex	inc/fssrdb.h	/^UINT4 FsStaticSrLabelIndex [ ] ={1,3,6,1,4,1,2076,163,1,0,18,1,2};$/;"	v
+FsStaticSrLabelStackIndex	inc/fssrdb.h	/^UINT4 FsStaticSrLabelStackIndex [ ] ={1,3,6,1,4,1,2076,163,1,0,19,1,5};$/;"	v
+FsStaticSrLabelStackIndexGet	src/fssrwr.c	/^FsStaticSrLabelStackIndexGet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsStaticSrLabelStackIndexSet	src/fssrwr.c	/^FsStaticSrLabelStackIndexSet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsStaticSrLabelStackIndexTest	src/fssrwr.c	/^FsStaticSrLabelStackIndexTest (UINT4 *pu4Error, tSnmpIndex * pMultiIndex,$/;"	f
+FsStaticSrLabelStackLabel	inc/fssrdb.h	/^UINT4 FsStaticSrLabelStackLabel [ ] ={1,3,6,1,4,1,2076,163,1,0,18,1,3};$/;"	v
+FsStaticSrLabelStackLabelGet	src/fssrwr.c	/^FsStaticSrLabelStackLabelGet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsStaticSrLabelStackLabelSet	src/fssrwr.c	/^FsStaticSrLabelStackLabelSet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsStaticSrLabelStackLabelTest	src/fssrwr.c	/^FsStaticSrLabelStackLabelTest (UINT4 *pu4Error, tSnmpIndex * pMultiIndex,$/;"	f
+FsStaticSrLabelStackTableDep	src/fssrwr.c	/^FsStaticSrLabelStackTableDep (UINT4 *pu4Error, tSnmpIndexList * pSnmpIndexList,$/;"	f
+FsStaticSrLabelStackTableINDEX	inc/fssrdb.h	/^UINT1 FsStaticSrLabelStackTableINDEX [] = {SNMP_DATA_TYPE_UNSIGNED32 ,SNMP_DATA_TYPE_UNSIGNED32};$/;"	v
+FsStaticSrNextHopAddr	inc/fssrdb.h	/^UINT4 FsStaticSrNextHopAddr [ ] ={1,3,6,1,4,1,2076,163,1,0,19,1,4};$/;"	v
+FsStaticSrNextHopAddrGet	src/fssrwr.c	/^FsStaticSrNextHopAddrGet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsStaticSrNextHopAddrSet	src/fssrwr.c	/^FsStaticSrNextHopAddrSet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsStaticSrNextHopAddrTest	src/fssrwr.c	/^FsStaticSrNextHopAddrTest (UINT4 *pu4Error, tSnmpIndex * pMultiIndex,$/;"	f
+FsStaticSrRowStatus	inc/fssrdb.h	/^UINT4 FsStaticSrRowStatus [ ] ={1,3,6,1,4,1,2076,163,1,0,19,1,6};$/;"	v
+FsStaticSrRowStatusGet	src/fssrwr.c	/^FsStaticSrRowStatusGet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsStaticSrRowStatusSet	src/fssrwr.c	/^FsStaticSrRowStatusSet (tSnmpIndex * pMultiIndex, tRetVal * pMultiData)$/;"	f
+FsStaticSrRowStatusTest	src/fssrwr.c	/^FsStaticSrRowStatusTest (UINT4 *pu4Error, tSnmpIndex * pMultiIndex,$/;"	f
+FsStaticSrTableDep	src/fssrwr.c	/^FsStaticSrTableDep (UINT4 *pu4Error, tSnmpIndexList * pSnmpIndexList,$/;"	f
+FsStaticSrTableINDEX	inc/fssrdb.h	/^UINT1 FsStaticSrTableINDEX [] = {SNMP_DATA_TYPE_OCTET_PRIM ,SNMP_DATA_TYPE_UNSIGNED32 ,SNMP_DATA_TYPE_INTEGER};$/;"	v
+GET_SR_IF_PTR_FROM_SORT_IF_LIST	inc/srdef.h	568;"	d
+GetNextIndexFsSrSIDTable	src/fssrwr.c	/^GetNextIndexFsSrSIDTable (tSnmpIndex * pFirstMultiIndex,$/;"	f
+GetNextIndexFsSrTePathTable	src/fssrwr.c	/^GetNextIndexFsSrTePathTable (tSnmpIndex * pFirstMultiIndex,$/;"	f
+GetNextIndexFsSrTeRtrListTable	src/fssrwr.c	/^GetNextIndexFsSrTeRtrListTable (tSnmpIndex * pFirstMultiIndex,$/;"	f
+GetNextIndexFsStaticSrLabelStackTable	src/fssrwr.c	/^GetNextIndexFsStaticSrLabelStackTable (tSnmpIndex * pFirstMultiIndex,$/;"	f
+GetNextIndexFsStaticSrTable	src/fssrwr.c	/^GetNextIndexFsStaticSrTable (tSnmpIndex * pFirstMultiIndex,$/;"	f
+INTERNAL_DEPENDENCIES	Makefile	/^INTERNAL_DEPENDENCIES = \\$/;"	m
+IPv6_LFA_ROUTE_ADD	inc/srtdefs.h	82;"	d
+IPv6_LFA_ROUTE_DELETE	inc/srtdefs.h	83;"	d
+IPv6_LFA_ROUTE_MODIFY	inc/srtdefs.h	86;"	d
+IPv6_LFA_ROUTE_RESET	inc/srtdefs.h	85;"	d
+IPv6_LFA_ROUTE_SET	inc/srtdefs.h	84;"	d
+IPv6_RLFA_ROUTE_ADD	inc/srtdefs.h	89;"	d
+IPv6_RLFA_ROUTE_DELETE	inc/srtdefs.h	90;"	d
+IPv6_RLFA_ROUTE_MODIFY	inc/srtdefs.h	93;"	d
+IPv6_RLFA_ROUTE_RESET	inc/srtdefs.h	92;"	d
+IPv6_RLFA_ROUTE_SET	inc/srtdefs.h	91;"	d
+IPv6_TILFA_ROUTE_ADD	inc/srtdefs.h	96;"	d
+IPv6_TILFA_ROUTE_DELETE	inc/srtdefs.h	97;"	d
+IPv6_TILFA_ROUTE_MODIFY	inc/srtdefs.h	100;"	d
+IPv6_TILFA_ROUTE_RESET	inc/srtdefs.h	99;"	d
+IPv6_TILFA_ROUTE_SET	inc/srtdefs.h	98;"	d
+IS_V4_SRGB_CONFIGURED	inc/srmacs.h	50;"	d
+IS_V6_SRGB_CONFIGURED	inc/srmacs.h	51;"	d
+Ip6Dst	inc/srtdefs.h	/^    tIp6Addr            Ip6Dst;     \/* The destination address prefix *\/$/;"	m	struct:_SrNetIpv6LfaRtInfo
+Ip6Dst	inc/srtdefs.h	/^    tIp6Addr           Ip6Dst;     				\/* The destination address prefix *\/$/;"	m	struct:_SrRtrInfo
+IsSidConfigured	src/srgr.c	/^IsSidConfigured (void)$/;"	f
+IssSrShowDebugging	src/srcli.c	/^IssSrShowDebugging (tCliHandle CliHandle)$/;"	f
+LAN_ADJ_SID_INDEX_SUB_TLV_LEN	inc/srdef.h	297;"	d
+LAN_ADJ_SID_LABEL_SUB_TLV_LEN	inc/srdef.h	296;"	d
+LAN_ADJ_SID_SUB_TLV_LEN	inc/srdef.h	300;"	d
+LAN_ADJ_SID_TLV	inc/srdef.h	239;"	d
+LFA_NODE_NEXTHOP	inc/srtdefs.h	109;"	d
+LFA_NODE_P	inc/srtdefs.h	110;"	d
+LFA_NODE_Q	inc/srtdefs.h	111;"	d
+LFA_ROUTE_ADD	inc/srtdefs.h	63;"	d
+LFA_ROUTE_DELETE	inc/srtdefs.h	64;"	d
+LFA_ROUTE_MODIFY	inc/srtdefs.h	65;"	d
+LFA_ROUTE_RESET	inc/srtdefs.h	67;"	d
+LFA_ROUTE_SET	inc/srtdefs.h	66;"	d
+LINK_SCOPE_OPQ_LSA_MASK	inc/srdef.h	245;"	d
+LfaCreateAndDeleteLSP	src/srutil.c	/^LfaCreateAndDeleteLSP (UINT2 u2MlibOperation, tSrRtrInfo * pSrRtrInfo,$/;"	f
+LfaIpRtChangeEventHandler	src/srutil.c	/^LfaIpRtChangeEventHandler (tNetIpv4LfaRtInfo * pNetIpLfaRtInfo)$/;"	f
+LfaIpv6RtChangeEventHandler	src/srutil.c	/^LfaIpv6RtChangeEventHandler (tNetIpv6LfaRtInfo * pNetIp6LfaRtInfo)$/;"	f
+LfaList	inc/srtdefs.h	/^    tTMO_SLL      LfaList;       \/* LFA Entries to which this Node as part of  Adj SID List*\/$/;"	m	struct:_SrLfaAdjInfo
+LfaMandRtrId	inc/srtdefs.h	/^    tGenU4Addr         LfaMandRtrId;         \/*Mandatory node based on LFA nexthop *\/$/;"	m	struct:_SrTeRtEntryInfo
+LfaNextHop	inc/srtdefs.h	/^    tIp6Addr            LfaNextHop; \/* The LFA next hop address *\/$/;"	m	struct:_SrNetIpv6LfaRtInfo
+LfaNextHop	inc/srtdefs.h	/^    tIp6Addr           LfaNextHop;              \/* The LFA next hop address *\/$/;"	m	struct:_SrRtrInfo
+LfaNexthop	inc/srtdefs.h	/^    tGenU4Addr         LfaNexthop;           \/* Lfa Nexthop of a mandatory node *\/$/;"	m	struct:_SrTeRtEntryInfo
+LfaRtAddOrDeleteEventHandler	src/srutil.c	/^LfaRtAddOrDeleteEventHandler (tNetIpv4LfaRtInfo * pLfaRtInfo,$/;"	f
+LinkInfo	inc/srtdefs.h	/^    tSrLinkInfoKey     LinkInfo;$/;"	m	struct:_SrExtLinkLSAInfo
+MAX_IPV6_ADDR_LEN	inc/srdef.h	339;"	d
+MAX_IP_ADDR_LEN	inc/srdef.h	338;"	d
+MAX_SR_AREA_LINK_INFO_SIZING_ID	inc/srsz.h	/^    MAX_SR_AREA_LINK_INFO_SIZING_ID,$/;"	e	enum:__anon4
+MAX_SR_EXT_LINK_LSA_INFO_SIZING_ID	inc/srsz.h	/^    MAX_SR_EXT_LINK_LSA_INFO_SIZING_ID,$/;"	e	enum:__anon4
+MAX_SR_GR_FTN_TNL_DB_SIZING_ID	inc/srsz.h	/^    MAX_SR_GR_FTN_TNL_DB_SIZING_ID,$/;"	e	enum:__anon4
+MAX_SR_GR_ILM_TNL_DB_SIZING_ID	inc/srsz.h	/^    MAX_SR_GR_ILM_TNL_DB_SIZING_ID,$/;"	e	enum:__anon4
+MAX_SR_INTF_SIZING_ID	inc/srsz.h	/^    MAX_SR_INTF_SIZING_ID,$/;"	e	enum:__anon4
+MAX_SR_LFA_ADJ_LIST_NODE_SIZING_ID	inc/srsz.h	/^    MAX_SR_LFA_ADJ_LIST_NODE_SIZING_ID,$/;"	e	enum:__anon4
+MAX_SR_LFA_ADJ_SIZING_ID	inc/srsz.h	/^    MAX_SR_LFA_ADJ_SIZING_ID,$/;"	e	enum:__anon4
+MAX_SR_LFA_NODE_SIZING_ID	inc/srsz.h	/^    MAX_SR_LFA_NODE_SIZING_ID,$/;"	e	enum:__anon4
+MAX_SR_OSPFV4_NBR_SIZING_ID	inc/srsz.h	/^    MAX_SR_OSPFV4_NBR_SIZING_ID,$/;"	e	enum:__anon4
+MAX_SR_OSPFV6_NBR_SIZING_ID	inc/srsz.h	/^    MAX_SR_OSPFV6_NBR_SIZING_ID,$/;"	e	enum:__anon4
+MAX_SR_OSPF_LSA_SIZING_ID	inc/srsz.h	/^    MAX_SR_OSPF_LSA_SIZING_ID,$/;"	e	enum:__anon4
+MAX_SR_OSPF_RI_LSA_SIZING_ID	inc/srsz.h	/^    MAX_SR_OSPF_RI_LSA_SIZING_ID,$/;"	e	enum:__anon4
+MAX_SR_PEER_ADJ_SIZING_ID	inc/srsz.h	/^	MAX_SR_PEER_ADJ_SIZING_ID,$/;"	e	enum:__anon4
+MAX_SR_QDEPTH_SIZING_ID	inc/srsz.h	/^	MAX_SR_QDEPTH_SIZING_ID,$/;"	e	enum:__anon4
+MAX_SR_RLFA_PATH_SIZING_ID	inc/srsz.h	/^	MAX_SR_RLFA_PATH_SIZING_ID,$/;"	e	enum:__anon4
+MAX_SR_RTINFO_SIZING_ID	inc/srsz.h	/^	MAX_SR_RTINFO_SIZING_ID,$/;"	e	enum:__anon4
+MAX_SR_RTR_DELAY_RT_INFO_SIZING_ID	inc/srsz.h	/^    MAX_SR_RTR_DELAY_RT_INFO_SIZING_ID,$/;"	e	enum:__anon4
+MAX_SR_RTR_NH_SIZING_ID	inc/srsz.h	/^	MAX_SR_RTR_NH_SIZING_ID,$/;"	e	enum:__anon4
+MAX_SR_RTR_SIZING_ID	inc/srsz.h	/^	MAX_SR_RTR_SIZING_ID,$/;"	e	enum:__anon4
+MAX_SR_STATIC_ENTRY_SIZING_ID	inc/srsz.h	/^    MAX_SR_STATIC_ENTRY_SIZING_ID,$/;"	e	enum:__anon4
+MAX_SR_TABLE_ENTRY_DATA_LEN	inc/srdb.h	21;"	d
+MAX_SR_TABLE_KEY_LEN	inc/srdb.h	20;"	d
+MAX_SR_TABLE_NAME_LEN	inc/srdb.h	19;"	d
+MAX_SR_TE_RTR_LIST_SIZING_ID	inc/srsz.h	/^	MAX_SR_TE_RTR_LIST_SIZING_ID,$/;"	e	enum:__anon4
+MAX_SR_TE_RTR_SIZING_ID	inc/srsz.h	/^	MAX_SR_TE_RTR_SIZING_ID,$/;"	e	enum:__anon4
+MAX_SR_TE_RT_ENTRY_SIZING_ID	inc/srsz.h	/^    MAX_SR_TE_RT_ENTRY_SIZING_ID,$/;"	e	enum:__anon4
+MAX_SR_TILFA_ADJ_SIZING_ID	inc/srsz.h	/^    MAX_SR_TILFA_ADJ_SIZING_ID,$/;"	e	enum:__anon4
+MAX_SR_TILFA_PATH_SIZING_ID	inc/srsz.h	/^	MAX_SR_TILFA_PATH_SIZING_ID,$/;"	e	enum:__anon4
+MAX_ST_STATIC_LBL_SIZING_ID	inc/srsz.h	/^    MAX_ST_STATIC_LBL_SIZING_ID,$/;"	e	enum:__anon4
+MPLS_INVALID	src/srutil.c	/^    MPLS_INVALID = 0,$/;"	e	enum:__anon1	file:
+MPLS_LABEL_POP	src/srutil.c	/^    MPLS_LABEL_POP,$/;"	e	enum:__anon1	file:
+MPLS_LABEL_PUSH	src/srutil.c	/^    MPLS_LABEL_PUSH,$/;"	e	enum:__anon1	file:
+MPLS_LABEL_SWAP	src/srutil.c	/^    MPLS_LABEL_SWAP$/;"	e	enum:__anon1	file:
+NETWORK_LSA	inc/srdef.h	140;"	d
+NEW_LSA	inc/srdef.h	143;"	d
+NEW_LSA_INSTANCE	inc/srdef.h	144;"	d
+Next	inc/srtdefs.h	/^    tTMO_SLL_NODE Next;                     \/* Next label in the same List *\/$/;"	m	struct:StaticSrLbl
+Next	inc/srtdefs.h	/^ tTMO_SLL_NODE Next;                        \/* Next RtrId in the same RtrList *\/$/;"	m	struct:SrRtrEntry
+Next	inc/srtdefs.h	/^ tTMO_SLL_NODE Next;                  \/* Next RtrId in the same RtrList *\/$/;"	m	struct:_SrTilfaAdjInfo
+NextHop	inc/srtdefs.h	/^    tGenU4Addr              NextHop;              \/* Nexthop  of a mandatory node *\/$/;"	m	struct:_SrStaticEntryInfo
+NextHop	inc/srtdefs.h	/^    tIp6Addr            NextHop;    \/* The next hop address *\/$/;"	m	struct:_SrNetIpv6LfaRtInfo
+NextHopList	inc/srtdefs.h	/^    tTMO_SLL           NextHopList;	$/;"	m	struct:_SrRtrInfo
+NexthopLfaList	inc/srtdefs.h	/^    tTMO_SLL      NexthopLfaList;       \/* LFA Entries to which this Node As NH*\/$/;"	m	struct:_SrLfaNodeInfo
+OOR_SID_ALARM	inc/srdef.h	170;"	d
+OSPFSR_CXT	inc/srmacs.h	58;"	d
+OSPFV3_AREA_SCOPE_OPQ_LSA	inc/srdef.h	249;"	d
+OSPFV3_EXTENDED_PREFIX_TLV_LEN	inc/srdef.h	214;"	d
+OSPFV3_EXT_INTER_AREA_PREFIX_LSA	inc/srdef.h	251;"	d
+OSPFV3_EXT_INTER_AREA_PREFIX_LSA_HDR_LEN	inc/srdef.h	227;"	d
+OSPFV3_EXT_INTER_AREA_PREFIX_TLV	inc/srdef.h	260;"	d
+OSPFV3_EXT_INTRA_AREA_PREFIX_LSA	inc/srdef.h	252;"	d
+OSPFV3_EXT_INTRA_AREA_PREFIX_LSA_HDR_LEN	inc/srdef.h	218;"	d
+OSPFV3_EXT_INTRA_AREA_PREFIX_TLV	inc/srdef.h	261;"	d
+OSPFV3_EXT_ROUTER_LSA	inc/srdef.h	250;"	d
+OSPFV3_EXT_ROUTER_TLV	inc/srdef.h	259;"	d
+OSPFV3_INTER_AREA_PRFIX_TLV_ADDR_OFFSET	inc/srdef.h	228;"	d
+OSPFV3_INTER_AREA_PRFIX_TLV_LEN	inc/srdef.h	226;"	d
+OSPFV3_INTER_AREA_PRFIX_TLV_TYPE	inc/srdef.h	225;"	d
+OSPFV3_INTRA_AREA_PRFIX_TLV_ADDR_OFFSET	inc/srdef.h	219;"	d
+OSPFV3_INTRA_AREA_PRFIX_TLV_HDR_LEN	inc/srdef.h	221;"	d
+OSPFV3_INTRA_AREA_PRFIX_TLV_LEN	inc/srdef.h	217;"	d
+OSPFV3_INTRA_AREA_PRFIX_TLV_TYPE	inc/srdef.h	216;"	d
+OSPFV3_LINK_SCOPE_OPQ_LSA	inc/srdef.h	248;"	d
+OSPFV3_ROUTER_LINK_TLV_LEN	inc/srdef.h	223;"	d
+OSPFV3_ROUTER_LINK_TLV_TYPE	inc/srdef.h	222;"	d
+OSPFV3_ROUTER_LSA	inc/srdef.h	253;"	d
+OSPF_EXT_LINK_INFO_FLUSH	inc/srdef.h	314;"	d
+OSPF_EXT_LINK_INFO_NEW	inc/srdef.h	316;"	d
+OSPF_EXT_LINK_INFO_ORG	inc/srdef.h	315;"	d
+OSPF_EXT_LINK_INFO_STALE	inc/srdef.h	313;"	d
+OSPF_EXT_LINK_LSA_OPAQUE_TYPE	inc/srdef.h	284;"	d
+OSPF_EXT_LINK_TLV_FIXED_LENGTH	inc/srdef.h	286;"	d
+OSPF_EXT_LINK_TLV_TYPE	inc/srdef.h	285;"	d
+OSPF_EXT_PRREFIX_LSA_OPAQUE_TYPE	inc/srdef.h	263;"	d
+OSPF_EXT_PRREFIX_TLV_LENGTH	inc/srdef.h	265;"	d
+OSPF_EXT_PRREFIX_TLV_TYPE	inc/srdef.h	264;"	d
+OSPF_FAILURE	inc/srdef.h	194;"	d
+OSPF_INTER_AREA	inc/srdef.h	266;"	d
+OSPF_INTRA_AREA	inc/srdef.h	267;"	d
+OSPF_LINK_TYPE_BROADCAST	inc/srdef.h	154;"	d
+OSPF_LINK_TYPE_P2P	inc/srdef.h	153;"	d
+OSPF_LSA_HEADER_LENGTH	inc/srdef.h	151;"	d
+OSPF_ROUTER_LSA_OFFSET	inc/srdef.h	152;"	d
+OSPF_SUCCESS	inc/srdef.h	193;"	d
+OldnextHop	inc/srtdefs.h	/^    tGenU4Addr         OldnextHop;              \/* Previous Next-Hop Address in case of NH modify*\/    $/;"	m	struct:_SrRtrNextHopInfo
+OspfSrEnqueueMsgFromOspf	src/srlsa.c	/^OspfSrEnqueueMsgFromOspf (tOsToOpqApp * pOspfMsg)$/;"	f
+OspfSrUtilGetLinkFromLsa	src/srlsa.c	/^OspfSrUtilGetLinkFromLsa (UINT1 *pLsa, UINT2 u2LsaLen,$/;"	f
+OspfV3SrEnqueueMsgFromOspf	src/srlsa.c	/^OspfV3SrEnqueueMsgFromOspf (tV3OsToOpqApp * pOspfV3Msg)$/;"	f
+OstoSrMsgParams	inc/srtdefs.h	/^            tOsToOpqApp     OstoSrMsgParams;$/;"	m	union:_SrQMsg::__anon10
+PLfaList	inc/srtdefs.h	/^    tTMO_SLL      PLfaList;             \/* LFA Entries to which this Node As P *\/$/;"	m	struct:_SrLfaNodeInfo
+PREFIX_CONFLICT_ALARM	inc/srdef.h	168;"	d
+PREFIX_SID_E_FLAG	inc/srdef.h	277;"	d
+PREFIX_SID_L_FLAG	inc/srdef.h	279;"	d
+PREFIX_SID_M_FLAG	inc/srdef.h	276;"	d
+PREFIX_SID_NP_FLAG	inc/srdef.h	275;"	d
+PREFIX_SID_SUB_TLV	inc/srdef.h	192;"	d
+PREFIX_SID_SUB_TLV_LEN	inc/srdef.h	270;"	d
+PREFIX_SID_SUB_TLV_LEN_V3	inc/srdef.h	273;"	d
+PREFIX_SID_SUB_TLV_TYPE	inc/srdef.h	269;"	d
+PREFIX_SID_SUB_TLV_TYPE_V3	inc/srdef.h	272;"	d
+PREFIX_SID_V_FLAG	inc/srdef.h	278;"	d
+Prefix	inc/srtdefs.h	/^    uGenU4Addr          Prefix;                 \/* Fec\/IP Address *\/$/;"	m	struct:_FEC
+PrimaryNexthop	inc/srtdefs.h	/^    tGenU4Addr         PrimaryNexthop;           \/* Primary nexthop  of a mandatory node *\/$/;"	m	struct:_SrTeRtEntryInfo
+PrimarynextHop	inc/srtdefs.h	/^    tGenU4Addr         PrimarynextHop;          \/* Next-Hop Address of Primary path*\/$/;"	m	struct:_SrRtrNextHopInfo
+QLfaList	inc/srtdefs.h	/^    tTMO_SLL      QLfaList;             \/* LFA Entries to which this Node As Q *\/$/;"	m	struct:_SrLfaNodeInfo
+REDIRECTLSP	inc/srdef.h	352;"	d
+RI_LSA_OPAQUE_TYPE	inc/srdef.h	230;"	d
+RI_LSA_OPQ_TYPE	inc/srdef.h	234;"	d
+RI_LSA_SR_ALGO_SPF	inc/srdef.h	209;"	d
+RI_LSA_SR_ALGO_TLV_LEN	inc/srdef.h	208;"	d
+RI_LSA_SR_ALGO_TLV_TYPE	inc/srdef.h	207;"	d
+RI_LSA_SR_SID_LABEL_RANGE_TLV_LEN	inc/srdef.h	212;"	d
+RI_LSA_SR_SID_LABEL_RANGE_TLV_TYPE	inc/srdef.h	211;"	d
+RLFA_ROUTE_ADD	inc/srtdefs.h	69;"	d
+RLFA_ROUTE_DELETE	inc/srtdefs.h	70;"	d
+RLFA_ROUTE_MODIFY	inc/srtdefs.h	71;"	d
+RLFA_ROUTE_RESET	inc/srtdefs.h	73;"	d
+RLFA_ROUTE_SET	inc/srtdefs.h	72;"	d
+RLfaRtAddOrDeleteEventHandler	src/srutil.c	/^RLfaRtAddOrDeleteEventHandler (tNetIpv4LfaRtInfo * pNetIpLfaRtInfo,$/;"	f
+ROUTER_LSA	inc/srdef.h	139;"	d
+RbNode	inc/srdb.h	/^  tRBNodeEmbd   RbNode;$/;"	m	struct:_SRTnlIfTable
+RbNode	inc/srtdefs.h	/^	tRBNodeEmbd        RbNode;$/;"	m	struct:_SrTilfaPathInfo
+RbNode	inc/srtdefs.h	/^     tRBNodeEmbd    RbNode;$/;"	m	struct:_SrOsRiLsInfo
+RbNode	inc/srtdefs.h	/^    tRBNodeEmbd             RbNode;$/;"	m	struct:_SrStaticEntryInfo
+RbNode	inc/srtdefs.h	/^    tRBNodeEmbd        RbNode;$/;"	m	struct:_SrExtLinkLSAInfo
+RbNode	inc/srtdefs.h	/^    tRBNodeEmbd        RbNode;$/;"	m	struct:_SrTeRtEntryInfo
+RbNode	inc/srtdefs.h	/^    tRBNodeEmbd   RbNode;$/;"	m	struct:_SrLfaAdjInfo
+RbNode	inc/srtdefs.h	/^    tRBNodeEmbd   RbNode;$/;"	m	struct:_SrLfaNodeInfo
+RbWalkFnForExtLinkEntryProcess	src/srlsa.c	/^RbWalkFnForExtLinkEntryProcess (tRBElem * pRBElem, eRBVisit visit, UINT4 u4Level,$/;"	f
+RbWalkFnForExtLinkStaleEntry	src/srlsa.c	/^RbWalkFnForExtLinkStaleEntry (tRBElem * pRBElem, eRBVisit visit, UINT4 u4Level,$/;"	f
+RegisterFSSR	src/fssrwr.c	/^RegisterFSSR ()$/;"	f
+RemoteNodeAddr	inc/srtdefs.h	/^    tGenU4Addr         RemoteNodeAddr;          \/* Remote Node Address *\/$/;"	m	struct:_SrRtrNextHopInfo
+RtrList	inc/srtdefs.h	/^    tTMO_SLL       RtrList;                 \/* Router Entries in SLL *\/$/;"	m	struct:_SrTeRtrEntry
+SID_CONFLICT_ALARM	inc/srdef.h	169;"	d
+SID_LABEL_SUB_TLV_LABEL_LENGTH	inc/srdef.h	189;"	d
+SID_LABEL_SUB_TLV_SID_LENGTH	inc/srdef.h	188;"	d
+SID_LABEL_SUB_TLV_TYPE	inc/srdef.h	187;"	d
+SID_LABEL_SUB_TLV_TYPE_V3	inc/srdef.h	191;"	d
+SRGB_DEFAULT_MAX_VALUE	inc/srdef.h	79;"	d
+SRGB_DEFAULT_MIN_VALUE	inc/srdef.h	78;"	d
+SRLFACreateILM	src/srutil.c	/^SRLFACreateILM (tInSegment * pInSegment)$/;"	f
+SRModifyNexthopHandle	src/srutil.c	/^SRModifyNexthopHandle(tSrRtrInfo *pSrRtrInfo,$/;"	f
+SRProcessDelayedRouteInfo	src/srmain.c	/^SRProcessDelayedRouteInfo(tSrRtrInfo  *pRtrInfo)$/;"	f
+SRTE_ALARM_CLEAR	inc/srtdefs.h	114;"	d
+SRTE_ALARM_RAISE	inc/srtdefs.h	115;"	d
+SRTE_SID_EXCEEDS_SRGB_ALARM	inc/srtdefs.h	118;"	d
+SRTE_UNKNOWN_SID_ALARM	inc/srtdefs.h	117;"	d
+SR_ADJ_SID	inc/srmacs.h	71;"	d
+SR_ADJ_SID_ILM_CREATE	inc/srdef.h	318;"	d
+SR_ADJ_SID_OP_ADD_LSA	inc/srdef.h	324;"	d
+SR_ADJ_SID_OP_CFG_ADD	inc/srdef.h	322;"	d
+SR_ADJ_SID_OP_CFG_DEL	inc/srdef.h	323;"	d
+SR_ADJ_SID_OP_DEL_LSA	inc/srdef.h	325;"	d
+SR_ADJ_SID_OP_NONE	inc/srdef.h	321;"	d
+SR_ADJ_SID_PRESENT	inc/srdef.h	149;"	d
+SR_ALARM_CLEAR	inc/srdef.h	165;"	d
+SR_ALARM_RAISE	inc/srdef.h	166;"	d
+SR_ALLOCATE_FTN_TNL_INFO_MEM_BLOCK	inc/srdef.h	474;"	d
+SR_ALLOCATE_ILM_TNL_INFO_MEM_BLOCK	inc/srdef.h	477;"	d
+SR_ALL_TRC	inc/srtrc.h	15;"	d
+SR_APP_REG_DREG_EVENT	inc/srdef.h	356;"	d
+SR_AREA_LINK_INFO_MEM_ALLOC	inc/srdef.h	447;"	d
+SR_AREA_LINK_INFO_MEM_FREE	inc/srdef.h	531;"	d
+SR_CFA_EVENT	inc/srtdefs.h	40;"	d
+SR_CFA_IFSTATUS_CHANGE	inc/srdef.h	357;"	d
+SR_CFA_INTF_DELETE	inc/srdef.h	358;"	d
+SR_COLD_REBOOT	inc/srdef.h	196;"	d
+SR_CONFLICT_NOT_WINNER	inc/srdef.h	163;"	d
+SR_CONFLICT_WINNER	inc/srdef.h	162;"	d
+SR_CRITICAL_TRC	inc/srtrc.h	13;"	d
+SR_CRU_BMC_DWFROMPDU	inc/srdef.h	117;"	d
+SR_CRU_BMC_DWTOPDU	inc/srdef.h	108;"	d
+SR_CRU_BMC_WFROMPDU	inc/srdef.h	114;"	d
+SR_CRU_BMC_WTOPDU	inc/srdef.h	105;"	d
+SR_CRU_BUF_ALLOCATE_FREE_OBJ	inc/srdef.h	438;"	d
+SR_CRU_BUF_RELEASE_FREE_OBJ	inc/srdef.h	516;"	d
+SR_CTRL_TRC	inc/srtrc.h	12;"	d
+SR_DBG_MAX_TRC	inc/srtrc.h	23;"	d
+SR_DBG_MIN_TRC	inc/srtrc.h	22;"	d
+SR_DESTROY_CMD	inc/srdef.h	160;"	d
+SR_DISABLEALL_TRC	inc/srtrc.h	14;"	d
+SR_DISABLED	inc/srdef.h	/^SR_DISABLED$/;"	e	enum:__anon2
+SR_ENABLED	inc/srdef.h	/^SR_ENABLED=1,$/;"	e	enum:__anon2
+SR_EQUAL	inc/srdef.h	/^ SR_EQUAL = 0,$/;"	e	enum:__anon3
+SR_EV_ALL	inc/srdef.h	365;"	d
+SR_EV_CFG_MSG_IN_QUEUE	inc/srdef.h	355;"	d
+SR_EXT_LINK_LSA_INFO_MEM_ALLOC	inc/srdef.h	450;"	d
+SR_EXT_LINK_LSA_INFO_MEM_FREE	inc/srdef.h	534;"	d
+SR_EXT_LINK_LSA_LEN	inc/srdef.h	201;"	d
+SR_EXT_LINK_LSA_SENT	inc/srmacs.h	70;"	d
+SR_EXT_PRF_LSA_SENT	inc/srmacs.h	69;"	d
+SR_FAIL_TRC	inc/srtrc.h	11;"	d
+SR_FALSE	inc/srdef.h	12;"	d
+SR_FEC_PREFIX_TYPE	inc/srdef.h	82;"	d
+SR_FINAL_OBJ	Makefile	/^SR_FINAL_OBJ    = ${SR_OBJ_DIR}\/FutureSR.o$/;"	m
+SR_FN_ENTRY_EXIT_TRC	inc/srtrc.h	6;"	d
+SR_FTN_CREATED	inc/srtdefs.h	103;"	d
+SR_FTN_NOT_CREATED	inc/srtdefs.h	102;"	d
+SR_FTN_TNL_INFO_MEM_FREE	inc/srdef.h	558;"	d
+SR_FTN_TNL_INFO_TBL_NAME	inc/srdb.h	16;"	d
+SR_GBL_IF_HSH_TBL	inc/srmacs.h	32;"	d
+SR_GBL_INFO	inc/srmacs.h	16;"	d
+SR_GBL_IP_QID	inc/srmacs.h	23;"	d
+SR_GBL_QID	inc/srmacs.h	20;"	d
+SR_GBL_SEM_ID	inc/srmacs.h	19;"	d
+SR_GBL_SENDER_TBL	inc/srmacs.h	33;"	d
+SR_GBL_SOCK_FD	inc/srmacs.h	28;"	d
+SR_GBL_TE_DBG_FLAG	inc/srmacs.h	26;"	d
+SR_GBL_TE_DBG_LVL	inc/srmacs.h	27;"	d
+SR_GBL_TIMER_LIST	inc/srmacs.h	34;"	d
+SR_GBL_UDP_READ_SOCK_FD	inc/srmacs.h	29;"	d
+SR_GBL_UDP_WRITE_SOCK_FD	inc/srmacs.h	30;"	d
+SR_GET_SELF_IN_LABEL	inc/srdef.h	46;"	d
+SR_GET_SELF_SID_INDEX_VAL	inc/srdef.h	20;"	d
+SR_GET_SELF_SID_LABEL	inc/srdef.h	55;"	d
+SR_GET_V6_SELF_SID_INDEX_VAL	inc/srdef.h	33;"	d
+SR_GREATER	inc/srdef.h	/^ SR_GREATER,$/;"	e	enum:__anon3
+SR_GR_FTN_TNL_DB_POOL	inc/srdef.h	397;"	d
+SR_GR_ILM_TNL_DB_POOL	inc/srdef.h	398;"	d
+SR_ILM_POP_CREATED	inc/srtdefs.h	104;"	d
+SR_ILM_TNL_INFO_MEM_FREE	inc/srdef.h	561;"	d
+SR_ILM_TNL_INFO_TBL_NAME	inc/srdb.h	17;"	d
+SR_INITIALISED	inc/srmacs.h	52;"	d
+SR_INTF_ALLOC	inc/srdef.h	402;"	d
+SR_INTF_FREE	inc/srdef.h	483;"	d
+SR_INTF_QID	inc/srdef.h	374;"	d
+SR_IP6_EVENT	inc/srtdefs.h	38;"	d
+SR_IPV6_NODE_SID	inc/srmacs.h	66;"	d
+SR_IP_EVENT	inc/srtdefs.h	36;"	d
+SR_IP_LFA_EVENT	inc/srtdefs.h	41;"	d
+SR_LADD1BYTE	inc/srdef.h	89;"	d
+SR_LADD2BYTE	inc/srdef.h	90;"	d
+SR_LADD3BYTE	inc/srdef.h	91;"	d
+SR_LADD4BYTE	inc/srdef.h	92;"	d
+SR_LADDSTR	inc/srdef.h	94;"	d
+SR_LESS	inc/srdef.h	/^ SR_LESS$/;"	e	enum:__anon3
+SR_LFA_ADJ_INFO	inc/srdef.h	395;"	d
+SR_LFA_ADJ_LIST_NODE_INFO	inc/srdef.h	396;"	d
+SR_LFA_ADJ_LIST_NODE_MEM_ALLOC	inc/srdef.h	471;"	d
+SR_LFA_ADJ_LIST_NODE_MEM_FREE	inc/srdef.h	555;"	d
+SR_LFA_ADJ_MEM_ALLOC	inc/srdef.h	468;"	d
+SR_LFA_ADJ_MEM_FREE	inc/srdef.h	552;"	d
+SR_LFA_NODE_INFO	inc/srdef.h	394;"	d
+SR_LFA_NODE_MEM_ALLOC	inc/srdef.h	465;"	d
+SR_LFA_NODE_MEM_FREE	inc/srdef.h	549;"	d
+SR_LGET1BYTE	inc/srdef.h	96;"	d
+SR_LGET2BYTE	inc/srdef.h	97;"	d
+SR_LGET3BYTE	inc/srdef.h	98;"	d
+SR_LGET4BYTE	inc/srdef.h	99;"	d
+SR_LOCK	inc/srmacs.h	38;"	d
+SR_MAIN_C	src/srmain.c	11;"	d	file:
+SR_MAIN_TRC	inc/srtrc.h	8;"	d
+SR_MAX_IP_EVENTS	inc/srtdefs.h	54;"	d
+SR_MAX_SIZING_ID	inc/srsz.h	/^    SR_MAX_SIZING_ID$/;"	e	enum:__anon4
+SR_MAX_TIMERS	inc/srtdefs.h	122;"	d
+SR_MGMT_TRC	inc/srtrc.h	7;"	d
+SR_MODE	inc/srmacs.h	56;"	d
+SR_MOD_STATUS	inc/srmacs.h	18;"	d
+SR_MSG_EVT	inc/srdef.h	359;"	d
+SR_NAME	inc/srtrc.h	5;"	d
+SR_NETIP6_EVENT	inc/srtdefs.h	39;"	d
+SR_OBJS	Makefile	/^SR_OBJS = \\$/;"	m
+SR_OFFSET	inc/srdef.h	566;"	d
+SR_OPQ_LSA_SUPPORTED	inc/srdef.h	242;"	d
+SR_OPR_F_ADD_DELAY_LIST	inc/srtdefs.h	113;"	d
+SR_OSPFV3_ALT_STATE_EVENT	inc/srtdefs.h	46;"	d
+SR_OSPFV3_DEREG	inc/srdef.h	185;"	d
+SR_OSPFV3_REG	inc/srdef.h	183;"	d
+SR_OSPFV3_SEND_OPQ_LSA	inc/srdef.h	184;"	d
+SR_OSPFV3_STATE_EVENT	inc/srtdefs.h	45;"	d
+SR_OSPFV3_UP_EVENT	inc/srtdefs.h	42;"	d
+SR_OSPFV4_AREA_LINK	inc/srdef.h	388;"	d
+SR_OSPFV4_EXT_LINK_INFO	inc/srdef.h	389;"	d
+SR_OSPFV4_NBR_INFO_MEM_ALLOC	inc/srdef.h	519;"	d
+SR_OSPFV4_NBR_INFO_MEM_FREE	inc/srdef.h	522;"	d
+SR_OSPFV4_NBR_LIST_POOL	inc/srdef.h	385;"	d
+SR_OSPFV6_NBR_INFO_MEM_ALLOC	inc/srdef.h	432;"	d
+SR_OSPFV6_NBR_INFO_MEM_FREE	inc/srdef.h	510;"	d
+SR_OSPFV6_NBR_LIST_POOL	inc/srdef.h	383;"	d
+SR_OSPF_ALT_STATE_EVENT	inc/srtdefs.h	44;"	d
+SR_OSPF_DEREG	inc/srdef.h	180;"	d
+SR_OSPF_INFO	inc/srdef.h	254;"	d
+SR_OSPF_LSA	inc/srdef.h	360;"	d
+SR_OSPF_LSA_MEM_ALLOC	inc/srdef.h	453;"	d
+SR_OSPF_LSA_MEM_FREE	inc/srdef.h	537;"	d
+SR_OSPF_LSA_POOL	inc/srdef.h	390;"	d
+SR_OSPF_LSA_REQ	inc/srdef.h	181;"	d
+SR_OSPF_MSG_EVENT	inc/srtdefs.h	49;"	d
+SR_OSPF_REG	inc/srdef.h	178;"	d
+SR_OSPF_RI_LSA_MEM_ALLOC	inc/srdef.h	456;"	d
+SR_OSPF_RI_LSA_MEM_FREE	inc/srdef.h	540;"	d
+SR_OSPF_RI_LSA_POOL	inc/srdef.h	391;"	d
+SR_OSPF_RTR_DISABLE_EVENT	inc/srtdefs.h	51;"	d
+SR_OSPF_SEND_OPQ_LSA	inc/srdef.h	179;"	d
+SR_OSPF_STATE_EVENT	inc/srtdefs.h	43;"	d
+SR_OSPF_TE_ADD_EVENT	inc/srtdefs.h	47;"	d
+SR_OSPF_TE_DEL_EVENT	inc/srtdefs.h	48;"	d
+SR_OSPF_UP_EVENT	inc/srtdefs.h	37;"	d
+SR_PEER_ADJ_LIST_POOL	inc/srdef.h	382;"	d
+SR_PEER_ADJ_SID_FREE	inc/srdef.h	507;"	d
+SR_PEER_ADJ_SID_MEM_ALLOC	inc/srdef.h	426;"	d
+SR_PEER_ADJ_SID_MEM_FREE	inc/srdef.h	429;"	d
+SR_PEER_RTR_LIST_FREE	inc/srdef.h	614;"	d
+SR_PPP_TRC	inc/srtrc.h	24;"	d
+SR_PREFIX_CONFLICT_MPLS_DEL	inc/srdef.h	173;"	d
+SR_PREFIX_SID_PRESENT	inc/srdef.h	148;"	d
+SR_P_ADMIN_STATUS	inc/srmacs.h	46;"	d
+SR_P_CXT_RTR_ID	inc/srmacs.h	57;"	d
+SR_P_INTF_IFINDEX	inc/srmacs.h	43;"	d
+SR_P_INTF_IP_ADDR_MASK	inc/srmacs.h	42;"	d
+SR_P_INTF_SID_INDEX	inc/srmacs.h	44;"	d
+SR_P_INTF_SID_INDEX_TYPE	inc/srmacs.h	49;"	d
+SR_P_INTF_SID_TYPE	inc/srmacs.h	48;"	d
+SR_P_OPER_STATUS	inc/srmacs.h	47;"	d
+SR_P_ROW_STATUS	inc/srmacs.h	45;"	d
+SR_QDEPTH_QID	inc/srdef.h	377;"	d
+SR_Q_MEM_ALLOC	inc/srdef.h	411;"	d
+SR_Q_MEM_FREE	inc/srdef.h	492;"	d
+SR_RED_BULK_UPDATE_MSG	inc/srrm.h	/^    SR_RED_BULK_UPDATE_MSG ,$/;"	e	enum:__anon12
+SR_RED_BULK_UPDT_REQ_MSG	inc/srrm.h	/^    SR_RED_BULK_UPDT_REQ_MSG  = RM_BULK_UPDT_REQ_MSG,$/;"	e	enum:__anon12
+SR_RED_BULK_UPDT_TAIL_MSG	inc/srrm.h	/^    SR_RED_BULK_UPDT_TAIL_MSG ,$/;"	e	enum:__anon12
+SR_RED_FTN_HW_LIST_SYNC_MSG	inc/srrm.h	/^    SR_RED_FTN_HW_LIST_SYNC_MSG$/;"	e	enum:__anon12
+SR_RED_ILM_HW_LIST_SYNC_MSG	inc/srrm.h	/^    SR_RED_ILM_HW_LIST_SYNC_MSG,$/;"	e	enum:__anon12
+SR_RESOURCE_TRC	inc/srtrc.h	10;"	d
+SR_RI_LSA_SENT	inc/srmacs.h	68;"	d
+SR_RI_LSA_TLV_LEN	inc/srdef.h	199;"	d
+SR_RLFA_PATH_INFO	inc/srdef.h	379;"	d
+SR_RLFA_PATH_MEM_ALLOC	inc/srdef.h	417;"	d
+SR_RLFA_PATH_MEM_FREE	inc/srdef.h	498;"	d
+SR_RM_ACTIVE_STANDBY_DOWN	inc/srrm.h	/^    SR_RM_ACTIVE_STANDBY_DOWN,$/;"	e	enum:__anon13
+SR_RM_ACTIVE_STANDBY_UP	inc/srrm.h	/^    SR_RM_ACTIVE_STANDBY_UP,$/;"	e	enum:__anon13
+SR_RM_BLKUPDT_NOT_STARTED	inc/srrm.h	22;"	d
+SR_RM_BULK_LEN_OFFSET	inc/srrm.h	19;"	d
+SR_RM_BULK_TAIL_MSG_LEN	inc/srrm.h	18;"	d
+SR_RM_BULK_TYPE_OFFSET	inc/srrm.h	20;"	d
+SR_RM_BULK_UPD_REQ_MSG_LEN	inc/srrm.h	16;"	d
+SR_RM_FTN_GBL_MOD	inc/srrm.h	15;"	d
+SR_RM_ILM_GBL_MOD	inc/srrm.h	14;"	d
+SR_RM_INIT	inc/srrm.h	/^    SR_RM_INIT = 1,$/;"	e	enum:__anon13
+SR_RM_MAX_BULK_SIZE	inc/srrm.h	21;"	d
+SR_RM_MOD_COMPLETED	inc/srrm.h	17;"	d
+SR_RM_MSG	inc/srtdefs.h	50;"	d
+SR_RM_MSG_HDR_SIZE	inc/srrm.h	13;"	d
+SR_RM_STANDBY	inc/srrm.h	/^    SR_RM_STANDBY$/;"	e	enum:__anon13
+SR_RTINFO_MEM_ALLOC	inc/srdef.h	414;"	d
+SR_RTINFO_MEM_FREE	inc/srdef.h	495;"	d
+SR_RTINFO_QID	inc/srdef.h	378;"	d
+SR_RTR_DELAY_RT_INFO	inc/srdef.h	399;"	d
+SR_RTR_DELAY_RT_INFO_ALLOC	inc/srdef.h	479;"	d
+SR_RTR_DELAY_RT_INFO_MEM_FREE	inc/srdef.h	563;"	d
+SR_RTR_LIST_ALLOC	inc/srdef.h	405;"	d
+SR_RTR_LIST_FREE	inc/srdef.h	486;"	d
+SR_RTR_NH_LIST_ALLOC	inc/srdef.h	408;"	d
+SR_RTR_NH_LIST_FREE	inc/srdef.h	489;"	d
+SR_RTR_NH_QID	inc/srdef.h	376;"	d
+SR_RTR_SID_QID	inc/srdef.h	375;"	d
+SR_RT_DELETED	inc/srtdefs.h	59;"	d
+SR_RT_FRR_NH_CHG	inc/srtdefs.h	60;"	d
+SR_RT_IFACE_CHG	inc/srtdefs.h	57;"	d
+SR_RT_METRIC_CHG	inc/srtdefs.h	58;"	d
+SR_RT_NEW	inc/srtdefs.h	55;"	d
+SR_RT_NH_CHG	inc/srtdefs.h	56;"	d
+SR_SEM_NAME	inc/srdef.h	84;"	d
+SR_SHUT_CMD	inc/srdef.h	159;"	d
+SR_SID_CONFLICT_MPLS_DEL	inc/srdef.h	172;"	d
+SR_SID_STATUS_DOWN	inc/srtdefs.h	106;"	d
+SR_SID_STATUS_UP	inc/srtdefs.h	107;"	d
+SR_SID_TYPE_INDEX	inc/srdef.h	176;"	d
+SR_SID_TYPE_LABEL	inc/srdef.h	175;"	d
+SR_SLL_DELETE_LIST	inc/srdef.h	622;"	d
+SR_SRGB_PRESENT	inc/srdef.h	147;"	d
+SR_STATIC_ENTRY_INFO	inc/srdef.h	386;"	d
+SR_STATIC_ENTRY_MEM_ALLOC	inc/srdef.h	441;"	d
+SR_STATIC_ENTRY_MEM_FREE	inc/srdef.h	525;"	d
+SR_STATIC_LBL_INFO	inc/srdef.h	387;"	d
+SR_STATIC_LBL_MEM_ALLOC	inc/srdef.h	444;"	d
+SR_STATIC_LBL_MEM_FREE	inc/srdef.h	528;"	d
+SR_TASK_NAME	inc/srtdefs.h	120;"	d
+SR_TE_RTR_INFO	inc/srdef.h	381;"	d
+SR_TE_RTR_LIST_INFO	inc/srdef.h	380;"	d
+SR_TE_RTR_LIST_MEM_ALLOC	inc/srdef.h	420;"	d
+SR_TE_RTR_LIST_MEM_FREE	inc/srdef.h	501;"	d
+SR_TE_RTR_MEM_ALLOC	inc/srdef.h	423;"	d
+SR_TE_RTR_MEM_FREE	inc/srdef.h	504;"	d
+SR_TE_RT_ENTRY_INFO	inc/srdef.h	384;"	d
+SR_TE_RT_ENTRY_MEM_ALLOC	inc/srdef.h	435;"	d
+SR_TE_RT_ENTRY_MEM_FREE	inc/srdef.h	513;"	d
+SR_THREE_BYTE_FROM_PDU	inc/srdef.h	126;"	d
+SR_THREE_BYTE_TO_PDU	inc/srdef.h	121;"	d
+SR_TILFA_ADJ_INFO	inc/srdef.h	393;"	d
+SR_TILFA_ADJ_MEM_ALLOC	inc/srdef.h	462;"	d
+SR_TILFA_ADJ_MEM_FREE	inc/srdef.h	546;"	d
+SR_TILFA_LABEL_STACK_DONE	inc/srdef.h	334;"	d
+SR_TILFA_PATH_INFO	inc/srdef.h	392;"	d
+SR_TILFA_PATH_MEM_ALLOC	inc/srdef.h	459;"	d
+SR_TILFA_PATH_MEM_FREE	inc/srdef.h	543;"	d
+SR_TILFA_SET_DEST_LABEL	inc/srdef.h	331;"	d
+SR_TILFA_SET_LABEL_STACK	inc/srdef.h	332;"	d
+SR_TILFA_SET_NONE	inc/srdef.h	328;"	d
+SR_TILFA_SET_PQ_ADJ	inc/srdef.h	330;"	d
+SR_TILFA_SET_P_LABEL	inc/srdef.h	329;"	d
+SR_TIMER_EXP_EVENT	inc/srdef.h	363;"	d
+SR_TRC	inc/srtrc.h	29;"	d
+SR_TRC1	inc/srtrc.h	33;"	d
+SR_TRC2	inc/srtrc.h	37;"	d
+SR_TRC3	inc/srtrc.h	41;"	d
+SR_TRC4	inc/srtrc.h	45;"	d
+SR_TRC5	inc/srtrc.h	49;"	d
+SR_TRC6	inc/srtrc.h	53;"	d
+SR_TRC_BUF_SIZE	src/srtrc.c	9;"	d	file:
+SR_TRC_FLAG	inc/srtrc.h	4;"	d
+SR_TRUE	inc/srdef.h	13;"	d
+SR_UNLOCK	inc/srmacs.h	39;"	d
+SR_UPDT_LSA_FLAG	inc/srdef.h	570;"	d
+SR_UPDT_LSA_STATUS	inc/srdef.h	589;"	d
+SR_UTIL_TRC	inc/srtrc.h	9;"	d
+SR_V4_SRGB_MAX_VAL	inc/srmacs.h	61;"	d
+SR_V4_SRGB_MIN_VAL	inc/srmacs.h	60;"	d
+SR_V6_SRGB_MAX_VAL	inc/srmacs.h	64;"	d
+SR_V6_SRGB_MIN_VAL	inc/srmacs.h	63;"	d
+SR_WARM_REBOOT	inc/srdef.h	197;"	d
+SrActivateLFA	src/srutil.c	/^SrActivateLFA (tSrRtrInfo * pSrRtrInfo, tSrRtrNextHopInfo * pSrRtrNextHopInfo)$/;"	f
+SrAddExtRtrLinkInfo	src/srlsa.c	/^SrAddExtRtrLinkInfo (tareaLinkInfo  *pSrAreaLinkInfo, tSrLinkInfoKey *pLinkNode)$/;"	f
+SrAddMplsEntries	src/srutil.c	/^SrAddMplsEntries (tSrRtrInfo * pRtrInfo)$/;"	f
+SrAddOrDelILMSidTable	src/srcli.c	/^SrAddOrDelILMSidTable (UINT1 u1AddrType, UINT2 u2IlmFlag)$/;"	f
+SrAddTiLfaPathEntryToLfaAdj	src/srutil.c	/^SrAddTiLfaPathEntryToLfaAdj(tSrTilfaPathInfo   *pTiLfaPathInfo)$/;"	f
+SrAddTiLfaPathEntryToLfaNode	src/srutil.c	/^SrAddTiLfaPathEntryToLfaNode(tSrTilfaPathInfo   *pTiLfaPathInfo)$/;"	f
+SrAddorDelILM	src/srcli.c	/^SrAddorDelILM (tSrSidInterfaceInfo *pSrSidEntry, UINT2 u2IlmFlag)$/;"	f
+SrCfaInfo	inc/srtdefs.h	/^            tSrCfaInfo     SrCfaInfo;        \/* IF Event Info *\/$/;"	m	union:_SrQMsg::__anon10
+SrChkAndActOnPrefixConflict	src/srutil.c	/^SrChkAndActOnPrefixConflict (tSrRtrInfo * pNewRtrNode, UINT4 u4Prefix)$/;"	f
+SrChkAndActOnSIDConflict	src/srutil.c	/^SrChkAndActOnSIDConflict (tSrRtrInfo * pNewRtrNode, UINT4 u4SidVal,$/;"	f
+SrChkForOORAlarm	src/srutil.c	/^SrChkForOORAlarm (tSrRtrInfo *pRtrInfo, UINT4 u4SidVal)$/;"	f
+SrChkRtrListPrefixConflict	src/srutil.c	/^SrChkRtrListPrefixConflict (tSrRtrInfo * pNewRtrNode, UINT4 u4PrefixAddr)$/;"	f
+SrChkRtrListSidConflict	src/srutil.c	/^SrChkRtrListSidConflict (tSrRtrInfo * pNewRtrNode, UINT4 u4SidVal)$/;"	f
+SrCliAddStaticBinding	src/srcli.c	/^SrCliAddStaticBinding (tCliHandle CliHandle, tGenU4Addr * pDestAddr,$/;"	f
+SrCliConfigAddrFamily	src/srcli.c	/^SrCliConfigAddrFamily (UINT4 u4Afi, UINT4 u4Set)$/;"	f
+SrCliConfigMode	src/srcli.c	/^SrCliConfigMode (UINT1 u1SrMode)$/;"	f
+SrCliConfigV4Alternate	src/srcli.c	/^SrCliConfigV4Alternate (tCliHandle CliHandle, UINT4 u4AltStatus)$/;"	f
+SrCliConfigV6Alternate	src/srcli.c	/^SrCliConfigV6Alternate (UINT4 u4AltStatus)$/;"	f
+SrCliDefaultSrgb	src/srcli.c	/^SrCliDefaultSrgb (UINT4 u1Afi)$/;"	f
+SrCliDelStaticBinding	src/srcli.c	/^SrCliDelStaticBinding (tCliHandle CliHandle, tGenU4Addr * pDestAddr,$/;"	f
+SrCliDisableSrMpls	src/srcli.c	/^SrCliDisableSrMpls (VOID)$/;"	f
+SrCliGetAfiCfgPrompt	src/srcli.c	/^SrCliGetAfiCfgPrompt (INT1 *pi1ModeName, INT1 *pi1DispStr)$/;"	f
+SrCliGetCfgPrompt	src/srcli.c	/^SrCliGetCfgPrompt (INT1 *pi1ModeName, INT1 *pi1DispStr)$/;"	f
+SrCliGetCurMode	src/srcli.c	/^SrCliGetCurMode (UINT4 *pu4Afi)$/;"	f
+SrCliGetCurPrompt	src/srcli.c	/^SrCliGetCurPrompt (UINT1 *pu1Prompt)$/;"	f
+SrCliGetSrMode	src/srcli.c	/^SrCliGetSrMode (INT4 *pi4SrMode)$/;"	f
+SrCliGetSrV4AlternateStatus	src/srcli.c	/^SrCliGetSrV4AlternateStatus (INT4 *pi4SrAltStatus)$/;"	f
+SrCliGetSrV6AlternateStatus	src/srcli.c	/^SrCliGetSrV6AlternateStatus (INT4 *pi4SrAltStatus)$/;"	f
+SrCliProcessAddSid	src/srcli.c	/^SrCliProcessAddSid (tSrSidInterfaceInfo * pSrSidInfo,$/;"	f
+SrCliProcessAdjSidCfg	src/srcli.c	/^SrCliProcessAdjSidCfg (tSrSidInterfaceInfo * pSrSidInfo)$/;"	f
+SrCliProcessAdminDownCmdForV4	src/srcli.c	/^SrCliProcessAdminDownCmdForV4 (UINT4 u4CmdStatus)$/;"	f
+SrCliProcessAdminDownCmdForV6	src/srcli.c	/^SrCliProcessAdminDownCmdForV6 (UINT4 u4CmdStatus)$/;"	f
+SrCliProcessAdminUpCmdForV4	src/srcli.c	/^SrCliProcessAdminUpCmdForV4 (VOID)$/;"	f
+SrCliProcessAdminUpCmdForV6	src/srcli.c	/^SrCliProcessAdminUpCmdForV6 (VOID)$/;"	f
+SrCliProcessDelSid	src/srcli.c	/^SrCliProcessDelSid (tCliHandle CliHandle, tGenU4Addr * pIfIpAddr,$/;"	f
+SrCliProcessV4Srgb	src/srcli.c	/^SrCliProcessV4Srgb (UINT4 u4MinSid, UINT4 u4MaxSid)$/;"	f
+SrCliProcessV6Srgb	src/srcli.c	/^SrCliProcessV6Srgb (UINT4 u4MinSid, UINT4 u4MaxSid)$/;"	f
+SrCliShowConfig	src/srcli.c	/^SrCliShowConfig (tCliHandle CliHandle)$/;"	f
+SrCliShowOptionalRouters	src/srcli.c	/^SrCliShowOptionalRouters (tCliHandle CliHandle, tGenU4Addr * pDestAddr,$/;"	f
+SrCliShowOspfSrCapability	src/srcli.c	/^SrCliShowOspfSrCapability (tCliHandle CliHandle)$/;"	f
+SrCliShowPeerInfoList	src/srcli.c	/^SrCliShowPeerInfoList (tCliHandle CliHandle, UINT4 u4Command)$/;"	f
+SrCliShowRouteInfo	src/srcli.c	/^SrCliShowRouteInfo (tCliHandle CliHandle, UINT4 u4Prefix, UINT4 u4Mask)$/;"	f
+SrCliShowRunningConfig	src/srcli.c	/^SrCliShowRunningConfig (tCliHandle CliHandle)$/;"	f
+SrCliShowSidInterfaceList	src/srcli.c	/^SrCliShowSidInterfaceList (tCliHandle CliHandle)$/;"	f
+SrCliSidIntfWalkFn	src/srcli.c	/^SrCliSidIntfWalkFn (tRBElem * node, eRBVisit visit, UINT4 u4Level,$/;"	f
+SrCliTestAndDeleteTeConfig	src/srcli.c	/^SrCliTestAndDeleteTeConfig (tGenU4Addr * pDestAddr, UINT4 u4DestMask)$/;"	f
+SrCliTestAndSetTeConfig	src/srcli.c	/^SrCliTestAndSetTeConfig (tGenU4Addr * pDestAddr, UINT4 u4DestMask,$/;"	f
+SrConfigSrV4Status	src/srcli.c	/^SrConfigSrV4Status (UINT1 u1SrStatus)$/;"	f
+SrConstructAdjSidSubTlv	src/srlsa.c	/^SrConstructAdjSidSubTlv (UINT1 **pTempCurrent, UINT4 SidLabelType, UINT4 u4Val)$/;"	f
+SrConstructAdjSidSubTlv	src/srlsa.c	/^SrConstructAdjSidSubTlv (UINT1 **pTempCurrent, tAdjSidNode *pAdjSidNode)$/;"	f
+SrConstructExtLinkOpqLsa	src/srlsa.c	/^SrConstructExtLinkOpqLsa (tOpqLSAInfo * pOpqLSAInfo,$/;"	f
+SrConstructExtLinkTlv	src/srlsa.c	/^SrConstructExtLinkTlv (tSrExtLinkLSAInfo  *pExtLinkInfo, UINT1 **pTempCurrent)$/;"	f
+SrConstructExtLinkTlv	src/srlsa.c	/^SrConstructExtLinkTlv (tSrSidInterfaceInfo * pSrSidEntry, UINT1 **pTempCurrent)$/;"	f
+SrConstructExtPrefixOpqLsa	src/srlsa.c	/^SrConstructExtPrefixOpqLsa (tOpqLSAInfo * pOpqLSAInfo,$/;"	f
+SrConstructExtPrefixTlv	src/srlsa.c	/^SrConstructExtPrefixTlv (UINT1 **pTempCurrent, UINT1 u1LsaStatus,$/;"	f
+SrConstructPrefixSidSubTlv	src/srlsa.c	/^SrConstructPrefixSidSubTlv (UINT1 **pTempCurrent,$/;"	f
+SrConstructPrefixSidSubTlvV3	src/srlsa.c	/^SrConstructPrefixSidSubTlvV3 (UINT1 **pTempCurrent,$/;"	f
+SrConstructPrefixTlv	src/srlsa.c	/^SrConstructPrefixTlv (UINT1 **pTempCurrent, tSrSidInterfaceInfo *pSrSidIntf)$/;"	f
+SrConstructRtrInfoLsa	src/srlsa.c	/^SrConstructRtrInfoLsa (tOpqLSAInfo * pOpqLSAInfo, UINT1 u1LsaStatus,$/;"	f
+SrConstructRtrInfoLsaV3	src/srlsa.c	/^SrConstructRtrInfoLsaV3 (tV3OpqLSAInfo * pOpqLSAInfo,$/;"	f
+SrConstructRtrInfoSidLabelRangeTlv	src/srlsa.c	/^SrConstructRtrInfoSidLabelRangeTlv (UINT1 **pTempCurrent)$/;"	f
+SrConstructRtrInfoSidLabelRangeTlvV3	src/srlsa.c	/^SrConstructRtrInfoSidLabelRangeTlvV3 (UINT1 **pTempCurrent)$/;"	f
+SrConstructRtrInfoSrAlgoTlv	src/srlsa.c	/^SrConstructRtrInfoSrAlgoTlv (UINT1 **pTempCurrent)$/;"	f
+SrConstructSendExtPrefixOpqLsa	src/srlsa.c	/^SrConstructSendExtPrefixOpqLsa (UINT1 u1LsaStatus, UINT4 nodeLabel,$/;"	f
+SrConstructSidLabelSubTlv	src/srlsa.c	/^SrConstructSidLabelSubTlv (UINT1 **pTempCurrent,$/;"	f
+SrConstructSidLabelSubTlvV3	src/srlsa.c	/^SrConstructSidLabelSubTlvV3 (UINT1 **pTempCurrent,$/;"	f
+SrConstructV3ExtPrefixTlv	src/srlsa.c	/^SrConstructV3ExtPrefixTlv (UINT1 **pTempCurrent, UINT2 u2lsaType,$/;"	f
+SrConstructV3ExtendedPrefixTlv	src/srlsa.c	/^SrConstructV3ExtendedPrefixTlv (UINT1 **pTempCurrent, UINT2 u2lsaType)$/;"	f
+SrContext	inc/srtdefs.h	/^    tSrContext          SrContext;$/;"	m	struct:_SrGlobalInfo
+SrContextV3	inc/srtdefs.h	/^    tSrContext		SrContextV3;          \/* SR Context for OSPFv3 *\/$/;"	m	struct:_SrGlobalInfo
+SrCreateAdjSidInfoNode	src/srlsa.c	/^SrCreateAdjSidInfoNode (VOID)$/;"	f
+SrCreateDelayRouteNode	src/srutil.c	/^SrCreateDelayRouteNode (VOID)$/;"	f
+SrCreateMplsBindingOnNbrSrUp	src/srutil.c	/^SrCreateMplsBindingOnNbrSrUp (tGenU4Addr * nbrPrefix, UINT4 u4AdvRtrId)$/;"	f
+SrCreateMplsEntry	src/srutil.c	/^SrCreateMplsEntry (tSrRtrInfo * pRtrInfo, tSrRtrNextHopInfo * pSrRtrNextHopInfo)$/;"	f
+SrCreateNewAreaLinkInfoNode	src/srlsa.c	/^SrCreateNewAreaLinkInfoNode (VOID)$/;"	f
+SrCreateNewExtLinkInfoNode	src/srlsa.c	/^SrCreateNewExtLinkInfoNode (VOID)$/;"	f
+SrCreateNewNextHopNode	src/srutil.c	/^SrCreateNewNextHopNode (VOID)$/;"	f
+SrCreateNewRouterNode	src/srutil.c	/^SrCreateNewRouterNode (VOID)$/;"	f
+SrCreateOptRtrEntry	src/srutil.c	/^SrCreateOptRtrEntry (UINT4 u4RtrListIndex, UINT4 u4OptRtrIndex)$/;"	f
+SrCreateRlfaPathTableEntry	src/srutil.c	/^SrCreateRlfaPathTableEntry (tSrRlfaPathInfo * pSrRlfaPathInfo)$/;"	f
+SrCreateSidInterface	src/srutil.c	/^SrCreateSidInterface (tGenU4Addr * pIfIpAddr)$/;"	f
+SrCreateStaticSrLblEntry	src/srutil.c	/^SrCreateStaticSrLblEntry (UINT4 u4LabelStackIndex, UINT4 u4SrLabelIndex)$/;"	f
+SrCreateStaticSrTableEntry	src/srutil.c	/^SrCreateStaticSrTableEntry (tSrStaticEntryInfo * pSrStaticInfo)$/;"	f
+SrCreateTeRouteTableEntry	src/srte.c	/^SrCreateTeRouteTableEntry (tSrTeRtEntryInfo * pSrTeRtInfo)$/;"	f
+SrCreateTiLfaPathEntry	src/srutil.c	/^SrCreateTiLfaPathEntry (tNetIpv4LfaRtInfo * pNetIpLfaRtInfo)$/;"	f
+SrCreateTilfaAdjEntry	src/srutil.c	/^SrCreateTilfaAdjEntry (tNetIpv4LfaRtInfo * pNetIpLfaRtInfo)$/;"	f
+SrDbDelFTNTnlInfoFromDB	src/srdb.c	/^SrDbDelFTNTnlInfoFromDB (UINT4 u4Prefix, UINT4 u4NextHop)$/;"	f
+SrDbDelILMTnlInfoFromDB	src/srdb.c	/^SrDbDelILMTnlInfoFromDB (UINT4 u4Prefix, UINT4 u4NextHop)$/;"	f
+SrDbDeleteAllDbTnlInfo	src/srdb.c	/^SrDbDeleteAllDbTnlInfo ()$/;"	f
+SrDbRegAllRestoreTableNotifyCallback	src/srdb.c	/^SrDbRegAllRestoreTableNotifyCallback (VOID)$/;"	f
+SrDbRestoreAllTables	src/srdb.c	/^SrDbRestoreAllTables (VOID)$/;"	f
+SrDeRegWithOspf3ForInfoGet	src/srutil.c	/^SrDeRegWithOspf3ForInfoGet (VOID)$/;"	f
+SrDeRegWithOspfForInfoGet	src/srutil.c	/^SrDeRegWithOspfForInfoGet (VOID)$/;"	f
+SrDeRegisterWithRtmForAlt	src/srmain.c	/^SrDeRegisterWithRtmForAlt ()$/;"	f
+SrDelFTNWithFRRForTE	src/srte.c	/^SrDelFTNWithFRRForTE (tGenU4Addr * pDestAddr, tSrRtrInfo * pRtrInfo)$/;"	f
+SrDelMplsEntries	src/srutil.c	/^SrDelMplsEntries (tSrRtrInfo * pRtrInfo, INT1 i1ConflictDel)$/;"	f
+SrDelSid	src/srcli.c	/^SrDelSid (tSrSidInterfaceInfo * pSrSidEntry)$/;"	f
+SrDelTiLfaPathEntryFromLfaAdj	src/srutil.c	/^SrDelTiLfaPathEntryFromLfaAdj(tSrTilfaPathInfo   *pTiLfaPathInfo)$/;"	f
+SrDelTiLfaPathEntryFromLfaNode	src/srutil.c	/^SrDelTiLfaPathEntryFromLfaNode(tSrTilfaPathInfo   *pTiLfaPathInfo)$/;"	f
+SrDeleteAdjLabelforPandQ	src/srutil.c	/^SrDeleteAdjLabelforPandQ(tSrTilfaPathInfo    *pTiLfaPathInfo,$/;"	f
+SrDeleteExtLinkInfoNode	src/srlsa.c	/^SrDeleteExtLinkInfoNode (tareaLinkInfo  *pSrAreaLinkInfo,$/;"	f
+SrDeleteILMFromSrId	src/srutil.c	/^SrDeleteILMFromSrId (tGenU4Addr * pDestAddr, tGenU4Addr * pNextHop)$/;"	f
+SrDeleteMplsBindingOnNbrSrDown	src/srutil.c	/^SrDeleteMplsBindingOnNbrSrDown (tGenU4Addr * nbrRtrId, UINT4 u4AdvRtrId)$/;"	f
+SrDeleteMplsEntry	src/srutil.c	/^SrDeleteMplsEntry (tSrRtrInfo * pRtrInfo)$/;"	f
+SrDeletePopNFwdUsingRtInfo	src/srutil.c	/^SrDeletePopNFwdUsingRtInfo (tGenU4Addr * pDestAddr, tGenU4Addr * pNextHop)$/;"	f
+SrDeleteRlfaPathTableEntry	src/srutil.c	/^SrDeleteRlfaPathTableEntry (tSrRlfaPathInfo * pSrRlfaPathInfo)$/;"	f
+SrDeleteRtrFromDelayList	src/srutil.c	/^VOID SrDeleteRtrFromDelayList(tSrRtrInfo  *pRtrInfo)$/;"	f
+SrDeleteSidTable	src/srcli.c	/^SrDeleteSidTable (UINT1 u1AddrType)$/;"	f
+SrDeleteStaleEntries	src/srgr.c	/^SrDeleteStaleEntries ()$/;"	f
+SrDeleteStaticSrTableEntry	src/srutil.c	/^SrDeleteStaticSrTableEntry (tSrStaticEntryInfo * pSrStaticInfo)$/;"	f
+SrDeleteTeRouteTableEntry	src/srutil.c	/^SrDeleteTeRouteTableEntry (tSrTeRtEntryInfo * pSrTeRtInfo)$/;"	f
+SrEnqueueMsgToSrQ	src/srutil.c	/^SrEnqueueMsgToSrQ (UINT1 u1EvtType, tSrQMsg * pSrQMsg)$/;"	f
+SrFTNDbDeleteTnlInfoTableEntry	src/srdb.c	/^SrFTNDbDeleteTnlInfoTableEntry (tSrTnlIfTable *pTnlDbEntry)$/;"	f
+SrFTNDbRestoreTnlInfoTable	src/srdb.c	/^SrFTNDbRestoreTnlInfoTable (VOID)$/;"	f
+SrFTNDbRestoreTnlInfoTableEntry	src/srdb.c	/^SrFTNDbRestoreTnlInfoTableEntry (tSrTnlIfTable *pTnlDbEntry)$/;"	f
+SrFTNDbStoreTnlInfo	src/srdb.c	/^SrFTNDbStoreTnlInfo (tSrTnlIfTable *pSrTnlInfo)$/;"	f
+SrFTNDbTnlInfoTableRestoreCallback	src/srdb.c	/^SrFTNDbTnlInfoTableRestoreCallback (CONST CHR1 *pTableName,$/;"	f
+SrFTNRbTreeCmpFunc	src/srutil.c	/^SrFTNRbTreeCmpFunc (tRBElem * pRBElem1, tRBElem * pRBElem2)$/;"	f
+SrFTNTnlDbTree	inc/srtdefs.h	/^    tRBTree             SrFTNTnlDbTree;$/;"	m	struct:_SrGlobalInfo
+SrFrrFtnCreateOrDelete	src/srte.c	/^SrFrrFtnCreateOrDelete (tSrRtrInfo * pSrRtrInfo,$/;"	f
+SrFtnCfaIfmCreateStackMplsTunnelInterface	src/srutil.c	/^SrFtnCfaIfmCreateStackMplsTunnelInterface (UINT4 prefix, UINT4 nexthop,$/;"	f
+SrFtnCfaIfmDeleteStackMplsTunnelInterface	src/srutil.c	/^SrFtnCfaIfmDeleteStackMplsTunnelInterface (UINT4 prefix, UINT4 nexthop,$/;"	f
+SrFtnCreateorDelete	src/srte.c	/^SrFtnCreateorDelete (tSrRtrInfo * pRtrInfo,$/;"	f
+SrGbRange	inc/srtdefs.h	/^        tSrGb                   SrGbRange;         \/** SRGB block **\/$/;"	m	struct:_SrContext
+SrGenerateAlarm	src/srutil.c	/^SrGenerateAlarm (tSrRtrInfo *pRtrInfo, UINT1 u1GenAlarm, UINT1 u1Type)$/;"	f
+SrGetAddrPrefix	src/srlsa.c	/^SrGetAddrPrefix (tOsLsaInfo * pOsLsaInfo)$/;"	f
+SrGetLabelForLFATEMandNode	src/srte.c	/^SrGetLabelForLFATEMandNode (tGenU4Addr * pLfaMandNode, tGenU4Addr * pMandNode,$/;"	f
+SrGetLabelForRLFARemoteNode	src/srutil.c	/^SrGetLabelForRLFARemoteNode (tGenU4Addr * pRemoteNode, UINT4 *pSrGbMinIndex,$/;"	f
+SrGetLabelFromSIDForRemoteNode	src/srutil.c	/^SrGetLabelFromSIDForRemoteNode(tSrRtrInfo         *pNexthopSrRtrInfo,$/;"	f
+SrGetNHForPrefix	src/srutil.c	/^SrGetNHForPrefix (tGenU4Addr * pDestAddr, tGenU4Addr * pNextHop,$/;"	f
+SrGetNbrRtrIdFromNbrAddr	src/srutil.c	/^SrGetNbrRtrIdFromNbrAddr(tGenU4Addr * pNbrLinkIpAddr, UINT4 * pNbrRtrId)$/;"	f
+SrGetNextHopFromNbrRtrId	src/srutil.c	/^SrGetNextHopFromNbrRtrId (tGenU4Addr * pNbrRtrId, tGenU4Addr * pNbrLinkIpAddr)$/;"	f
+SrGetNextHopFromRTM	src/srutil.c	/^SrGetNextHopFromRTM (UINT4 u4IpAddr, tGenU4Addr * pNxtHopIpAddr)$/;"	f
+SrGetNextRlfaRtEntry	src/srutil.c	/^SrGetNextRlfaRtEntry (tSrRlfaPathInfo * pSrRlfaPathInfo)$/;"	f
+SrGetNextStaticSrTableEntry	src/srutil.c	/^SrGetNextStaticSrTableEntry (tSrStaticEntryInfo * pSrStaticInfo)$/;"	f
+SrGetNextTeRouteTableEntry	src/srte.c	/^SrGetNextTeRouteTableEntry (tSrTeRtEntryInfo * pSrTeRtInfo)$/;"	f
+SrGetRlfaPathEntryFromDestAddr	src/srutil.c	/^SrGetRlfaPathEntryFromDestAddr (tGenU4Addr * pDestAddr)$/;"	f
+SrGetRtrInfoFromNextHop	src/srutil.c	/^SrGetRtrInfoFromNextHop (tGenU4Addr * pNextHop)$/;"	f
+SrGetSrRtrInfoFromNodeId	src/srutil.c	/^SrGetSrRtrInfoFromNodeId (tGenU4Addr * pDestAddr)$/;"	f
+SrGetSrRtrInfoFromRtrAndAdvRtrId	src/srutil.c	/^SrGetSrRtrInfoFromRtrAndAdvRtrId (tGenU4Addr * pDestAddr, UINT4 u4AdvRtrId)$/;"	f
+SrGetSrRtrInfoFromRtrId	src/srutil.c	/^SrGetSrRtrInfoFromRtrId (tGenU4Addr * pRouterId)$/;"	f
+SrGetStaticSrFromDestAddr	src/srutil.c	/^SrGetStaticSrFromDestAddr (tGenU4Addr * pDestAddr, UINT4 u4LspId)$/;"	f
+SrGetStaticSrTableEntry	src/srutil.c	/^SrGetStaticSrTableEntry (tSrStaticEntryInfo * pSrStaticInfo)$/;"	f
+SrGetTeRouteEntryFromDestAddr	src/srte.c	/^SrGetTeRouteEntryFromDestAddr (tGenU4Addr * pDestAddr)$/;"	f
+SrGetTeRouteTableEntry	src/srte.c	/^SrGetTeRouteTableEntry (tSrTeRtEntryInfo * pSrTeRtInfo)$/;"	f
+SrHandleAddSidReq	src/srcli.c	/^SrHandleAddSidReq (UINT4 u4PrefixSidType,$/;"	f
+SrHandleEventforAllExtLinkLsa	src/srutil.c	/^SrHandleEventforAllExtLinkLsa (UINT1 u1LsaStatus)$/;"	f
+SrHandleRouteSetEvent	src/srutil.c	/^SrHandleRouteSetEvent (tNetIpv4LfaRtInfo * pLfaRtInfo)$/;"	f
+SrILMDbDeleteTnlInfoTableEntry	src/srdb.c	/^SrILMDbDeleteTnlInfoTableEntry (tSrTnlIfTable *pTnlDbEntry)$/;"	f
+SrILMDbRestoreTnlInfoTable	src/srdb.c	/^SrILMDbRestoreTnlInfoTable (VOID)$/;"	f
+SrILMDbRestoreTnlInfoTableEntry	src/srdb.c	/^SrILMDbRestoreTnlInfoTableEntry (tSrTnlIfTable *pTnlDbEntry)$/;"	f
+SrILMDbStoreTnlInfo	src/srdb.c	/^SrILMDbStoreTnlInfo (tSrTnlIfTable *pSrTnlInfo)$/;"	f
+SrILMDbTnlInfoTableRestoreCallback	src/srdb.c	/^SrILMDbTnlInfoTableRestoreCallback (CONST CHR1 *pTableName,$/;"	f
+SrILMRbTreeCmpFunc	src/srutil.c	/^SrILMRbTreeCmpFunc (tRBElem * pRBElem1, tRBElem * pRBElem2)$/;"	f
+SrILMTnlDbTree	inc/srtdefs.h	/^    tRBTree             SrILMTnlDbTree;$/;"	m	struct:_SrGlobalInfo
+SrIPv4UpdateMplsBindingOnNbrSrUp	src/srutil.c	/^SrIPv4UpdateMplsBindingOnNbrSrUp(tSrRtrInfo         *pRtrInfo,$/;"	f
+SrIPv6UpdateMplsBindingOnNbrSrUp	src/srutil.c	/^SrIPv6UpdateMplsBindingOnNbrSrUp(tSrRtrInfo         *pRtrInfo,$/;"	f
+SrIlmCfaIfmCreateStackMplsTunnelInterface	src/srutil.c	/^SrIlmCfaIfmCreateStackMplsTunnelInterface (UINT4 prefix, UINT4 nexthop,$/;"	f
+SrIlmCfaIfmDeleteStackMplsTunnelInterface	src/srutil.c	/^SrIlmCfaIfmDeleteStackMplsTunnelInterface (UINT4 prefix, UINT4 nexthop,$/;"	f
+SrInitSidInterface	src/srutil.c	/^SrInitSidInterface (tSrSidInterfaceInfo * pSrSidInterface,$/;"	f
+SrIpEvtInfo	inc/srtdefs.h	/^            tSrIpEvtInfo   SrIpEvtInfo;      \/* IP Event Info *\/$/;"	m	union:_SrQMsg::__anon10
+SrIpRtChgEventHandler	src/srutil.c	/^SrIpRtChgEventHandler (tNetIpv4RtInfo * pNetIpv4RtInfo, tNetIpv4RtInfo * pNetIpv4OldRtInfo, UINT1 u1CmdType)$/;"	f
+SrIpv4RlfaFetchAndCreateLSP	src/srutil.c	/^SrIpv4RlfaFetchAndCreateLSP (tNetIpv4LfaRtInfo * pNetIpLfaRtInfo)$/;"	f
+SrIpv4RlfaILMCreation	src/srutil.c	/^SrIpv4RlfaILMCreation (tNetIpv4LfaRtInfo * pNetIpLfaRtInfo,$/;"	f
+SrIpv4TiLfaCreateILM	src/srutil.c	/^SrIpv4TiLfaCreateILM (tSrTilfaPathInfo    *pTiLfaPathInfo)$/;"	f
+SrIpv4TiLfaCreateLSP	src/srutil.c	/^SrIpv4TiLfaCreateLSP (tSrTilfaPathInfo    *pTiLfaPathInfo)$/;"	f
+SrIpv4TiLfaDeleteILM	src/srutil.c	/^SrIpv4TiLfaDeleteILM (tSrTilfaPathInfo    *pTiLfaPathInfo)$/;"	f
+SrIpv4TiLfaDeleteLSP	src/srutil.c	/^SrIpv4TiLfaDeleteLSP (tSrTilfaPathInfo    *pTiLfaPathInfo)$/;"	f
+SrIpv4TiLfaFrrModifyDeleteILM	src/srutil.c	/^SrIpv4TiLfaFrrModifyDeleteILM (tSrTilfaPathInfo    *pTiLfaPathInfo)$/;"	f
+SrIpv4TiLfaUpdateLabelStackInfo	src/srutil.c	/^SrIpv4TiLfaUpdateLabelStackInfo (tSrTilfaPathInfo    *pTiLfaPathInfo)$/;"	f
+SrIpv6RlfaFetchAndCreateLSP	src/srutil.c	/^SrIpv6RlfaFetchAndCreateLSP (tNetIpv6LfaRtInfo * pNetIpv6LfaRtInfo)$/;"	f
+SrIpv6RlfaILMCreation	src/srutil.c	/^SrIpv6RlfaILMCreation (tNetIpv6LfaRtInfo * pNetIpv6LfaRtInfo,$/;"	f
+SrIpv6RtChgEventHandler	src/srutil.c	/^SrIpv6RtChgEventHandler (tNetIpv6HliParams * pNetIpv6HlParams)$/;"	f
+SrIsFlushLsa	src/srutil.c	/^SrIsFlushLsa (tOsLsaInfo * pOsLsaInfo)$/;"	f
+SrIsLoopbackUsed	src/srutil.c	/^SrIsLoopbackUsed (UINT4 u4IpAddr)$/;"	f
+SrIsV3FlushLsa	src/srutil.c	/^SrIsV3FlushLsa (tOs3LsaInfo * pOsLsaInfo)$/;"	f
+SrLfaAdjCreate	src/srutil.c	/^SrLfaAdjCreate(tSrTilfaAdjInfo    *pTiLfaAdjInfo)$/;"	f
+SrLfaAdjTreeCmpFunc	src/srutil.c	/^SrLfaAdjTreeCmpFunc (tRBElem * pRBElem1, tRBElem * pRBElem2)$/;"	f
+SrLfaCreateAddAdjListNode	src/srutil.c	/^SrLfaCreateAddAdjListNode(tSrLfaAdjInfo  *pLfaAdj,$/;"	f
+SrLfaCreateLSP	src/srutil.c	/^SrLfaCreateLSP (tSrRtrInfo * pSrRtrInfo, tSrRtrNextHopInfo * pSrRtrNextHopInfo)$/;"	f
+SrLfaLSPHandle	src/srutil.c	/^SrLfaLSPHandle ()$/;"	f
+SrLfaNodeCreate	src/srutil.c	/^SrLfaNodeCreate(UINT4 u4RtrId)$/;"	f
+SrLfaNodeTreeCmpFunc	src/srutil.c	/^SrLfaNodeTreeCmpFunc (tRBElem * pRBElem1, tRBElem * pRBElem2)$/;"	f
+SrMainCreateTaskMain	src/srmain.c	/^SrMainCreateTaskMain (INT1 *pi1Arg)$/;"	f
+SrMainMemClear	src/srmain.c	/^SrMainMemClear (VOID)$/;"	f
+SrMainMemInit	src/srmain.c	/^SrMainMemInit (VOID)$/;"	f
+SrMainTask	src/srmain.c	/^SrMainTask (VOID)$/;"	f
+SrMainTaskDeInit	src/srmain.c	/^SrMainTaskDeInit (VOID)$/;"	f
+SrMainTaskInit	src/srmain.c	/^SrMainTaskInit (VOID)$/;"	f
+SrMainTaskLock	src/srutil.c	/^SrMainTaskLock (VOID)$/;"	f
+SrMainTaskUnLock	src/srutil.c	/^SrMainTaskUnLock (VOID)$/;"	f
+SrMemPoolIds	inc/srsz.h	/^tMemPoolId SrMemPoolIds [SR_MAX_SIZING_ID];$/;"	v
+SrMplsCreateFTN	src/srutil.c	/^SrMplsCreateFTN (tSrRtrInfo * pSrRtrInfo, tSrRtrNextHopInfo * pSrRtrNextHopInfo)$/;"	f
+SrMplsCreateILM	src/srutil.c	/^SrMplsCreateILM (tSrRtrInfo * pSrRtrInfo, tSrRtrNextHopInfo * pSrRtrNextHopInfo)$/;"	f
+SrMplsCreateILMPopAndFwd	src/srutil.c	/^SrMplsCreateILMPopAndFwd (tSrRtrInfo * pRtrInfo,$/;"	f
+SrMplsCreateOrDeleteLsp	src/srutil.c	/^SrMplsCreateOrDeleteLsp (UINT2 u2MlibOperation, tSrRtrInfo * pSrRtrInfo,$/;"	f
+SrMplsCreateOrDeleteStackLsp	src/srutil.c	/^SrMplsCreateOrDeleteStackLsp (UINT2 u2MlibOperation, tSrRtrInfo * pSrRtrInfo,$/;"	f
+SrMplsDeleteAllFTN	src/srutil.c	/^SrMplsDeleteAllFTN (UINT2 u2AddrType)$/;"	f
+SrMplsDeleteAllILM	src/srutil.c	/^SrMplsDeleteAllILM (UINT2 u2AddrType)$/;"	f
+SrMplsDeleteFTN	src/srutil.c	/^SrMplsDeleteFTN (tSrRtrInfo * pSrRtrInfo, tSrRtrNextHopInfo * pSrRtrNextHopInfo)$/;"	f
+SrMplsDeleteILM	src/srutil.c	/^SrMplsDeleteILM (tSrInSegInfo * pSrInSegInfo, tSrRtrInfo * pSrRtrInfo,$/;"	f
+SrMplsDeleteILMPopAndFwd	src/srutil.c	/^SrMplsDeleteILMPopAndFwd (tSrRtrInfo * pRtrInfo,$/;"	f
+SrMplsDeleteTunIntf	src/srutil.c	/^SrMplsDeleteTunIntf (UINT4 *u4MplsTnlIfIndex)$/;"	f
+SrMplsDynamicCleanUp	src/srutil.c	/^SrMplsDynamicCleanUp (UINT2 u2AddrType)$/;"	f
+SrMplsModifyLSP	src/srutil.c	/^SrMplsModifyLSP (tSrIpEvtInfo * pSrIpEvtInfo, tSrRtrInfo * pSrRtrInfo,$/;"	f
+SrMplsModifyPrimaryLSP	src/srutil.c	/^SrMplsModifyPrimaryLSP (tSrIpEvtInfo * pSrIpEvtInfo,$/;"	f
+SrMplsModifyRlfaLSP	src/srutil.c	/^SrMplsModifyRlfaLSP (tSrIpEvtInfo * pSrIpEvtInfo, tSrRtrInfo *pSrRtrInfo,$/;"	f
+SrMplsModifyTilfaLSP	src/srutil.c	/^SrMplsModifyTilfaLSP (tSrIpEvtInfo * pSrIpEvtInfo, tSrRtrInfo *pSrRtrInfo,$/;"	f
+SrMplsSetAction	src/srutil.c	/^SrMplsSetAction (UINT2 *pMlibOperation, UINT1 u1NextHopType)$/;"	f
+SrMplsSetAllFTNRowStatus	src/srcli.c	/^SrMplsSetAllFTNRowStatus (INT4 i4RowStatus)$/;"	f
+SrMplsSetAllILMRowStatus	src/srcli.c	/^SrMplsSetAllILMRowStatus (INT4 i4RowStatus)$/;"	f
+SrNbrInfoCleanup	src/srutil.c	/^SrNbrInfoCleanup (UINT4 u4AddrType)$/;"	f
+SrNbrRtrFromNextHop	src/srutil.c	/^SrNbrRtrFromNextHop (UINT4 u4NextHop)$/;"	f
+SrNetIpLfaRtInfo	inc/srtdefs.h	/^            tSrNetIpLfaRtInfo SrNetIpLfaRtInfo; \/*Sr LFA\/RLFA\/TILFA ipv4 event info *\/$/;"	m	union:_SrQMsg::__anon10
+SrNetIpv6LfaRtInfo	inc/srtdefs.h	/^            tSrNetIpv6LfaRtInfo SrNetIpv6LfaRtInfo;$/;"	m	union:_SrQMsg::__anon10
+SrOspf3AbrStatusChngHandler	src/srutil.c	/^SrOspf3AbrStatusChngHandler (UINT1 u1AbrStatus)$/;"	f
+SrOspf3RtrIDChngHandler	src/srutil.c	/^SrOspf3RtrIDChngHandler (UINT4 u4OspfRtrID)$/;"	f
+SrOspfAbrStatusChngHandler	src/srutil.c	/^SrOspfAbrStatusChngHandler (UINT1 u1AbrStatus)$/;"	f
+SrOspfMsgHandler	src/srmain.c	/^SrOspfMsgHandler (tOsToOpqApp * pOsToSrMsg)$/;"	f
+SrOspfRtrIDChngHandler	src/srutil.c	/^SrOspfRtrIDChngHandler (UINT4 u4OspfRtrID)$/;"	f
+SrOspfUpEventHandler	src/srutil.c	/^SrOspfUpEventHandler (void)$/;"	f
+SrOspfV3ConstructExtendedLSA	src/srlsa.c	/^SrOspfV3ConstructExtendedLSA (tV3OpqLSAInfo * pOpqLSAInfo,$/;"	f
+SrOspfv3UpEventHandler	src/srutil.c	/^SrOspfv3UpEventHandler (VOID)$/;"	f
+SrParseRtrLsaAddRtrLinks	src/srlsa.c	/^SrParseRtrLsaAddRtrLinks (tOsLsaInfo  *pOsLsaInfo, tareaLinkInfo *pSrAreaLinkInfo)$/;"	f
+SrPeerInfoCleanUp	src/srutil.c	/^SrPeerInfoCleanUp (UINT2 u2AddrType)$/;"	f
+SrPrefixChkAndCreateEntriesForNxtRtr	src/srutil.c	/^SrPrefixChkAndCreateEntriesForNxtRtr (UINT4 u4DelRtrPrefix, UINT4 u4DelAdvRtrId)$/;"	f
+SrPriTeLblStack	inc/srtdefs.h	/^    tSrTeLabelStack      SrPriTeLblStack ;     \/* Te Label Stack for Primary Path , used while FRR LSP switchover to Primary *\/$/;"	m	struct:_SrTeRtEntryInfo
+SrProcessAddAdjTlvtoLinkInfo	src/srlsa.c	/^SrProcessAddAdjTlvtoLinkInfo(tSrExtLinkLSAInfo   *pExtLinkNode,$/;"	f
+SrProcessAdjSidChange	src/srlsa.c	/^SrProcessAdjSidChange(tSrSidInterfaceInfo * pSrSidInfo,$/;"	f
+SrProcessAltStateChgFromOspfV3	src/srutil.c	/^SrProcessAltStateChgFromOspfV3 (UINT4 u4AltStatus)$/;"	f
+SrProcessDelAdjTlvtoLinkInfo	src/srlsa.c	/^SrProcessDelAdjTlvtoLinkInfo(tSrExtLinkLSAInfo   *pExtLinkNode,$/;"	f
+SrProcessDelSllNodeFromLfaNode	src/srutil.c	/^SrProcessDelSllNodeFromLfaNode(tSrLfaNodeInfo      *pLfaNode,$/;"	f
+SrProcessDeleteStaleExtLinkInfo	src/srlsa.c	/^SrProcessDeleteStaleExtLinkInfo(tareaLinkInfo   *pSrAreaLinkInfo)$/;"	f
+SrProcessExtLinkInfoUpdate	src/srlsa.c	/^SrProcessExtLinkInfoUpdate(tSrExtLinkLSAInfo  *pExtLinkInfo, UINT4 u4AreaId)$/;"	f
+SrProcessFRRModifyRoute	src/srutil.c	/^SrProcessFRRModifyRoute(tSrIpEvtInfo       *pSrIpEvtInfo,$/;"	f
+SrProcessFRRModifyRouteEvent	src/srutil.c	/^SrProcessFRRModifyRouteEvent (tSrIpEvtInfo * pSrIpEvtInfo)$/;"	f
+SrProcessFlushExtPrefixOpqLsa	src/srlsa.c	/^SrProcessFlushExtPrefixOpqLsa (tSrRtrInfo *pRtrInfo)$/;"	f
+SrProcessFlushLsaExtLinkInfo	src/srlsa.c	/^SrProcessFlushLsaExtLinkInfo(tSrExtLinkLSAInfo  *pExtLinkNode)$/;"	f
+SrProcessFlushRtrInfoLsa	src/srlsa.c	/^SrProcessFlushRtrInfoLsa (UINT4 u4AdvRtrId, UINT4 u4OpqAreaId)$/;"	f
+SrProcessIp6Events	src/srutil.c	/^SrProcessIp6Events (tSrIpEvtInfo * pSrIpEvtInfo)$/;"	f
+SrProcessIpEvents	src/srutil.c	/^SrProcessIpEvents (tSrIpEvtInfo * pSrIpEvtInfo)$/;"	f
+SrProcessLfaIpRtChangeEvent	src/srutil.c	/^SrProcessLfaIpRtChangeEvent (tNetIpv4LfaRtInfo * pLfaRtInfo)$/;"	f
+SrProcessLfaIpv6RtChangeEvent	src/srutil.c	/^SrProcessLfaIpv6RtChangeEvent (tNetIpv6LfaRtInfo * pIpv6LfaRtInfo)$/;"	f
+SrProcessNetIp6LfaEvents	src/srutil.c	/^SrProcessNetIp6LfaEvents (tSrNetIpv6LfaRtInfo * pSrNetIp6LfaRtInfo)$/;"	f
+SrProcessNetIpLfaEvents	src/srutil.c	/^SrProcessNetIpLfaEvents (tSrNetIpLfaRtInfo * pSrNetIpLfaRtInfo)$/;"	f
+SrProcessNetworkLsa	src/srlsa.c	/^SrProcessNetworkLsa (tOsToOpqApp * pOspfMsg, tOsSrArea * pOsSrArea)$/;"	f
+SrProcessOpqExtLinkAdjSidSubTlv	src/srlsa.c	/^SrProcessOpqExtLinkAdjSidSubTlv(UINT1   **ptlvPtr, tAdjSidNode *pAdjSidInfo,$/;"	f
+SrProcessOpqExtLinkLsa	src/srlsa.c	/^SrProcessOpqExtLinkLsa (tOsLsaInfo *pOsLsaInfo, tSrRtrInfo *pRtrInfo)$/;"	f
+SrProcessOpqType10Lsa	src/srlsa.c	/^SrProcessOpqType10Lsa (tOsToOpqApp * pOspfMsg, tOsSrArea * pOsSrArea)$/;"	f
+SrProcessOspfMsg	src/srlsa.c	/^SrProcessOspfMsg (tOsToOpqApp * pOspfMsg)$/;"	f
+SrProcessOspfNbrADjSidILMUpdate	src/srlsa.c	/^SrProcessOspfNbrADjSidILMUpdate(tSrV4OspfNbrInfo  *pSrOspfNbrInfo, UINT1  isILMDel)$/;"	f
+SrProcessOspfV3Msg	src/srlsa.c	/^SrProcessOspfV3Msg (tV3OsToOpqApp * pOspfMsg)$/;"	f
+SrProcessQMsg	src/srmain.c	/^SrProcessQMsg (UINT4 u4Event)$/;"	f
+SrProcessRecvAdjSidInfo	src/srlsa.c	/^SrProcessRecvAdjSidInfo(tSrRtrInfo *pRtrInfo, tAdjSidNode *pRecvAdjSid,$/;"	f
+SrProcessRmEvent	src/srrm.c	/^SrProcessRmEvent (tSrRmEvtInfo *pRmSrMsg)$/;"	f
+SrProcessRouteChangeEvent	src/srutil.c	/^SrProcessRouteChangeEvent (tSrIpEvtInfo * pSrIpEvtInfo)$/;"	f
+SrProcessRouteNextHopChangeEvent	src/srutil.c	/^SrProcessRouteNextHopChangeEvent (tSrIpEvtInfo * pSrIpEvtInfo)$/;"	f
+SrProcessRtrDisableInCxt	src/srutil.c	/^SrProcessRtrDisableInCxt (UINT4 u4OspfCxt)$/;"	f
+SrProcessRtrLsa	src/srlsa.c	/^SrProcessRtrLsa (tOsToOpqApp * pOspfMsg, tOsSrArea * pOsSrArea)$/;"	f
+SrProcessRtrLsaforUpdateExtLinkInfo	src/srlsa.c	/^SrProcessRtrLsaforUpdateExtLinkInfo (tOsLsaInfo  *pOsLsaInfo, UINT4   u4AreaId)$/;"	f
+SrProcessStateChgFromOspf	src/srutil.c	/^SrProcessStateChgFromOspf (UINT4 u4OspfCxt, UINT4 u4SrStatus)$/;"	f
+SrProcessStateChgFromOspfV3	src/srutil.c	/^SrProcessStateChgFromOspfV3 (UINT4 u4OspfV3Cxt, UINT4 u4SrStatus)$/;"	f
+SrProcessTimerEvent	src/srmain.c	/^SrProcessTimerEvent ()$/;"	f
+SrProgramMPLSentriesAfterGR	src/srgr.c	/^SrProgramMPLSentriesAfterGR(void)$/;"	f
+SrQueueHandler	src/srmain.c	/^SrQueueHandler (tSrQMsg * pQMsg)$/;"	f
+SrRLfaRtChangeEventHandler	src/srutil.c	/^SrRLfaRtChangeEventHandler (tNetIpv4LfaRtInfo * pLfaRtInfo)$/;"	f
+SrRegWithOspf3ForInfoGet	src/srutil.c	/^SrRegWithOspf3ForInfoGet (VOID)$/;"	f
+SrRegWithOspfForInfoGet	src/srutil.c	/^SrRegWithOspfForInfoGet (VOID)$/;"	f
+SrRegisterWithRtmForAlt	src/srmain.c	/^SrRegisterWithRtmForAlt ()$/;"	f
+SrReleaseMplsInLabel	src/srutil.c	/^SrReleaseMplsInLabel (UINT2 u2AddrType, UINT4 u4SidValue)$/;"	f
+SrReserveMplsInLabel	src/srutil.c	/^SrReserveMplsInLabel (UINT2 u2AddrType, UINT1 sidIndexType, UINT4 u4SidValue)$/;"	f
+SrResvLabelSpace	src/srutil.c	/^SrResvLabelSpace (VOID)$/;"	f
+SrRlfaCreateFtnEntry	src/srutil.c	/^SrRlfaCreateFtnEntry (tGenU4Addr * pDestAddr)$/;"	f
+SrRlfaCreateILM	src/srutil.c	/^SrRlfaCreateILM (UINT4 *pu4LfaInLabel)$/;"	f
+SrRlfaDeleteFTNAndILM	src/srutil.c	/^SrRlfaDeleteFTNAndILM (tGenU4Addr * pDestAddr,$/;"	f
+SrRlfaDeleteFtnEntry	src/srutil.c	/^SrRlfaDeleteFtnEntry (tGenU4Addr * pDestAddr, tGenU4Addr * pNextHop)$/;"	f
+SrRlfaDeleteILM	src/srutil.c	/^SrRlfaDeleteILM (tGenU4Addr * pDestAddr, tGenU4Addr * pRemoteAddr,$/;"	f
+SrRlfaModifyFtnEntry	src/srutil.c	/^SrRlfaModifyFtnEntry (tGenU4Addr * pDestAddr)$/;"	f
+SrRlfaSetTeTunnel	src/srutil.c	/^SrRlfaSetTeTunnel (tGenU4Addr * pDestAddr, UINT4 u4DestMask,$/;"	f
+SrRmDeRegisterWithRM	src/srrmport.c	/^SrRmDeRegisterWithRM (VOID)$/;"	f
+SrRmEvt	inc/srtdefs.h	/^            tSrRmEvtInfo    SrRmEvt;$/;"	m	union:_SrQMsg::__anon10
+SrRmGetRmNodeState	src/srrmport.c	/^SrRmGetRmNodeState ()$/;"	f
+SrRmHandleConfRestoreCompEvt	src/srrm.c	/^SrRmHandleConfRestoreCompEvt()$/;"	f
+SrRmHandleGoActiveEvent	src/srrm.c	/^SrRmHandleGoActiveEvent()$/;"	f
+SrRmHandleGoStandbyEvent	src/srrm.c	/^SrRmHandleGoStandbyEvent()$/;"	f
+SrRmHandleGrStartEvent	src/srrm.c	/^SrRmHandleGrStartEvent()$/;"	f
+SrRmHandlePlannedRestartEvent	src/srrm.c	/^SrRmHandlePlannedRestartEvent (VOID)$/;"	f
+SrRmHandleStaticConfRestoreCompEvt	src/srrm.c	/^SrRmHandleStaticConfRestoreCompEvt (VOID)$/;"	f
+SrRmHandleSystemReadyEvent	src/srrm.c	/^SrRmHandleSystemReadyEvent (VOID)$/;"	f
+SrRmHandleWarmRebootModeEvent	src/srrm.c	/^SrRmHandleWarmRebootModeEvent (VOID)$/;"	f
+SrRmInit	src/srrm.c	/^SrRmInit ()$/;"	f
+SrRmInitBulkUpdateFlags	src/srrm.c	/^SrRmInitBulkUpdateFlags(VOID)$/;"	f
+SrRmRcvPktFromRm	src/srrmport.c	/^SrRmRcvPktFromRm (UINT1 u1Event, tRmMsg * pData, UINT2 u2DataLen)$/;"	f
+SrRmRegisterWithRM	src/srrmport.c	/^SrRmRegisterWithRM (VOID)$/;"	f
+SrRmRelRmMsgMem	src/srrmport.c	/^SrRmRelRmMsgMem (UINT1 *pu1Block)$/;"	f
+SrRmSendEventToRm	src/srrmport.c	/^SrRmSendEventToRm (tRmProtoEvt * pEvt)$/;"	f
+SrRtrEntry	inc/srtdefs.h	/^typedef struct SrRtrEntry {$/;"	s
+SrSetDebugLevel	src/srcli.c	/^SrSetDebugLevel (tCliHandle CliHandle, UINT4 u4TrcVal, UINT4 u4TrcFlag)$/;"	f
+SrSetMplsILMRowStatus	src/srcli.c	/^SrSetMplsILMRowStatus (UINT4 u4XcIndex, UINT4 u4InIndex,$/;"	f
+SrSetOspfSrStatus	src/srcli.c	/^SrSetOspfSrStatus (UINT4 u4OspfContextId, UINT4 u4srStatus)$/;"	f
+SrShowLblCountFromLblGroup	inc/srdef.h	631;"	d
+SrShowLblInfoFromLblGroup	inc/srdef.h	630;"	d
+SrShowTePathInfoTable	src/srcli.c	/^SrShowTePathInfoTable (tCliHandle CliHandle, UINT4 u4AddrType)$/;"	f
+SrSidChkAndCreateEntriesForNxtRtr	src/srutil.c	/^SrSidChkAndCreateEntriesForNxtRtr (UINT4 u4DelRtrSidVal, UINT4 u4DelAdvRtrId)$/;"	f
+SrSidEntryAddToRBtree	src/srutil.c	/^SrSidEntryAddToRBtree (tSrSidInterfaceInfo * pSrSidEntry)$/;"	f
+SrSizingMemCreateMemPools	src/srsz.c	/^SrSizingMemCreateMemPools (VOID)$/;"	f
+SrSizingMemDeleteMemPools	src/srsz.c	/^SrSizingMemDeleteMemPools (VOID)$/;"	f
+SrSizingParams	inc/srsz.h	/^tFsModSizingParams SrSizingParams [] = {$/;"	v
+SrSndMsgToOspf	src/srlsa.c	/^SrSndMsgToOspf (UINT1 u1MsgType, UINT4 u4SrCxtId, tOpqLSAInfo * pOpqLSAInfo)$/;"	f
+SrSndMsgToOspfV3	src/srlsa.c	/^SrSndMsgToOspfV3 (UINT1 u1MsgType, UINT4 u4SrCxtId, tV3OpqLSAInfo * pOpqLSAInfo)$/;"	f
+SrStartRtDelayTimer	src/srutil.c	/^SrStartRtDelayTimer ()$/;"	f
+SrStartTask	src/srmain.c	/^SrStartTask (VOID)$/;"	f
+SrStaticBindingShowRunningConfig	src/srcli.c	/^SrStaticBindingShowRunningConfig (tCliHandle CliHandle)$/;"	f
+SrStaticClearAllAlarm	src/srutil.c	/^SrStaticClearAllAlarm (tSrStaticEntryInfo* pStaticSrInfo)$/;"	f
+SrStaticGenerateAlarm	src/srutil.c	/^SrStaticGenerateAlarm (tSrStaticEntryInfo* pStaticSrInfo, UINT1 u1Type, UINT1 u1Raise)$/;"	f
+SrStaticGetDynamicNextHop	src/srutil.c	/^SrStaticGetDynamicNextHop (tGenU4Addr* pDestAddr, UINT4 u4LspId)$/;"	f
+SrStaticLblStack	inc/srtdefs.h	/^    tStaticSrLabelStack     SrStaticLblStack;     \/*  Label Stack for Primary Path *\/$/;"	m	struct:_SrStaticEntryInfo
+SrStaticProcessCreateOrDel	src/srutil.c	/^SrStaticProcessCreateOrDel (tGenU4Addr * pDestAddr, UINT4 u4StaticEnable,$/;"	f
+SrStaticRbTreeCmpFunc	src/srutil.c	/^SrStaticRbTreeCmpFunc (tRBElem * pRBElem1, tRBElem * pRBElem2)$/;"	f
+SrStaticSetDynamicNextHop	src/srutil.c	/^SrStaticSetDynamicNextHop (tSrRtrInfo* pRtrInfo, UINT1 u1SidEvt)$/;"	f
+SrStaticSetRowStatus	src/srutil.c	/^SrStaticSetRowStatus (tSrStaticEntryInfo* pStaticSrInfo, INT4 i4RowStatus)$/;"	f
+SrSzRegisterModuleSizingParams	src/srsz.c	/^SrSzRegisterModuleSizingParams (CHR1 * pu1ModName)$/;"	f
+SrTeConfigEvent	src/srte.c	/^SrTeConfigEvent (tGenU4Addr destAddr, UINT4 u4DestMask,$/;"	f
+SrTeCreateFtnRtChangeEvt	src/srte.c	/^SrTeCreateFtnRtChangeEvt (tGenU4Addr * destAddr, UINT4 *pu4ErrCode)$/;"	f
+SrTeCreateFtnType10	src/srte.c	/^SrTeCreateFtnType10 (tGenU4Addr * destAddr, UINT4 *pu4ErrCode)$/;"	f
+SrTeDeleteEvent	src/srte.c	/^SrTeDeleteEvent (tGenU4Addr destAddr)$/;"	f
+SrTeDeleteFtnRtChangeEvt	src/srte.c	/^SrTeDeleteFtnRtChangeEvt (tGenU4Addr * pDestAddr, UINT4 *pu4ErrCode,$/;"	f
+SrTeDeleteFtnType10	src/srte.c	/^SrTeDeleteFtnType10 (tGenU4Addr * pDestAddr, UINT4 *pu4ErrCode)$/;"	f
+SrTeFRRFtnCreateOrDel	src/srte.c	/^SrTeFRRFtnCreateOrDel (tSrTeRtEntryInfo * pSrTeRtEntryInfo, UINT1 u1cmdType)$/;"	f
+SrTeFRRIlmAddorDelete	src/srte.c	/^SrTeFRRIlmAddorDelete (tGenU4Addr * destAddr,$/;"	f
+SrTeFtnCreateOrDel	src/srte.c	/^SrTeFtnCreateOrDel (tSrTeRtEntryInfo * pSrTeDestRtInfo, UINT1 u1cmdType)$/;"	f
+SrTeFtnIlmCreateDelViaDestRt	src/srte.c	/^SrTeFtnIlmCreateDelViaDestRt (tSrTeRtEntryInfo * pSrTeDestRtInfo,$/;"	f
+SrTeFtnIlmCreateDelViaMandRt	src/srte.c	/^SrTeFtnIlmCreateDelViaMandRt (tGenU4Addr * destAddr, UINT1 u1cmdType,$/;"	f
+SrTeFtnIlmCreateDelWithLfaViaMandRt	src/srte.c	/^SrTeFtnIlmCreateDelWithLfaViaMandRt (tGenU4Addr * destAddr, UINT1 u1cmdType)$/;"	f
+SrTeGetLabelForRtrId	src/srutil.c	/^SrTeGetLabelForRtrId (tGenU4Addr * pRouterId, tGenU4Addr * pPrevRouterId,$/;"	f
+SrTeLfaCreateFtnIlm	src/srte.c	/^SrTeLfaCreateFtnIlm (tSrTeRtEntryInfo * pSrTeRtEntryInfo)$/;"	f
+SrTeLfaDeleteFtnIlm	src/srte.c	/^SrTeLfaDeleteFtnIlm (tSrTeRtEntryInfo * pSrTeRtEntryInfo)$/;"	f
+SrTeLfaFtnActivate	src/srte.c	/^SrTeLfaFtnActivate (tSrRtrInfo * pSrTeMandRtrInfo)$/;"	f
+SrTeLfaRouteUpdate	src/srte.c	/^SrTeLfaRouteUpdate (tGenU4Addr * pDestAddr, tGenU4Addr * pMandatoryRtrId)$/;"	f
+SrTeLfaRtQuery	src/srte.c	/^SrTeLfaRtQuery (tGenU4Addr * pDestAddr, tNetIpv4LfaRtInfo * pNetIpLfaRtInfo)$/;"	f
+SrTeMplsModifyLSP	src/srte.c	/^SrTeMplsModifyLSP (tSrRtrInfo * pSrRtrInfo, tSrTeRtEntryInfo * pSrTeDestRtInfo,$/;"	f
+SrTeProcess	src/srte.c	/^SrTeProcess (tGenU4Addr * pDestAddr, UINT4 u4TeEnable)$/;"	f
+SrTeProgramAlternateLsp	src/srte.c	/^SrTeProgramAlternateLsp (tSrTeRtEntryInfo * pSrTeRtEntryInfo)$/;"	f
+SrTeRtInfo	inc/srtdefs.h	/^            tSrTeOspfRtInfo SrTeRtInfo; \/*Sr TE event info *\/$/;"	m	union:_SrQMsg::__anon10
+SrTeSetAllTePathInfoRowStatus	src/srcli.c	/^SrTeSetAllTePathInfoRowStatus (INT4 i4RowStatus, UINT2 u2AddrType)$/;"	f
+SrTiLfaDeleteSrRouterAsLfaNextHop	src/srutil.c	/^SrTiLfaDeleteSrRouterAsLfaNextHop(tSrRtrInfo    *pSrNexthopNode,$/;"	f
+SrTiLfaDeleteSrRouterAsLfaPNode	src/srutil.c	/^SrTiLfaDeleteSrRouterAsLfaPNode(tSrRtrInfo    *pSrPNode,$/;"	f
+SrTiLfaDeleteSrRouterAsLfaQNode	src/srutil.c	/^SrTiLfaDeleteSrRouterAsLfaQNode(tSrRtrInfo    *pSrQNode,$/;"	f
+SrTiLfaFreeAdjSidList	src/srutil.c	/^SrTiLfaFreeAdjSidList (tTMO_SLL_NODE * pNode)$/;"	f
+SrTiLfaPathDelete	src/srutil.c	/^VOID SrTiLfaPathDelete(tSrTilfaPathInfo    *pTiLfaPathInfo)$/;"	f
+SrTiLfaPathRbTreeCmpFunc	src/srutil.c	/^SrTiLfaPathRbTreeCmpFunc (tRBElem * pRBElem1, tRBElem * pRBElem2)$/;"	f
+SrTiLfaProcessAdjInfoDelete	src/srutil.c	/^SrTiLfaProcessAdjInfoDelete(tAdjSidNode   *pAdjSidNode,$/;"	f
+SrTiLfaProcessAdjInfoUpdate	src/srutil.c	/^SrTiLfaProcessAdjInfoUpdate(tSrRtrInfo    *pSrRouterNode,$/;"	f
+SrTiLfaProcessForSrRouterAdjChange	src/srutil.c	/^SrTiLfaProcessForSrRouterAdjChange(tSrRtrInfo    *pSrRtrNode,$/;"	f
+SrTiLfaProcessForSrRouterAdjDel	src/srutil.c	/^SrTiLfaProcessForSrRouterAdjDel(tAdjSidNode   *pAdjSidNode, UINT4 u4AreaId)$/;"	f
+SrTiLfaProcessForSrRouterNodeChange	src/srutil.c	/^SrTiLfaProcessForSrRouterNodeChange(tSrRtrInfo    *pSrRtrNode)$/;"	f
+SrTiLfaProcessForSrRouterNodeDelete	src/srutil.c	/^SrTiLfaProcessForSrRouterNodeDelete(tSrRtrInfo    *pSrRtrNode)$/;"	f
+SrTiLfaProcessSrRouterAsLfaNextHop	src/srutil.c	/^SrTiLfaProcessSrRouterAsLfaNextHop(tSrRtrInfo    *pSrNexthopNode,$/;"	f
+SrTiLfaProcessSrRouterAsLfaPNode	src/srutil.c	/^SrTiLfaProcessSrRouterAsLfaPNode(tSrRtrInfo    *pSrPNode,$/;"	f
+SrTiLfaProcessSrRouterAsLfaQNode	src/srutil.c	/^SrTiLfaProcessSrRouterAsLfaQNode(tSrRtrInfo    *pSrQNode,$/;"	f
+SrTiLfaRtChangeEventHandler	src/srutil.c	/^SrTiLfaRtChangeEventHandler (tNetIpv4LfaRtInfo * pLfaRtInfo)$/;"	f
+SrTrc	src/srtrc.c	/^SrTrc (UINT4 u4Flags, const char *fmt, ...)$/;"	f
+SrTrcPrint	src/srtrc.c	/^SrTrcPrint (const char *fname, UINT4 u4Line, const char *s)$/;"	f
+SrTrcWrite	src/srtrc.c	/^SrTrcWrite (CHR1 * s)$/;"	f
+SrUpdateAdjLabelforPandQ	src/srutil.c	/^SrUpdateAdjLabelforPandQ(tSrTilfaPathInfo    *pTiLfaPathInfo,$/;"	f
+SrUpdateExtRtrLinkAdjInfo	src/srlsa.c	/^SrUpdateExtRtrLinkAdjInfo(tSrExtLinkLSAInfo   *pExtLinkNode)$/;"	f
+SrUtilCheckNbrIsMultiSid	src/srutil.c	/^SrUtilCheckNbrIsMultiSid (tGenU4Addr *nbrPrefixId, UINT4 u4AdvRtrId)$/;"	f
+SrUtilCheckNodeIdConfigured	src/srutil.c	/^SrUtilCheckNodeIdConfigured ()$/;"	f
+SrUtilCheckNodeIdPresent	src/srutil.c	/^SrUtilCheckNodeIdPresent (UINT4 u4Addr)$/;"	f
+SrUtilCheckSIDPresent	src/srutil.c	/^SrUtilCheckSIDPresent (UINT4 u4SidVal)$/;"	f
+SrUtilCreateMplsTunnelInterface	src/srutil.c	/^SrUtilCreateMplsTunnelInterface (UINT4 u4OutIfIndex, UINT2 u2AddrType,$/;"	f
+SrUtilCreateorDeleteILM	src/srutil.c	/^SrUtilCreateorDeleteILM (tSrSidInterfaceInfo * pSrSidInfo, UINT4 u4SidValue,$/;"	f
+SrUtilExtLinkInfoRbTreeCmpFunc	src/srlsa.c	/^SrUtilExtLinkInfoRbTreeCmpFunc (tRBElem * pRBElem1, tRBElem * pRBElem2)$/;"	f
+SrUtilFetchOspf3AreadID	src/srutil.c	/^SrUtilFetchOspf3AreadID (UINT4 u4IfIndex, UINT4 *u4AreaId)$/;"	f
+SrUtilFetchOspfv2AreadID	src/srutil.c	/^SrUtilFetchOspfv2AreadID (UINT4 u4OspfIfIpAddress, INT4 i4OspfAddressLessIf,$/;"	f
+SrUtilGetLblId	src/srutil.c	/^SrUtilGetLblId (UINT2 *pu2SrLblId)$/;"	f
+SrUtilHandleCfaEvent	src/srutil.c	/^SrUtilHandleCfaEvent (UINT4 u4IfIndex, UINT1 u1OperStatus, UINT1 u1IfType)$/;"	f
+SrUtilHandleCfaIfStatusChange	src/srutil.c	/^SrUtilHandleCfaIfStatusChange (INT4 i4IfIndex)$/;"	f
+SrUtilIpAddrComp	src/srutil.c	/^SrUtilIpAddrComp (tIPADDR addr1, tIPADDR addr2)$/;"	f
+SrUtilIpAddrIndComp	src/srutil.c	/^SrUtilIpAddrIndComp (tIPADDR ifIpAddr1,$/;"	f
+SrUtilOsRiLsCmpFunc	src/srutil.c	/^SrUtilOsRiLsCmpFunc (tRBElem * pRBElem1, tRBElem * pRBElem2)$/;"	f
+SrUtilOspfDwordFromPdu	src/srutil.c	/^SrUtilOspfDwordFromPdu (UINT1 *pu1PduAddr)$/;"	f
+SrUtilOspfDwordToPdu	src/srutil.c	/^SrUtilOspfDwordToPdu (UINT1 *pu1PduAddr, UINT4 u4Value)$/;"	f
+SrUtilRlfaPathRbTreeCmpFunc	src/srutil.c	/^SrUtilRlfaPathRbTreeCmpFunc (tRBElem * pRBElem1, tRBElem * pRBElem2)$/;"	f
+SrUtilSendLSA	src/srutil.c	/^SrUtilSendLSA (UINT1 u1LsaStatus, UINT4 lsaTLVReceived, UINT1 u1lsaType)$/;"	f
+SrUtilSendLSAForSid	src/srutil.c	/^SrUtilSendLSAForSid (UINT1 u1LsaStatus, UINT4 lsaTLVReceived, UINT1 u1lsaType,$/;"	f
+SrUtilSidRbTreeCmpFunc	src/srutil.c	/^SrUtilSidRbTreeCmpFunc (tRBElem * pRBElem1, tRBElem * pRBElem2)$/;"	f
+SrUtilTeRouteRbTreeCmpFunc	src/srte.c	/^SrUtilTeRouteRbTreeCmpFunc (tRBElem * pRBElem1, tRBElem * pRBElem2)$/;"	f
+SrUtilV2CapabilityOpaqueStatus	src/srutil.c	/^SrUtilV2CapabilityOpaqueStatus (UINT1 *pu1RetVal, UINT4 u4SrCxtId)$/;"	f
+SrUtilV3CapabilityOpaqueStatus	src/srutil.c	/^SrUtilV3CapabilityOpaqueStatus (UINT1 *pu1RetVal, UINT4 u4SrCxtId)$/;"	f
+SrUtlCheckTnlInTnlDbTable	src/srutil.c	/^SrUtlCheckTnlInTnlDbTable (UINT1 dbOperation, UINT4 u4Prefix, UINT4 u4NextHop, tSrTnlIfTable** pSrTnlInfo)$/;"	f
+SrV3CliAltConfig	src/srcli.c	/^SrV3CliAltConfig (INT4 i4SetAltStatus)$/;"	f
+SrV3ConstructSendExtLsa	src/srlsa.c	/^SrV3ConstructSendExtLsa (UINT1 u1LsaStatus, UINT4 nodeLabel,$/;"	f
+SrV3DeRegisterWithRtmForAlt	src/srmain.c	/^SrV3DeRegisterWithRtmForAlt ()$/;"	f
+SrV3EnableAlternate	src/srutil.c	/^SrV3EnableAlternate (VOID)$/;"	f
+SrV3GetAddrPrefix	src/srlsa.c	/^SrV3GetAddrPrefix (tOs3LsaInfo * pOsLsaInfo, tIp6Addr * pPrefixAddr)$/;"	f
+SrV3GetPeerRtrInfo	src/srutil.c	/^SrV3GetPeerRtrInfo (tSrRtrInfo * pSrRtrInfo, tGenU4Addr * prtrId,$/;"	f
+SrV3LfaFetchAndCreateLSP	src/srutil.c	/^SrV3LfaFetchAndCreateLSP (UINT2 u2MlibOperation, tSrRtrInfo * pSrRtrInfo,$/;"	f
+SrV3LfaRtAddOrDeleteEventHandler	src/srutil.c	/^SrV3LfaRtAddOrDeleteEventHandler (tNetIpv6LfaRtInfo * pIpv6LfaRtInfo,$/;"	f
+SrV3ProcessOpqType10Lsa	src/srlsa.c	/^SrV3ProcessOpqType10Lsa (tV3OsToOpqApp * pOspfMsg)$/;"	f
+SrV3RLfaRtAddOrDeleteEventHandler	src/srutil.c	/^SrV3RLfaRtAddOrDeleteEventHandler (tNetIpv6LfaRtInfo * pNetIpv6LfaRtInfo,$/;"	f
+SrV3RLfaRtChangeEventHandler	src/srutil.c	/^SrV3RLfaRtChangeEventHandler (tNetIpv6LfaRtInfo * pIpv6LfaRtInfo)$/;"	f
+SrV3RegisterWithRtmForAlt	src/srmain.c	/^SrV3RegisterWithRtmForAlt ()$/;"	f
+SrV3SetOspfSrStatus	src/srcli.c	/^SrV3SetOspfSrStatus (UINT4 u4OspfContextId, UINT4 u4srStatus)$/;"	f
+SrV3TiLfaRtAddOrDeleteEventHandler	src/srutil.c	/^UINT4 SrV3TiLfaRtAddOrDeleteEventHandler (tNetIpv6LfaRtInfo * pNetIpv6LfaRtInfo,$/;"	f
+SrV3TiLfaRtChangeEventHandler	src/srutil.c	/^SrV3TiLfaRtChangeEventHandler (tNetIpv6LfaRtInfo * pIpv6LfaRtInfo)$/;"	f
+SrV3UtilSendLSA	src/srutil.c	/^SrV3UtilSendLSA (UINT1 u1LsaStatus, UINT4 lsaTLVReceived)$/;"	f
+SrV4GetSrNextHopInfoFromRtr	src/srutil.c	/^SrV4GetSrNextHopInfoFromRtr (tSrRtrInfo * pSrRtrInfo, UINT4 u4NextHop)$/;"	f
+SrV4GlobalAdminStatus	src/srutil.c	/^SrV4GlobalAdminStatus ()$/;"	f
+SrV6GlobalAdminStatus	src/srutil.c	/^SrV6GlobalAdminStatus ()$/;"	f
+StaticLblList	inc/srtdefs.h	/^    tTMO_SLL       StaticLblList;            \/* Dest Addr Entries in SLL *\/$/;"	m	struct:_StaticSrLblListEntry
+StaticSrLbl	inc/srtdefs.h	/^    typedef struct StaticSrLbl {$/;"	s
+THREE_BYTE_FROM_PDU	inc/srdef.h	346;"	d
+THREE_BYTE_TO_PDU	inc/srdef.h	341;"	d
+TILFA_ROUTE_ADD	inc/srtdefs.h	75;"	d
+TILFA_ROUTE_DELETE	inc/srtdefs.h	76;"	d
+TILFA_ROUTE_MODIFY	inc/srtdefs.h	77;"	d
+TILFA_ROUTE_RESET	inc/srtdefs.h	79;"	d
+TILFA_ROUTE_SET	inc/srtdefs.h	78;"	d
+TYPE10_OPQ_LSA	inc/srdef.h	141;"	d
+TYPE11_OPQ_LSA	inc/srdef.h	142;"	d
+TiLfaHandleIpv4RouteAdd	src/srutil.c	/^TiLfaHandleIpv4RouteAdd(tNetIpv4LfaRtInfo * pNetIpLfaRtInfo)$/;"	f
+TiLfaHandleIpv4RouteDel	src/srutil.c	/^TiLfaHandleIpv4RouteDel(tSrTilfaPathInfo   *pSrTilfaPathInfo)$/;"	f
+TiLfaRtAddOrDeleteEventHandler	src/srutil.c	/^TiLfaRtAddOrDeleteEventHandler (tNetIpv4LfaRtInfo * pNetIpLfaRtInfo,$/;"	f
+UnRegisterFSSR	src/fssrwr.c	/^UnRegisterFSSR ()$/;"	f
+V3OpqAppDeRegisterInCxt	src/srlsa.c	/^V3OpqAppDeRegisterInCxt (UINT4 u4ContextId, UINT1 u1AppOpqType)$/;"	f
+V3OpqAppRegisterInCxt	src/srlsa.c	/^V3OpqAppRegisterInCxt (UINT4 u4ContextId, UINT1 u1AppOpqType,$/;"	f
+V3OpqAppToOpqModuleSendInCxt	src/srlsa.c	/^V3OpqAppToOpqModuleSendInCxt (UINT4 u4ContextId,$/;"	f
+V3_E_INTRA_AREA_PREFIX_LSA_TYPE	inc/srdef.h	232;"	d
+V3_RI_LSA_OPAQUE_TYPE	inc/srdef.h	231;"	d
+V3_SR_RI_LSA_TLV_LEN	inc/srdef.h	200;"	d
+_AdjSidNode	inc/srtdefs.h	/^typedef struct _AdjSidNode$/;"	s
+_FEC	inc/srtdefs.h	/^typedef struct _FEC$/;"	s
+_FSSRDB_H	inc/fssrdb.h	9;"	d
+_FSSRWR_H	inc/fssrwr.h	5;"	d
+_LfaRouteEntryInfo	inc/srtdefs.h	/^typedef struct _LfaRouteEntryInfo$/;"	s
+_OsSrArea	inc/srtdefs.h	/^typedef struct _OsSrArea$/;"	s
+_OspfSrLsa	inc/srtdefs.h	/^typedef struct _OspfSrLsa {$/;"	s
+_SRDB_H	inc/srdb.h	11;"	d
+_SRRM_H	inc/srrm.h	11;"	d
+_SRSZ_C	src/srsz.c	13;"	d	file:
+_SRTnlIfTable	inc/srdb.h	/^typedef struct _SRTnlIfTable$/;"	s
+_SR_CLI_C	src/srcli.c	11;"	d	file:
+_SR_CLI_H_	inc/srclip.h	10;"	d
+_SR_DEF_H_	inc/srdef.h	10;"	d
+_SR_GLOB_H_	inc/srglob.h	9;"	d
+_SR_INCS_H	inc/srincs.h	16;"	d
+_SR_LSA_H_	inc/srlsa.h	15;"	d
+_SR_MACS_H	inc/srmacs.h	14;"	d
+_SR_MAIN_H_	inc/srmain.h	15;"	d
+_SR_SZ_H_	inc/srsz.h	8;"	d
+_SR_TDEFS_H_	inc/srtdefs.h	25;"	d
+_SR_TRC_C	src/srtrc.c	2;"	d	file:
+_SR_TRC_H_	inc/srtrc.h	2;"	d
+_SR_UTIL_C	src/srutil.c	10;"	d	file:
+_SrAdjLfaListNode	inc/srtdefs.h	/^typedef struct _SrAdjLfaListNode {$/;"	s
+_SrCfaInfo	inc/srtdefs.h	/^typedef struct _SrCfaInfo$/;"	s
+_SrContext	inc/srtdefs.h	/^typedef struct _SrContext$/;"	s
+_SrExtLinkLSAInfo	inc/srtdefs.h	/^typedef struct _SrExtLinkLSAInfo {$/;"	s
+_SrGb	inc/srtdefs.h	/^typedef struct _SrGb {$/;"	s
+_SrGlobalInfo	inc/srtdefs.h	/^typedef struct _SrGlobalInfo$/;"	s
+_SrInSegInfo	inc/srtdefs.h	/^typedef struct _SrInSegInfo {$/;"	s
+_SrLfaAdjInfo	inc/srtdefs.h	/^typedef struct _SrLfaAdjInfo {$/;"	s
+_SrLfaNodeInfo	inc/srtdefs.h	/^typedef struct _SrLfaNodeInfo {$/;"	s
+_SrLinkInfoKey	inc/srtdefs.h	/^typedef struct _SrLinkInfoKey {$/;"	s
+_SrNetIpLfaRtInfo	inc/srtdefs.h	/^typedef struct _SrNetIpLfaRtInfo$/;"	s
+_SrNetIpv6LfaRtInfo	inc/srtdefs.h	/^typedef struct _SrNetIpv6LfaRtInfo$/;"	s
+_SrOs3NbrInfo	inc/srtdefs.h	/^typedef struct _SrOs3NbrInfo {$/;"	s
+_SrOs4NbrInfo	inc/srtdefs.h	/^typedef struct _SrOs4NbrInfo {$/;"	s
+_SrOs6pfNbrInfo	inc/srtdefs.h	/^typedef struct _SrOs6pfNbrInfo {$/;"	s
+_SrOsRiLsInfo	inc/srtdefs.h	/^typedef struct _SrOsRiLsInfo {$/;"	s
+_SrQMsg	inc/srtdefs.h	/^typedef struct _SrQMsg$/;"	s
+_SrRMInfo	inc/srtdefs.h	/^typedef struct _SrRMInfo$/;"	s
+_SrRlfaPathInfo	inc/srtdefs.h	/^typedef struct _SrRlfaPathInfo {$/;"	s
+_SrRmEvtInfo	inc/srtdefs.h	/^typedef struct _SrRmEvtInfo$/;"	s
+_SrRouteEntryInfo	inc/srtdefs.h	/^typedef struct _SrRouteEntryInfo$/;"	s
+_SrRtrInfo	inc/srtdefs.h	/^typedef struct _SrRtrInfo {$/;"	s
+_SrRtrNextHopInfo	inc/srtdefs.h	/^typedef struct _SrRtrNextHopInfo$/;"	s
+_SrSidInterfaceInfo	inc/srtdefs.h	/^typedef struct _SrSidInterfaceInfo {$/;"	s
+_SrStaticEntryInfo	inc/srtdefs.h	/^typedef struct _SrStaticEntryInfo {$/;"	s
+_SrTeLabelStack	inc/srtdefs.h	/^typedef struct _SrTeLabelStack {$/;"	s
+_SrTeOspfRtInfo	inc/srtdefs.h	/^typedef struct _SrTeOspfRtInfo$/;"	s
+_SrTeRtEntryInfo	inc/srtdefs.h	/^typedef struct _SrTeRtEntryInfo {$/;"	s
+_SrTeRtrEntry	inc/srtdefs.h	/^typedef struct _SrTeRtrEntry {$/;"	s
+_SrTilfaAdjInfo	inc/srtdefs.h	/^typedef struct _SrTilfaAdjInfo {$/;"	s
+_SrTilfaPathInfo	inc/srtdefs.h	/^typedef struct _SrTilfaPathInfo {$/;"	s
+_SrTimerDesc	inc/srtdefs.h	/^typedef struct _SrTimerDesc {$/;"	s
+_SrV4OspfNbrInfo	inc/srtdefs.h	/^typedef struct _SrV4OspfNbrInfo {$/;"	s
+_SrareaLinkInfo	inc/srtdefs.h	/^typedef struct _SrareaLinkInfo {$/;"	s
+_StaticSrLabelStack	inc/srtdefs.h	/^ typedef struct _StaticSrLabelStack {$/;"	s
+_StaticSrLblListEntry	inc/srtdefs.h	/^typedef struct _StaticSrLblListEntry {$/;"	s
+a	inc/srtdefs.h	/^	UINT1 a;$/;"	m	struct:_OsSrArea
+adjNode	inc/srtdefs.h	/^    tTMO_SLL_NODE	   adjNode;           \/* List node to Adj list in LFA Node *\/$/;"	m	struct:_SrAdjLfaListNode
+adjSidList	inc/srtdefs.h	/^	tTMO_SLL           adjSidList;$/;"	m	struct:_SrRtrInfo
+adjSidSubTlvList	inc/srtdefs.h	/^    tTMO_SLL           adjSidSubTlvList;  \/*Adj-SID list*\/$/;"	m	struct:_SrExtLinkLSAInfo
+advRtrId	inc/srtdefs.h	/^     tGenU4Addr     advRtrId;$/;"	m	struct:_SrOsRiLsInfo
+advRtrId	inc/srtdefs.h	/^    tGenU4Addr         advRtrId;                \/* AdvRtrId *\/$/;"	m	struct:_SrRtrInfo
+au1Lsa	inc/srtdefs.h	/^    UINT1         au1Lsa[MAX_SR_LSAS];$/;"	m	struct:_OspfSrLsa
+au1Pad	inc/srtdefs.h	/^     UINT1          au1Pad[3];$/;"	m	struct:_SrOsRiLsInfo
+au1Pad	inc/srtdefs.h	/^    UINT1               au1Pad[1];$/;"	m	struct:_FEC
+au1Pad	inc/srtdefs.h	/^    UINT1               au1Pad[2];$/;"	m	struct:_LfaRouteEntryInfo
+au1Pad	inc/srtdefs.h	/^    UINT1               au1Pad[2];$/;"	m	struct:_SrRouteEntryInfo
+au1Pad	inc/srtdefs.h	/^    UINT1              au1Pad[2];$/;"	m	struct:_SrSidInterfaceInfo
+au1Pad	inc/srtdefs.h	/^    UINT1              au1Pad[3];$/;"	m	struct:_SrRtrInfo
+au1Pad	inc/srtdefs.h	/^   UINT1            au1Pad[2];$/;"	m	struct:_SrCfaInfo
+au1QNodeSystemId	inc/srtdefs.h	/^        UINT1           au1QNodeSystemId[ISIS_SYS_ID_LEN]; \/* Remote System Id for RLFA or TI-LFA Tunnel,$/;"	m	union:_SrNetIpv6LfaRtInfo::__anon7
+au1QNodeSystemId	inc/srtdefs.h	/^       UINT1    au1QNodeSystemId[ISIS_SYS_ID_LEN]; \/* Remote System Id for RLFA or TI-LFA Tunnel,$/;"	m	union:_SrNetIpLfaRtInfo::__anon9
+au1RemNodeSystemId	inc/srtdefs.h	/^        UINT1           au1RemNodeSystemId[ISIS_SYS_ID_LEN]; \/* Remote System Id for RLFA or $/;"	m	union:_SrNetIpv6LfaRtInfo::__anon6
+au1RemNodeSystemId	inc/srtdefs.h	/^       UINT1    au1RemNodeSystemId[ISIS_SYS_ID_LEN]; \/* Remote System Id for RLFA or $/;"	m	union:_SrNetIpLfaRtInfo::__anon8
+au1Rsvd	inc/srtdefs.h	/^    UINT1               au1Rsvd[2]; \/* Included for 4-byte Alignment *\/$/;"	m	struct:_SrTimerDesc
+au1pad	inc/srtdefs.h	/^	UINT1              au1pad[3];$/;"	m	struct:_SrExtLinkLSAInfo
+au1pad	inc/srtdefs.h	/^    UINT1              au1pad[2];$/;"	m	struct:_SrRtrNextHopInfo
+au1pad	inc/srtdefs.h	/^    UINT1              au1pad[3];$/;"	m	struct:_SrLinkInfoKey
+au1pad	inc/srtdefs.h	/^    UINT1      au1pad[3];$/;"	m	struct:_SrTeOspfRtInfo
+au4OptRouterIds	inc/srtdefs.h	/^	tGenU4Addr au4OptRouterIds[MAX_SR_LABEL_DEPTH]; \/* optional routerIds *\/$/;"	m	struct:_SrTeOspfRtInfo
+b1IsBulkReqRcvd	inc/srtdefs.h	/^		BOOL1  b1IsBulkReqRcvd;$/;"	m	struct:_SrRMInfo
+bIsDelayTimerStarted	inc/srtdefs.h	/^    BOOL1               bIsDelayTimerStarted;$/;"	m	struct:_SrGlobalInfo
+bIsFRRHwLsp	inc/srtdefs.h	/^    BOOL1	           bIsFRRHwLsp;             \/* This flag is to prevent H\/W programming of LFA routes during LFA enablement in SR,$/;"	m	struct:_SrRtrNextHopInfo
+bIsFRRModifyLsp	inc/srtdefs.h	/^    BOOL1              bIsFRRModifyLsp;          \/* This flag is allowed to programm the LFA\/RLFA LSP*\/$/;"	m	struct:_SrRtrNextHopInfo
+bIsLfaActive	inc/srtdefs.h	/^    BOOL1       bIsLfaActive; \/* This flag is to check whether Lfa route is active or not *\/$/;"	m	struct:_SrRtrInfo
+bIsLfaNextHop	inc/srtdefs.h	/^    BOOL1              bIsLfaNextHop;           \/* Flag to identify LFA nexthop or not in tSrRtrNextHopInfo NextHop SLL List*\/$/;"	m	struct:_SrRtrNextHopInfo
+bIsMicroLoopAvd	inc/srtdefs.h	/^    BOOL1               bIsMicroLoopAvd;$/;"	m	struct:_SrGlobalInfo
+bIsOnlyCPUpdate	inc/srtdefs.h	/^    BOOL1              bIsOnlyCPUpdate;          \/* This flag is to check whether to update $/;"	m	struct:_SrRtrNextHopInfo
+bIsRlfaActive	inc/srtdefs.h	/^    BOOL1       bIsRlfaActive;$/;"	m	struct:_SrRlfaPathInfo
+bIsSrTeFRRActive	inc/srtdefs.h	/^    BOOL1              bIsSrTeFRRActive;     \/* This flag is to check whether Sr TE Lfa route is active or not *\/$/;"	m	struct:_SrTeRtEntryInfo
+bIsTeconfigured	inc/srtdefs.h	/^    BOOL1        bIsTeconfigured; \/* To check whether TE is configured for the prefix *\/$/;"	m	struct:_SrRtrInfo
+cli_process_sr_cmd	src/srcli.c	/^cli_process_sr_cmd (tCliHandle CliHandle, UINT4 u4Command, ...)$/;"	f
+delayTimerNode	inc/srtdefs.h	/^    tTmrAppTimer        delayTimerNode;$/;"	m	struct:_SrGlobalInfo
+destAddr	inc/srtdefs.h	/^	tGenU4Addr         destAddr;            \/* Destination Addr *\/$/;"	m	struct:_SrTilfaPathInfo
+destAddr	inc/srtdefs.h	/^	tGenU4Addr destAddr; \/* TE destination *\/$/;"	m	struct:_SrTeOspfRtInfo
+destAddr	inc/srtdefs.h	/^    tGenU4Addr              destAddr;             \/* Destination IP *\/$/;"	m	struct:_SrStaticEntryInfo
+destAddr	inc/srtdefs.h	/^    tGenU4Addr          destAddr;     \/* The destination address *\/$/;"	m	struct:_SrRouteEntryInfo
+destAddr	inc/srtdefs.h	/^    tGenU4Addr         destAddr;				\/* Destination IP *\/$/;"	m	struct:_SrRlfaPathInfo
+destAddr	inc/srtdefs.h	/^    tGenU4Addr         destAddr;             \/* Destination IP *\/$/;"	m	struct:_SrTeRtEntryInfo
+fssr	inc/fssrdb.h	/^UINT4 fssr [] ={1,3,6,1,4,1,2076,163,1};$/;"	v
+fssrEntry	inc/fssrdb.h	/^tMibData fssrEntry = { 46, fssrMibEntry };$/;"	v
+fssrMibEntry	inc/fssrdb.h	/^tMbDbEntry fssrMibEntry[]= {$/;"	v
+fssrOID	inc/fssrdb.h	/^tSNMP_OID_TYPE fssrOID = {9, fssr};$/;"	v
+gSrGlobalInfo	src/srmain.c	/^tSrGlobalInfo       gSrGlobalInfo;$/;"	v
+gSrIpQId	inc/srtdefs.h	/^    tOsixQId            gSrIpQId;      $/;"	m	struct:_SrGlobalInfo
+gSrQId	inc/srtdefs.h	/^    tOsixQId            gSrQId;      $/;"	m	struct:_SrGlobalInfo
+gSrSemId	inc/srtdefs.h	/^    tOsixSemId          gSrSemId;$/;"	m	struct:_SrGlobalInfo
+gSrTaskId	inc/srtdefs.h	/^    tOsixTaskId         gSrTaskId;$/;"	m	struct:_SrGlobalInfo
+gSrV4OspfNbrList	src/srmain.c	/^tTMO_SLL            gSrV4OspfNbrList;$/;"	v
+gSrV6OspfNbrList	src/srmain.c	/^tTMO_SLL            gSrV6OspfNbrList;$/;"	v
+gu2SrLblGroupId	src/srmain.c	/^UINT2               gu2SrLblGroupId;$/;"	v
+gu4AddrV4Family	src/srmain.c	/^UINT4               gu4AddrV4Family = SR_ZERO;$/;"	v
+gu4AddrV6Family	src/srmain.c	/^UINT4               gu4AddrV6Family = SR_ZERO;$/;"	v
+gu4AltModuleStatus	src/srcli.c	/^tSrAltModuleStatus  gu4AltModuleStatus;$/;"	v
+gu4SegmentMpls	src/srmain.c	/^UINT4               gu4SegmentMpls = SR_ZERO;$/;"	v
+i1Proto	inc/srtdefs.h	/^    INT1                i1Proto;    \/* Protocol from which this route is$/;"	m	struct:_SrNetIpv6LfaRtInfo
+i2Offset	inc/srtdefs.h	/^    INT2                i2Offset;$/;"	m	struct:_SrTimerDesc
+i4IfIndex	inc/srtdefs.h	/^   INT4             i4IfIndex;	   \/* Interface Index of the port*\/$/;"	m	struct:_SrCfaInfo
+i4Metric1	inc/srtdefs.h	/^    INT4                i4Metric1;      \/* The reachability cost for the$/;"	m	struct:_LfaRouteEntryInfo
+i4Metric1	inc/srtdefs.h	/^    INT4                i4Metric1;      \/* The reachability cost for the$/;"	m	struct:_SrRouteEntryInfo
+i4RowStatus	inc/srtdefs.h	/^    INT4                  i4RowStatus ;	  \/* Row Status *\/$/;"	m	struct:_SrGb
+ifIpAddr	inc/srtdefs.h	/^    tGenU4Addr         ifIpAddr;  				\/* Ip Address Of the Interface *\/$/;"	m	struct:_SrSidInterfaceInfo
+ifIpAddrMask	inc/srtdefs.h	/^    UINT4	           ifIpAddrMask; 			\/* Subnet mask *\/$/;"	m	struct:_SrSidInterfaceInfo
+ipAddrType	inc/srtdefs.h	/^	UINT1			   ipAddrType;$/;"	m	struct:_SrSidInterfaceInfo
+isLabelSpaceRsvd	inc/srtdefs.h	/^    UINT4		isLabelSpaceRsvd;$/;"	m	struct:_SrGlobalInfo
+isSrgbConfigured	inc/srtdefs.h	/^	UINT4				  isSrgbConfigured;	\/*Status of SRGB configuration by user$/;"	m	struct:_SrGb
+isSrgbV3Configured	inc/srtdefs.h	/^	UINT4				  isSrgbV3Configured;	\/*Status of SRGB configuration by user$/;"	m	struct:_SrGb
+lfaNextHopAddr	inc/srtdefs.h	/^	tGenU4Addr         lfaNextHopAddr;      \/* TI-LFA Next hop address *\/$/;"	m	struct:_SrTilfaPathInfo
+linkInfoList	inc/srtdefs.h	/^    tTMO_SLL            linkInfoList;        \/* Link information to generate Extended Link LSAs *\/$/;"	m	struct:_SrGlobalInfo
+linkIpAddr	inc/srtdefs.h	/^	tGenU4Addr			linkIpAddr;$/;"	m	struct:_AdjSidNode
+mandRtrId	inc/srtdefs.h	/^    tGenU4Addr         mandRtrId;				\/* Path u4MandRtrId (Mandatory Router-Id)*\/$/;"	m	struct:_SrRlfaPathInfo
+mandRtrId	inc/srtdefs.h	/^    tGenU4Addr         mandRtrId;            \/* Path u4MandRtrId (Mandatory Router-Id)*\/$/;"	m	struct:_SrTeRtEntryInfo
+mandatoryRtrId	inc/srtdefs.h	/^	tGenU4Addr mandatoryRtrId; \/* TE mandatory node *\/$/;"	m	struct:_SrTeOspfRtInfo
+nbrIpv6Addr	inc/srtdefs.h	/^     tIp6Addr  nbrIpv6Addr;$/;"	m	struct:_SrOs3NbrInfo
+nbrRtrId	inc/srtdefs.h	/^     UINT4	    nbrRtrId;$/;"	m	struct:_SrOs3NbrInfo
+nbrRtrId	inc/srtdefs.h	/^    UINT4              nbrRtrId;                \/* Nbr RtrId *\/$/;"	m	struct:_SrRtrNextHopInfo
+nextAdjSid	inc/srtdefs.h	/^	tTMO_SLL_NODE		nextAdjSid;$/;"	m	struct:_AdjSidNode
+nextAreanode	inc/srtdefs.h	/^	tTMO_SLL_NODE	   nextAreanode;$/;"	m	struct:_SrareaLinkInfo
+nextHop	inc/srtdefs.h	/^    tGenU4Addr          nextHop;      \/* The nexthop address to which any$/;"	m	struct:_SrRouteEntryInfo
+nextHop	inc/srtdefs.h	/^    tGenU4Addr         nextHop;                 \/* Next-Hop Address *\/$/;"	m	struct:_SrRtrNextHopInfo
+nextNbrNode	inc/srtdefs.h	/^	tTMO_SLL_NODE	   nextNbrNode;$/;"	m	struct:_SrOs6pfNbrInfo
+nextNbrNode	inc/srtdefs.h	/^    tTMO_SLL_NODE      nextNbrNode;$/;"	m	struct:_SrV4OspfNbrInfo
+nextNextHop	inc/srtdefs.h	/^    tTMO_SLL_NODE      nextNextHop;             \/* Next pointer*\/$/;"	m	struct:_SrRtrNextHopInfo
+nextNode	inc/srtdefs.h	/^    tTMO_SLL_NODE       nextNode;$/;"	m	struct:__anon11
+nextRtrId	inc/srtdefs.h	/^	tTMO_SLL_NODE	   nextRtrId;$/;"	m	struct:_SrRtrInfo
+nextTePath	inc/srtdefs.h	/^	tTMO_SLL_NODE	   nextTePath;	$/;"	m	struct:_SrRlfaPathInfo
+nexthopNode	inc/srtdefs.h	/^	tTMO_SLL_NODE	   nexthopNode;     \/* List node to Nexthop list in LFA Node *\/$/;"	m	struct:_SrTilfaPathInfo
+nmhDepv2FsSrDebugFlag	src/fssrlw.c	/^nmhDepv2FsSrDebugFlag (UINT4 *pu4ErrorCode, tSnmpIndexList * pSnmpIndexList,$/;"	f
+nmhDepv2FsSrGlobalAdminStatus	src/fssrlw.c	/^nmhDepv2FsSrGlobalAdminStatus (UINT4 *pu4ErrorCode,$/;"	f
+nmhDepv2FsSrIpv4AddrFamily	src/fssrlw.c	/^nmhDepv2FsSrIpv4AddrFamily (UINT4 *pu4ErrorCode,$/;"	f
+nmhDepv2FsSrIpv6AddrFamily	src/fssrlw.c	/^nmhDepv2FsSrIpv6AddrFamily (UINT4 *pu4ErrorCode,$/;"	f
+nmhDepv2FsSrMode	src/fssrlw.c	/^nmhDepv2FsSrMode (UINT4 *pu4ErrorCode, tSnmpIndexList * pSnmpIndexList,$/;"	f
+nmhDepv2FsSrSIDTable	src/fssrlw.c	/^nmhDepv2FsSrSIDTable (UINT4 *pu4ErrorCode, tSnmpIndexList * pSnmpIndexList,$/;"	f
+nmhDepv2FsSrTePathTable	src/fssrlw.c	/^nmhDepv2FsSrTePathTable (UINT4 *pu4ErrorCode, tSnmpIndexList * pSnmpIndexList,$/;"	f
+nmhDepv2FsSrTeRtrListTable	src/fssrlw.c	/^nmhDepv2FsSrTeRtrListTable (UINT4 *pu4ErrorCode,$/;"	f
+nmhDepv2FsSrV4AlternateStatus	src/fssrlw.c	/^nmhDepv2FsSrV4AlternateStatus (UINT4 *pu4ErrorCode,$/;"	f
+nmhDepv2FsSrV4MaxSrGbValue	src/fssrlw.c	/^nmhDepv2FsSrV4MaxSrGbValue (UINT4 *pu4ErrorCode,$/;"	f
+nmhDepv2FsSrV4MinSrGbValue	src/fssrlw.c	/^nmhDepv2FsSrV4MinSrGbValue (UINT4 *pu4ErrorCode,$/;"	f
+nmhDepv2FsSrV4Status	src/fssrlw.c	/^nmhDepv2FsSrV4Status (UINT4 *pu4ErrorCode, tSnmpIndexList * pSnmpIndexList,$/;"	f
+nmhDepv2FsSrV6AlternateStatus	src/fssrlw.c	/^nmhDepv2FsSrV6AlternateStatus (UINT4 *pu4ErrorCode,$/;"	f
+nmhDepv2FsSrV6MaxSrGbValue	src/fssrlw.c	/^nmhDepv2FsSrV6MaxSrGbValue (UINT4 *pu4ErrorCode,$/;"	f
+nmhDepv2FsSrV6MinSrGbValue	src/fssrlw.c	/^nmhDepv2FsSrV6MinSrGbValue (UINT4 *pu4ErrorCode,$/;"	f
+nmhDepv2FsSrV6Status	src/fssrlw.c	/^nmhDepv2FsSrV6Status (UINT4 *pu4ErrorCode, tSnmpIndexList * pSnmpIndexList,$/;"	f
+nmhDepv2FsStaticSrLabelStackTable	src/fssrlw.c	/^nmhDepv2FsStaticSrLabelStackTable (UINT4 *pu4ErrorCode,$/;"	f
+nmhDepv2FsStaticSrTable	src/fssrlw.c	/^nmhDepv2FsStaticSrTable (UINT4 *pu4ErrorCode, tSnmpIndexList * pSnmpIndexList,$/;"	f
+nmhGetFirstIndexFsSrSIDTable	src/fssrlw.c	/^nmhGetFirstIndexFsSrSIDTable (INT4 *pi4FsSrSIDAddrType,$/;"	f
+nmhGetFirstIndexFsSrTePathTable	src/fssrlw.c	/^nmhGetFirstIndexFsSrTePathTable (tSNMP_OCTET_STRING_TYPE * pFsSrTeDestAddr,$/;"	f
+nmhGetFirstIndexFsSrTeRtrListTable	src/fssrlw.c	/^nmhGetFirstIndexFsSrTeRtrListTable (UINT4 *pu4FsSrTeRtrListIndex,$/;"	f
+nmhGetFirstIndexFsStaticSrLabelStackTable	src/fssrlw.c	/^nmhGetFirstIndexFsStaticSrLabelStackTable (UINT4 *pu4FsStaticLabelStackIndex,$/;"	f
+nmhGetFirstIndexFsStaticSrTable	src/fssrlw.c	/^nmhGetFirstIndexFsStaticSrTable (tSNMP_OCTET_STRING_TYPE * pFsStaticSrDestAddr,$/;"	f
+nmhGetFsLabelStackIndexNext	src/fssrlw.c	/^nmhGetFsLabelStackIndexNext (UINT4 *pu4RetValFsLabelStackIndexNext)$/;"	f
+nmhGetFsRouterListIndexNext	src/fssrlw.c	/^nmhGetFsRouterListIndexNext (UINT4 *pu4RetValFsRouterListIndexNext)$/;"	f
+nmhGetFsSrAlgo	src/fssrlw.c	/^nmhGetFsSrAlgo (INT4 i4FsSrSIDAddrType,$/;"	f
+nmhGetFsSrDebugFlag	src/fssrlw.c	/^nmhGetFsSrDebugFlag (UINT4 *pu4RetValFsSrDebugFlag)$/;"	f
+nmhGetFsSrFlags	src/fssrlw.c	/^nmhGetFsSrFlags (INT4 i4FsSrSIDAddrType,$/;"	f
+nmhGetFsSrGlobalAdminStatus	src/fssrlw.c	/^nmhGetFsSrGlobalAdminStatus (INT4 *pi4RetValFsSrGlobalAdminStatus)$/;"	f
+nmhGetFsSrIpv4AddrFamily	src/fssrlw.c	/^nmhGetFsSrIpv4AddrFamily (INT4 *pi4RetValFsSrIpv4AddrFamily)$/;"	f
+nmhGetFsSrIpv6AddrFamily	src/fssrlw.c	/^nmhGetFsSrIpv6AddrFamily (INT4 *pi4RetValFsSrIpv6AddrFamily)$/;"	f
+nmhGetFsSrMTID	src/fssrlw.c	/^nmhGetFsSrMTID (INT4 i4FsSrSIDAddrType,$/;"	f
+nmhGetFsSrMode	src/fssrlw.c	/^nmhGetFsSrMode (INT4 *pi4RetValFsSrMode)$/;"	f
+nmhGetFsSrSIDRowStatus	src/fssrlw.c	/^nmhGetFsSrSIDRowStatus (INT4 i4FsSrSIDAddrType,$/;"	f
+nmhGetFsSrSIDType	src/fssrlw.c	/^nmhGetFsSrSIDType (INT4 i4FsSrSIDAddrType,$/;"	f
+nmhGetFsSrSIDValue	src/fssrlw.c	/^nmhGetFsSrSIDValue (INT4 i4FsSrSIDAddrType,$/;"	f
+nmhGetFsSrSidIndexType	src/fssrlw.c	/^nmhGetFsSrSidIndexType (INT4 i4FsSrSIDAddrType,$/;"	f
+nmhGetFsSrTeOptRouterId	src/fssrlw.c	/^nmhGetFsSrTeOptRouterId (UINT4 u4FsSrTeRtrListIndex,$/;"	f
+nmhGetFsSrTePathRowStatus	src/fssrlw.c	/^nmhGetFsSrTePathRowStatus (tSNMP_OCTET_STRING_TYPE * pFsSrTeDestAddr,$/;"	f
+nmhGetFsSrTeRouterListIndex	src/fssrlw.c	/^nmhGetFsSrTeRouterListIndex (tSNMP_OCTET_STRING_TYPE * pFsSrTeDestAddr,$/;"	f
+nmhGetFsSrTeRtrRowStatus	src/fssrlw.c	/^nmhGetFsSrTeRtrRowStatus (UINT4 u4FsSrTeRtrListIndex,$/;"	f
+nmhGetFsSrV4AlternateStatus	src/fssrlw.c	/^nmhGetFsSrV4AlternateStatus (INT4 *pi4RetValFsSrV4AlternateStatus)$/;"	f
+nmhGetFsSrV4MaxSrGbValue	src/fssrlw.c	/^nmhGetFsSrV4MaxSrGbValue (UINT4 *pu4RetValFsSrV4MaxSrGbValue)$/;"	f
+nmhGetFsSrV4MinSrGbValue	src/fssrlw.c	/^nmhGetFsSrV4MinSrGbValue (UINT4 *pu4RetValFsSrV4MinSrGbValue)$/;"	f
+nmhGetFsSrV4Status	src/fssrlw.c	/^nmhGetFsSrV4Status (INT4 *pi4RetValFsSrV4Status)$/;"	f
+nmhGetFsSrV6AlternateStatus	src/fssrlw.c	/^nmhGetFsSrV6AlternateStatus (INT4 *pi4RetValFsSrV6AlternateStatus)$/;"	f
+nmhGetFsSrV6MaxSrGbValue	src/fssrlw.c	/^nmhGetFsSrV6MaxSrGbValue (UINT4 *pu4RetValFsSrV6MaxSrGbValue)$/;"	f
+nmhGetFsSrV6MinSrGbValue	src/fssrlw.c	/^nmhGetFsSrV6MinSrGbValue (UINT4 *pu4RetValFsSrV6MinSrGbValue)$/;"	f
+nmhGetFsSrV6Status	src/fssrlw.c	/^nmhGetFsSrV6Status (INT4 *pi4RetValFsSrV6Status)$/;"	f
+nmhGetFsSrWeight	src/fssrlw.c	/^nmhGetFsSrWeight (INT4 i4FsSrSIDAddrType,$/;"	f
+nmhGetFsStaticSrLabelStackIndex	src/fssrlw.c	/^nmhGetFsStaticSrLabelStackIndex (tSNMP_OCTET_STRING_TYPE * pFsStaticSrDestAddr,$/;"	f
+nmhGetFsStaticSrLabelStackLabel	src/fssrlw.c	/^nmhGetFsStaticSrLabelStackLabel (UINT4 u4FsStaticLabelStackIndex,$/;"	f
+nmhGetFsStaticSrNextHopAddr	src/fssrlw.c	/^nmhGetFsStaticSrNextHopAddr (tSNMP_OCTET_STRING_TYPE * pFsStaticSrDestAddr,$/;"	f
+nmhGetFsStaticSrRowStatus	src/fssrlw.c	/^nmhGetFsStaticSrRowStatus (tSNMP_OCTET_STRING_TYPE * pFsStaticSrDestAddr,$/;"	f
+nmhGetNextIndexFsSrSIDTable	src/fssrlw.c	/^nmhGetNextIndexFsSrSIDTable (INT4 i4FsSrSIDAddrType,$/;"	f
+nmhGetNextIndexFsSrTePathTable	src/fssrlw.c	/^nmhGetNextIndexFsSrTePathTable (tSNMP_OCTET_STRING_TYPE * pFsSrTeDestAddr,$/;"	f
+nmhGetNextIndexFsSrTeRtrListTable	src/fssrlw.c	/^nmhGetNextIndexFsSrTeRtrListTable (UINT4 u4FsSrTeRtrListIndex,$/;"	f
+nmhGetNextIndexFsStaticSrLabelStackTable	src/fssrlw.c	/^nmhGetNextIndexFsStaticSrLabelStackTable (UINT4 u4FsStaticLabelStackIndex,$/;"	f
+nmhGetNextIndexFsStaticSrTable	src/fssrlw.c	/^nmhGetNextIndexFsStaticSrTable (tSNMP_OCTET_STRING_TYPE * pFsStaticSrDestAddr,$/;"	f
+nmhSetFsSrAlgo	src/fssrlw.c	/^nmhSetFsSrAlgo (INT4 i4FsSrSIDAddrType, tSNMP_OCTET_STRING_TYPE * pFsSrSIDNetIp,$/;"	f
+nmhSetFsSrDebugFlag	src/fssrlw.c	/^nmhSetFsSrDebugFlag (UINT4 u4SetValFsSrDebugFlag)$/;"	f
+nmhSetFsSrFlags	src/fssrlw.c	/^nmhSetFsSrFlags (INT4 i4FsSrSIDAddrType,$/;"	f
+nmhSetFsSrGlobalAdminStatus	src/fssrlw.c	/^nmhSetFsSrGlobalAdminStatus (INT4 i4SetValFsSrGlobalAdminStatus)$/;"	f
+nmhSetFsSrIpv4AddrFamily	src/fssrlw.c	/^nmhSetFsSrIpv4AddrFamily (INT4 i4SetValFsSrIpv4AddrFamily)$/;"	f
+nmhSetFsSrIpv6AddrFamily	src/fssrlw.c	/^nmhSetFsSrIpv6AddrFamily (INT4 i4SetValFsSrIpv6AddrFamily)$/;"	f
+nmhSetFsSrMTID	src/fssrlw.c	/^nmhSetFsSrMTID (INT4 i4FsSrSIDAddrType, tSNMP_OCTET_STRING_TYPE * pFsSrSIDNetIp,$/;"	f
+nmhSetFsSrMode	src/fssrlw.c	/^nmhSetFsSrMode (INT4 i4SetValFsSrMode)$/;"	f
+nmhSetFsSrSIDRowStatus	src/fssrlw.c	/^nmhSetFsSrSIDRowStatus (INT4 i4FsSrSIDAddrType,$/;"	f
+nmhSetFsSrSIDType	src/fssrlw.c	/^nmhSetFsSrSIDType (INT4 i4FsSrSIDAddrType,$/;"	f
+nmhSetFsSrSIDValue	src/fssrlw.c	/^nmhSetFsSrSIDValue (INT4 i4FsSrSIDAddrType,$/;"	f
+nmhSetFsSrSidIndexType	src/fssrlw.c	/^nmhSetFsSrSidIndexType (INT4 i4FsSrSIDAddrType,$/;"	f
+nmhSetFsSrTeOptRouterId	src/fssrlw.c	/^nmhSetFsSrTeOptRouterId (UINT4 u4FsSrTeRtrListIndex,$/;"	f
+nmhSetFsSrTePathRowStatus	src/fssrlw.c	/^nmhSetFsSrTePathRowStatus (tSNMP_OCTET_STRING_TYPE * pFsSrTeDestAddr,$/;"	f
+nmhSetFsSrTeRouterListIndex	src/fssrlw.c	/^nmhSetFsSrTeRouterListIndex (tSNMP_OCTET_STRING_TYPE * pFsSrTeDestAddr,$/;"	f
+nmhSetFsSrTeRtrRowStatus	src/fssrlw.c	/^nmhSetFsSrTeRtrRowStatus (UINT4 u4FsSrTeRtrListIndex,$/;"	f
+nmhSetFsSrV4AlternateStatus	src/fssrlw.c	/^nmhSetFsSrV4AlternateStatus (INT4 i4SetValFsSrV4AlternateStatus)$/;"	f
+nmhSetFsSrV4MaxSrGbValue	src/fssrlw.c	/^nmhSetFsSrV4MaxSrGbValue (UINT4 u4SetValFsSrV4MaxSrGbValue)$/;"	f
+nmhSetFsSrV4MinSrGbValue	src/fssrlw.c	/^nmhSetFsSrV4MinSrGbValue (UINT4 u4SetValFsSrV4MinSrGbValue)$/;"	f
+nmhSetFsSrV4Status	src/fssrlw.c	/^nmhSetFsSrV4Status (INT4 i4SetValFsSrV4Status)$/;"	f
+nmhSetFsSrV6AlternateStatus	src/fssrlw.c	/^nmhSetFsSrV6AlternateStatus (INT4 i4SetValFsSrV6AlternateStatus)$/;"	f
+nmhSetFsSrV6MaxSrGbValue	src/fssrlw.c	/^nmhSetFsSrV6MaxSrGbValue (UINT4 u4SetValFsSrV6MaxSrGbValue)$/;"	f
+nmhSetFsSrV6MinSrGbValue	src/fssrlw.c	/^nmhSetFsSrV6MinSrGbValue (UINT4 u4SetValFsSrV6MinSrGbValue)$/;"	f
+nmhSetFsSrV6Status	src/fssrlw.c	/^nmhSetFsSrV6Status (INT4 i4SetValFsSrV6Status)$/;"	f
+nmhSetFsSrWeight	src/fssrlw.c	/^nmhSetFsSrWeight (INT4 i4FsSrSIDAddrType,$/;"	f
+nmhSetFsStaticSrLabelStackIndex	src/fssrlw.c	/^nmhSetFsStaticSrLabelStackIndex (tSNMP_OCTET_STRING_TYPE * pFsStaticSrDestAddr,$/;"	f
+nmhSetFsStaticSrLabelStackLabel	src/fssrlw.c	/^nmhSetFsStaticSrLabelStackLabel (UINT4 u4FsStaticLabelStackIndex,$/;"	f
+nmhSetFsStaticSrNextHopAddr	src/fssrlw.c	/^nmhSetFsStaticSrNextHopAddr (tSNMP_OCTET_STRING_TYPE * pFsStaticSrDestAddr,$/;"	f
+nmhSetFsStaticSrRowStatus	src/fssrlw.c	/^nmhSetFsStaticSrRowStatus (tSNMP_OCTET_STRING_TYPE * pFsStaticSrDestAddr,$/;"	f
+nmhTestv2FsSrAlgo	src/fssrlw.c	/^nmhTestv2FsSrAlgo (UINT4 *pu4ErrorCode, INT4 i4FsSrSIDAddrType,$/;"	f
+nmhTestv2FsSrDebugFlag	src/fssrlw.c	/^nmhTestv2FsSrDebugFlag (UINT4 *pu4ErrorCode, UINT4 u4TestValFsSrDebugFlag)$/;"	f
+nmhTestv2FsSrFlags	src/fssrlw.c	/^nmhTestv2FsSrFlags (UINT4 *pu4ErrorCode, INT4 i4FsSrSIDAddrType,$/;"	f
+nmhTestv2FsSrGlobalAdminStatus	src/fssrlw.c	/^nmhTestv2FsSrGlobalAdminStatus (UINT4 *pu4ErrorCode,$/;"	f
+nmhTestv2FsSrIpv4AddrFamily	src/fssrlw.c	/^nmhTestv2FsSrIpv4AddrFamily (UINT4 *pu4ErrorCode,$/;"	f
+nmhTestv2FsSrIpv6AddrFamily	src/fssrlw.c	/^nmhTestv2FsSrIpv6AddrFamily (UINT4 *pu4ErrorCode,$/;"	f
+nmhTestv2FsSrMTID	src/fssrlw.c	/^nmhTestv2FsSrMTID (UINT4 *pu4ErrorCode, INT4 i4FsSrSIDAddrType,$/;"	f
+nmhTestv2FsSrMode	src/fssrlw.c	/^nmhTestv2FsSrMode (UINT4 *pu4ErrorCode, INT4 i4TestValFsSrMode)$/;"	f
+nmhTestv2FsSrSIDRowStatus	src/fssrlw.c	/^nmhTestv2FsSrSIDRowStatus (UINT4 *pu4ErrorCode, INT4 i4FsSrSIDAddrType,$/;"	f
+nmhTestv2FsSrSIDType	src/fssrlw.c	/^nmhTestv2FsSrSIDType (UINT4 *pu4ErrorCode, INT4 i4FsSrSIDAddrType,$/;"	f
+nmhTestv2FsSrSIDValue	src/fssrlw.c	/^nmhTestv2FsSrSIDValue (UINT4 *pu4ErrorCode, INT4 i4FsSrSIDAddrType,$/;"	f
+nmhTestv2FsSrSidIndexType	src/fssrlw.c	/^nmhTestv2FsSrSidIndexType (UINT4 *pu4ErrorCode, INT4 i4FsSrSIDAddrType,$/;"	f
+nmhTestv2FsSrTeOptRouterId	src/fssrlw.c	/^nmhTestv2FsSrTeOptRouterId (UINT4 *pu4ErrorCode,$/;"	f
+nmhTestv2FsSrTePathRowStatus	src/fssrlw.c	/^nmhTestv2FsSrTePathRowStatus (UINT4 *pu4ErrorCode,$/;"	f
+nmhTestv2FsSrTeRouterListIndex	src/fssrlw.c	/^nmhTestv2FsSrTeRouterListIndex (UINT4 *pu4ErrorCode,$/;"	f
+nmhTestv2FsSrTeRtrRowStatus	src/fssrlw.c	/^nmhTestv2FsSrTeRtrRowStatus (UINT4 *pu4ErrorCode,$/;"	f
+nmhTestv2FsSrV4AlternateStatus	src/fssrlw.c	/^nmhTestv2FsSrV4AlternateStatus (UINT4 *pu4ErrorCode,$/;"	f
+nmhTestv2FsSrV4MaxSrGbValue	src/fssrlw.c	/^nmhTestv2FsSrV4MaxSrGbValue (UINT4 *pu4ErrorCode,$/;"	f
+nmhTestv2FsSrV4MinSrGbValue	src/fssrlw.c	/^nmhTestv2FsSrV4MinSrGbValue (UINT4 *pu4ErrorCode,$/;"	f
+nmhTestv2FsSrV4Status	src/fssrlw.c	/^nmhTestv2FsSrV4Status (UINT4 *pu4ErrorCode, INT4 i4TestValFsSrV4Status)$/;"	f
+nmhTestv2FsSrV6AlternateStatus	src/fssrlw.c	/^nmhTestv2FsSrV6AlternateStatus (UINT4 *pu4ErrorCode,$/;"	f
+nmhTestv2FsSrV6MaxSrGbValue	src/fssrlw.c	/^nmhTestv2FsSrV6MaxSrGbValue (UINT4 *pu4ErrorCode,$/;"	f
+nmhTestv2FsSrV6MinSrGbValue	src/fssrlw.c	/^nmhTestv2FsSrV6MinSrGbValue (UINT4 *pu4ErrorCode,$/;"	f
+nmhTestv2FsSrV6Status	src/fssrlw.c	/^nmhTestv2FsSrV6Status (UINT4 *pu4ErrorCode, INT4 i4TestValFsSrV6Status)$/;"	f
+nmhTestv2FsSrWeight	src/fssrlw.c	/^nmhTestv2FsSrWeight (UINT4 *pu4ErrorCode, INT4 i4FsSrSIDAddrType,$/;"	f
+nmhTestv2FsStaticSrLabelStackIndex	src/fssrlw.c	/^nmhTestv2FsStaticSrLabelStackIndex (UINT4 *pu4ErrorCode,$/;"	f
+nmhTestv2FsStaticSrLabelStackLabel	src/fssrlw.c	/^nmhTestv2FsStaticSrLabelStackLabel (UINT4 *pu4ErrorCode,$/;"	f
+nmhTestv2FsStaticSrNextHopAddr	src/fssrlw.c	/^nmhTestv2FsStaticSrNextHopAddr (UINT4 *pu4ErrorCode,$/;"	f
+nmhTestv2FsStaticSrRowStatus	src/fssrlw.c	/^nmhTestv2FsStaticSrRowStatus (UINT4 *pu4ErrorCode,$/;"	f
+nmhValidateIndexInstanceFsSrSIDTable	src/fssrlw.c	/^nmhValidateIndexInstanceFsSrSIDTable (INT4 i4FsSrSIDAddrType,$/;"	f
+nmhValidateIndexInstanceFsSrTePathTable	src/fssrlw.c	/^nmhValidateIndexInstanceFsSrTePathTable (tSNMP_OCTET_STRING_TYPE *$/;"	f
+nmhValidateIndexInstanceFsSrTeRtrListTable	src/fssrlw.c	/^nmhValidateIndexInstanceFsSrTeRtrListTable (UINT4 u4FsSrTeRtrListIndex,$/;"	f
+nmhValidateIndexInstanceFsStaticSrLabelStackTable	src/fssrlw.c	/^nmhValidateIndexInstanceFsStaticSrLabelStackTable (UINT4$/;"	f
+nmhValidateIndexInstanceFsStaticSrTable	src/fssrlw.c	/^nmhValidateIndexInstanceFsStaticSrTable (tSNMP_OCTET_STRING_TYPE *$/;"	f
+ospfV4NbrInfo	inc/srtdefs.h	/^    tSrOs4NbrInfo      ospfV4NbrInfo;$/;"	m	struct:_SrV4OspfNbrInfo
+ospfV6NbrInfo	inc/srtdefs.h	/^    tSrOs3NbrInfo	   ospfV6NbrInfo;	$/;"	m	struct:_SrOs6pfNbrInfo
+pBuff	inc/srtdefs.h	/^    tRmMsg        *pBuff;     \/* Message given by RM module. *\/$/;"	m	struct:_SrRmEvtInfo
+pExtLinkLsaInfoTree	inc/srtdefs.h	/^	struct rbtree      *pExtLinkLsaInfoTree;$/;"	m	struct:_SrareaLinkInfo	typeref:struct:_SrareaLinkInfo::rbtree
+pLfaPathInfo	inc/srtdefs.h	/^    tSrTilfaPathInfo  *pLfaPathInfo;$/;"	m	struct:_SrAdjLfaListNode
+pNode	inc/srtdefs.h	/^	tTMO_SLL_NODE	   pNode;           \/* List node to P list in LFA Node *\/$/;"	m	struct:_SrTilfaPathInfo
+pRouteInfo	inc/srtdefs.h	/^    UINT1*  pRouteInfo;$/;"	m	struct:__anon5
+pSrLfaAdjRbTree	inc/srtdefs.h	/^    struct rbtree      *pSrLfaAdjRbTree;      \/* Pointer to LFA Adj tree  *\/$/;"	m	struct:_SrGlobalInfo	typeref:struct:_SrGlobalInfo::rbtree
+pSrLfaNodeRbTree	inc/srtdefs.h	/^    struct rbtree      *pSrLfaNodeRbTree;      \/* Pointer to LFA Nexthop\/P\/Q node tree  *\/$/;"	m	struct:_SrGlobalInfo	typeref:struct:_SrGlobalInfo::rbtree
+pSrOsRiLsRbTree	inc/srtdefs.h	/^    struct rbtree      *pSrOsRiLsRbTree;     \/* Pointer to Opaque LSA's RI RBTree *\/$/;"	m	struct:_SrGlobalInfo	typeref:struct:_SrGlobalInfo::rbtree
+pSrRlfaPathRbTree	inc/srtdefs.h	/^    struct rbtree      *pSrRlfaPathRbTree;      \/* Pointer to SR RLFA RBTree *\/$/;"	m	struct:_SrGlobalInfo	typeref:struct:_SrGlobalInfo::rbtree
+pSrSidRbTree	inc/srtdefs.h	/^    struct rbtree      *pSrSidRbTree;         \/* Pointer to SID RBTree *\/$/;"	m	struct:_SrGlobalInfo	typeref:struct:_SrGlobalInfo::rbtree
+pSrStaticRbTree	inc/srtdefs.h	/^    struct rbtree      *pSrStaticRbTree;     \/* Pointer to Static Sr Info RBtree *\/$/;"	m	struct:_SrGlobalInfo	typeref:struct:_SrGlobalInfo::rbtree
+pSrTeRouteRbTree	inc/srtdefs.h	/^    struct rbtree      *pSrTeRouteRbTree;     \/* Pointer to SR TE RBTree *\/$/;"	m	struct:_SrGlobalInfo	typeref:struct:_SrGlobalInfo::rbtree
+pSrTilfaPathRbTree	inc/srtdefs.h	/^    struct rbtree      *pSrTilfaPathRbTree;      \/* Pointer to SR RLFA RBTree *\/$/;"	m	struct:_SrGlobalInfo	typeref:struct:_SrGlobalInfo::rbtree
+pTimerExpFunc	inc/srtdefs.h	/^    VOID                (*pTimerExpFunc)(VOID *);$/;"	m	struct:_SrTimerDesc
+pTopSIDRtrInfo	inc/srtdefs.h	/^    tSrRtrInfo*             pTopSIDRtrInfo;$/;"	m	struct:_SrStaticEntryInfo
+pV6SrSelfNodeInfo	inc/srtdefs.h	/^    tSrSidInterfaceInfo *pV6SrSelfNodeInfo;       \/* Self Node Info *\/$/;"	m	struct:_SrGlobalInfo
+pqAdjSidList	inc/srtdefs.h	/^    tTMO_SLL           pqAdjSidList;      \/* PQ Adj Sid  list *\/$/;"	m	struct:_SrTilfaPathInfo
+prefixId	inc/srtdefs.h	/^    tGenU4Addr         prefixId;	  			\/* Prefix-ID *\/$/;"	m	struct:_SrRtrInfo
+qNode	inc/srtdefs.h	/^	tTMO_SLL_NODE	   qNode;           \/* List node to Q list in LFA Node *\/$/;"	m	struct:_SrTilfaPathInfo
+rlfaNextHop	inc/srtdefs.h	/^    tGenU4Addr         rlfaNextHop;$/;"	m	struct:_SrRlfaPathInfo
+rlfaOutIfIndex	inc/srtdefs.h	/^    UINT4		rlfaOutIfIndex;$/;"	m	struct:_SrRlfaPathInfo
+routerId	inc/srtdefs.h	/^ tGenU4Addr    routerId;                  \/* RtrId *\/$/;"	m	struct:SrRtrEntry
+routerList	inc/srtdefs.h	/^    tTMO_SLL		routerList;             \/* List of LSA-10 received *\/$/;"	m	struct:_SrGlobalInfo
+rtDelayList	inc/srtdefs.h	/^    tTMO_SLL		    rtDelayList;$/;"	m	struct:_SrGlobalInfo
+rtrId	inc/srtdefs.h	/^        tGenU4Addr              rtrId;              \/** Loopback Address with SID is associated **\/$/;"	m	struct:_SrContext
+srRmInfo	inc/srtdefs.h	/^    tSrRMInfo           srRmInfo;$/;"	m	struct:_SrGlobalInfo
+srRouteInfo	inc/srtdefs.h	/^    tSrRouteEntryInfo srRouteInfo;$/;"	m	struct:__anon11
+srStaticLblListIndex	inc/srtdefs.h	/^    tStaticSrLblListEntry   srStaticLblListIndex;$/;"	m	struct:_SrStaticEntryInfo
+srTeRtrListIndex	inc/srtdefs.h	/^    tSrTeRtrListEntry  srTeRtrListIndex;     \/* Te Rtr List Index (SR_MAX_TE_OPTIONAL_RTR = 5)*\/$/;"	m	struct:_SrTeRtEntryInfo
+srTmrListId	inc/srtdefs.h	/^    tTimerListId        srTmrListId;$/;"	m	struct:_SrGlobalInfo
+srgbRange	inc/srtdefs.h	/^	tSrGb			   srgbRange;				\/* SRGB Range of SR-Router*\/$/;"	m	struct:_SrRtrInfo
+tAdjSidNode	inc/srtdefs.h	/^}tAdjSidNode;$/;"	t	typeref:struct:_AdjSidNode
+tLfaRouteEntryInfo	inc/srtdefs.h	/^tLfaRouteEntryInfo;$/;"	t	typeref:struct:_LfaRouteEntryInfo
+tOsSrArea	inc/srtdefs.h	/^}tOsSrArea;$/;"	t	typeref:struct:_OsSrArea
+tOspfSrLsa	inc/srtdefs.h	/^}tOspfSrLsa;$/;"	t	typeref:struct:_OspfSrLsa
+tSrAdjLfaListNode	inc/srtdefs.h	/^} tSrAdjLfaListNode;$/;"	t	typeref:struct:_SrAdjLfaListNode
+tSrCfaInfo	inc/srtdefs.h	/^}tSrCfaInfo;$/;"	t	typeref:struct:_SrCfaInfo
+tSrContext	inc/srtdefs.h	/^} tSrContext;$/;"	t	typeref:struct:_SrContext
+tSrDelayRtInfo	inc/srtdefs.h	/^}tSrDelayRtInfo;$/;"	t	typeref:struct:__anon11
+tSrExtLinkLSAInfo	inc/srtdefs.h	/^} tSrExtLinkLSAInfo;$/;"	t	typeref:struct:_SrExtLinkLSAInfo
+tSrFec	inc/srtdefs.h	/^}tSrFec;$/;"	t	typeref:struct:_FEC
+tSrGb	inc/srtdefs.h	/^}tSrGb;$/;"	t	typeref:struct:_SrGb
+tSrGlobalInfo	inc/srtdefs.h	/^}tSrGlobalInfo;$/;"	t	typeref:struct:_SrGlobalInfo
+tSrInSegInfo	inc/srtdefs.h	/^}tSrInSegInfo;$/;"	t	typeref:struct:_SrInSegInfo
+tSrIpEvtInfo	inc/srtdefs.h	/^}tSrIpEvtInfo;$/;"	t	typeref:struct:__anon5
+tSrLfaAdjInfo	inc/srtdefs.h	/^}tSrLfaAdjInfo;$/;"	t	typeref:struct:_SrLfaAdjInfo
+tSrLfaNodeInfo	inc/srtdefs.h	/^}tSrLfaNodeInfo;$/;"	t	typeref:struct:_SrLfaNodeInfo
+tSrLinkInfoKey	inc/srtdefs.h	/^} tSrLinkInfoKey;$/;"	t	typeref:struct:_SrLinkInfoKey
+tSrNetIpLfaRtInfo	inc/srtdefs.h	/^tSrNetIpLfaRtInfo;$/;"	t	typeref:struct:_SrNetIpLfaRtInfo
+tSrNetIpv6LfaRtInfo	inc/srtdefs.h	/^tSrNetIpv6LfaRtInfo;$/;"	t	typeref:struct:_SrNetIpv6LfaRtInfo
+tSrOs3NbrInfo	inc/srtdefs.h	/^} tSrOs3NbrInfo; $/;"	t	typeref:struct:_SrOs3NbrInfo
+tSrOs4NbrInfo	inc/srtdefs.h	/^} tSrOs4NbrInfo;$/;"	t	typeref:struct:_SrOs4NbrInfo
+tSrOsRiLsInfo	inc/srtdefs.h	/^} tSrOsRiLsInfo; $/;"	t	typeref:struct:_SrOsRiLsInfo
+tSrQMsg	inc/srtdefs.h	/^}tSrQMsg;$/;"	t	typeref:struct:_SrQMsg
+tSrRMInfo	inc/srtdefs.h	/^}tSrRMInfo;$/;"	t	typeref:struct:_SrRMInfo
+tSrRlfaPathInfo	inc/srtdefs.h	/^} tSrRlfaPathInfo;$/;"	t	typeref:struct:_SrRlfaPathInfo
+tSrRmEvtInfo	inc/srtdefs.h	/^}tSrRmEvtInfo;$/;"	t	typeref:struct:_SrRmEvtInfo
+tSrRouteEntryInfo	inc/srtdefs.h	/^tSrRouteEntryInfo;$/;"	t	typeref:struct:_SrRouteEntryInfo
+tSrRtrEntry	inc/srtdefs.h	/^}tSrRtrEntry;$/;"	t	typeref:struct:SrRtrEntry
+tSrRtrInfo	inc/srtdefs.h	/^} tSrRtrInfo;$/;"	t	typeref:struct:_SrRtrInfo
+tSrRtrNextHopInfo	inc/srtdefs.h	/^}tSrRtrNextHopInfo;$/;"	t	typeref:struct:_SrRtrNextHopInfo
+tSrSidInterfaceInfo	inc/srtdefs.h	/^} tSrSidInterfaceInfo;$/;"	t	typeref:struct:_SrSidInterfaceInfo
+tSrStaticEntryInfo	inc/srtdefs.h	/^} tSrStaticEntryInfo;$/;"	t	typeref:struct:_SrStaticEntryInfo
+tSrTeLabelStack	inc/srtdefs.h	/^}tSrTeLabelStack;$/;"	t	typeref:struct:_SrTeLabelStack
+tSrTeOspfRtInfo	inc/srtdefs.h	/^tSrTeOspfRtInfo;$/;"	t	typeref:struct:_SrTeOspfRtInfo
+tSrTeRtEntryInfo	inc/srtdefs.h	/^} tSrTeRtEntryInfo;$/;"	t	typeref:struct:_SrTeRtEntryInfo
+tSrTeRtrListEntry	inc/srtdefs.h	/^} tSrTeRtrListEntry;$/;"	t	typeref:struct:_SrTeRtrEntry
+tSrTilfaAdjInfo	inc/srtdefs.h	/^}tSrTilfaAdjInfo;$/;"	t	typeref:struct:_SrTilfaAdjInfo
+tSrTilfaPathInfo	inc/srtdefs.h	/^} tSrTilfaPathInfo;$/;"	t	typeref:struct:_SrTilfaPathInfo
+tSrTimerDesc	inc/srtdefs.h	/^} tSrTimerDesc;$/;"	t	typeref:struct:_SrTimerDesc
+tSrTnlIfTable	inc/srdb.h	/^}tSrTnlIfTable;$/;"	t	typeref:struct:_SRTnlIfTable
+tSrV4OspfNbrInfo	inc/srtdefs.h	/^}tSrV4OspfNbrInfo;$/;"	t	typeref:struct:_SrV4OspfNbrInfo
+tSrV6OspfNbrInfo	inc/srtdefs.h	/^}tSrV6OspfNbrInfo;$/;"	t	typeref:struct:_SrOs6pfNbrInfo
+tStaticSrLabelStack	inc/srtdefs.h	/^}tStaticSrLabelStack;$/;"	t	typeref:struct:_StaticSrLabelStack
+tStaticSrLbl	inc/srtdefs.h	/^}tStaticSrLbl;$/;"	t	typeref:struct:StaticSrLbl
+tStaticSrLblListEntry	inc/srtdefs.h	/^}tStaticSrLblListEntry;$/;"	t	typeref:struct:_StaticSrLblListEntry
+tareaLinkInfo	inc/srtdefs.h	/^} tareaLinkInfo;$/;"	t	typeref:struct:_SrareaLinkInfo
+teSwapNextHop	inc/srtdefs.h	/^    tGenU4Addr         teSwapNextHop;	  		\/* Next-Hop Address for TE swap*\/$/;"	m	struct:_SrRtrInfo
+u	inc/srtdefs.h	/^         }u; $/;"	m	struct:_SrQMsg	typeref:union:_SrQMsg::__anon10
+u1AdjSidConfigured	inc/srtdefs.h	/^    UINT1               u1AdjSidConfigured;      \/* Indicates Adjacency SId configured *\/$/;"	m	struct:_SrGlobalInfo
+u1AdjSidInfoFlags	inc/srtdefs.h	/^    UINT1              u1AdjSidInfoFlags;$/;"	m	struct:_SrSidInterfaceInfo
+u1AdjSidOprFlags	inc/srtdefs.h	/^    UINT1              u1AdjSidOprFlags;$/;"	m	struct:_SrSidInterfaceInfo
+u1AdminState	inc/srtdefs.h	/^		UINT1  u1AdminState;$/;"	m	struct:_SrRMInfo
+u1AdminStatus	inc/srtdefs.h	/^        UINT1                   u1AdminStatus;$/;"	m	struct:_SrContext
+u1AdminStatus	inc/srtdefs.h	/^    UINT1              u1AdminStatus;			\/* Admin Status *\/$/;"	m	struct:_SrSidInterfaceInfo
+u1Algo	inc/srtdefs.h	/^     UINT1          u1Algo;$/;"	m	struct:_SrOsRiLsInfo
+u1Algo	inc/srtdefs.h	/^    UINT1              u1Algo;$/;"	m	struct:_SrRtrInfo
+u1Algo	inc/srtdefs.h	/^    UINT1              u1Algo;$/;"	m	struct:_SrSidInterfaceInfo
+u1AsbrStatus	inc/srtdefs.h	/^        UINT1                   u1AsbrStatus;$/;"	m	struct:_SrContext
+u1BulkUpdModuleStatus	inc/srtdefs.h	/^		UINT1  u1BulkUpdModuleStatus;$/;"	m	struct:_SrRMInfo
+u1CmdType	inc/srtdefs.h	/^       UINT1    u1CmdType;     \/* Add \/ Delete \/ Modify LFA route *\/$/;"	m	struct:_SrNetIpLfaRtInfo
+u1CmdType	inc/srtdefs.h	/^    UINT1               u1CmdType;  \/* ADD\/DELETE\/MODIFY LFA route info *\/$/;"	m	struct:_SrNetIpv6LfaRtInfo
+u1Event	inc/srtdefs.h	/^    UINT1          u1Event;    \/* Event given by RM module. *\/$/;"	m	struct:_SrRmEvtInfo
+u1FRRNextHop	inc/srtdefs.h	/^    UINT1              u1FRRNextHop;            \/* Flag to identify FRR Type (LFA\/RLFA) *\/$/;"	m	struct:_SrRtrNextHopInfo
+u1FecElmntType	inc/srtdefs.h	/^    UINT1               u1FecElmntType;         \/* SR_FEC_PREFIX_TYPE \/ SR_FEC_ADJACENCY_TYPE*\/$/;"	m	struct:_FEC
+u1Flags	inc/srtdefs.h	/^    UINT1               u1Flags;     			\/* B\/V\/L\/G\/P Flags*\/$/;"	m	struct:_AdjSidNode
+u1Flags	inc/srtdefs.h	/^    UINT1              u1Flags;  				\/* NP\/M\/E\/V\/L Flags - Node SID*\/$/;"	m	struct:_SrSidInterfaceInfo
+u1Flags	inc/srtdefs.h	/^    UINT1              u1Flags;  			    \/* NP\/M\/E\/V\/L Flags*\/$/;"	m	struct:_SrRtrInfo
+u1IfStatus	inc/srtdefs.h	/^   UINT1            u1IfStatus;    \/*Interface Status*\/$/;"	m	struct:_SrCfaInfo
+u1IfType	inc/srtdefs.h	/^   UINT1            u1IfType;      \/* Interface Type*\/$/;"	m	struct:_SrCfaInfo
+u1IsBlocked	inc/srtdefs.h	/^    UINT1               u1IsBlocked;$/;"	m	struct:_SrGlobalInfo
+u1IsGrStart	inc/srtdefs.h	/^    UINT1               u1IsGrStart;$/;"	m	struct:_SrGlobalInfo
+u1IsSystemReady	inc/srtdefs.h	/^    UINT1               u1IsSystemReady;$/;"	m	struct:_SrGlobalInfo
+u1LSASent	inc/srtdefs.h	/^	UINT1			   u1LSASent;$/;"	m	struct:_SrRtrInfo
+u1LfaMPLSStatus	inc/srtdefs.h	/^    UINT1              u1LfaMPLSStatus;         \/* TE  LFA FTN status *\/$/;"	m	struct:_SrTeRtEntryInfo
+u1LfaStatusFlags	inc/srtdefs.h	/^    UINT1              u1LfaStatusFlags;$/;"	m	struct:_SrTilfaPathInfo
+u1LfaType	inc/srtdefs.h	/^       UINT1    u1LfaType;     \/* Flag to indicate whether$/;"	m	struct:_SrNetIpLfaRtInfo
+u1LfaType	inc/srtdefs.h	/^    UINT1               u1LfaType;     \/* Flag to indicate whether its a LFA or RLFA or TI-LFA route *\/$/;"	m	struct:_SrNetIpv6LfaRtInfo
+u1LfaType	inc/srtdefs.h	/^    UINT1              u1LfaType; \/* Flag to check whether route is LFA or RLFA or TI-LFA *\/ $/;"	m	struct:_SrRtrInfo
+u1LinkType	inc/srtdefs.h	/^    UINT1               u1LinkType;$/;"	m	struct:_AdjSidNode
+u1LinkType	inc/srtdefs.h	/^    UINT1              u1LinkType;     \/* OSPF router LSA link type  corresponding to this Ext LSA*\/$/;"	m	struct:_SrLinkInfoKey
+u1MPLSStatus	inc/srtdefs.h	/^    UINT1              u1MPLSStatus;            \/* Dynamic Variable : SR_FTN_CREATED \/ SR_FTN_NOT_CREATED*\/$/;"	m	struct:_SrRlfaPathInfo
+u1MPLSStatus	inc/srtdefs.h	/^    UINT1              u1MPLSStatus;            \/* Dynamic Variable : SR_FTN_CREATED \/ SR_FTN_NOT_CREATED*\/$/;"	m	struct:_SrTilfaPathInfo
+u1MPLSStatus	inc/srtdefs.h	/^    UINT1              u1MPLSStatus;            \/* SR_FTN_CREATED \/ SR_FTN_NOT_CREATED \/ SR_ILM_POP_CREATED$/;"	m	struct:_SrRtrNextHopInfo
+u1MPLSStatus	inc/srtdefs.h	/^    UINT1              u1MPLSStatus;         \/* Dynamic Variable : SR_FTN_CREATED \/ SR_FTN_NOT_CREATED*\/$/;"	m	struct:_SrTeRtEntryInfo
+u1MTID	inc/srtdefs.h	/^    UINT1               u1MTID;$/;"	m	struct:_AdjSidNode
+u1MTID	inc/srtdefs.h	/^    UINT1              u1MTID;$/;"	m	struct:_SrRtrInfo
+u1NoOfOptRouters	inc/srtdefs.h	/^	UINT1      u1NoOfOptRouters; \/* No of optional routers configured *\/$/;"	m	struct:_SrTeOspfRtInfo
+u1OperStatus	inc/srtdefs.h	/^    UINT1              u1OperStatus;			\/* Oper status *\/$/;"	m	struct:_SrSidInterfaceInfo
+u1OprFlags	inc/srtdefs.h	/^    UINT1              u1OprFlags;$/;"	m	struct:_SrRtrInfo
+u1Ospf3AbrStatus	inc/srtdefs.h	/^    UINT1               u1Ospf3AbrStatus; \/* Flag to  indicate Abr status$/;"	m	struct:_SrGlobalInfo
+u1OspfAbrStatus	inc/srtdefs.h	/^    UINT1               u1OspfAbrStatus; \/* Flag to indicate Ospfv2 Abr Status *\/ $/;"	m	struct:_SrGlobalInfo
+u1OspfDeRegInProgress	inc/srtdefs.h	/^    UINT1               u1OspfDeRegInProgress; \/* Flag to indicate if OSPF $/;"	m	struct:_SrGlobalInfo
+u1Ospfv3DeRegInProgress	inc/srtdefs.h	/^    UINT1               u1Ospfv3DeRegInProgress; \/* Flag to indicate if OSPFv3 $/;"	m	struct:_SrGlobalInfo
+u1OutOfRangeAlarm	inc/srtdefs.h	/^    UINT1              u1OutOfRangeAlarm;$/;"	m	struct:_SrRtrInfo
+u1Pad	inc/srtdefs.h	/^		UINT1  u1Pad;$/;"	m	struct:_SrRMInfo
+u1Pad	inc/srtdefs.h	/^    UINT1                   u1Pad;$/;"	m	struct:_SrStaticEntryInfo
+u1Pad	inc/srtdefs.h	/^    UINT1              u1Pad;$/;"	m	struct:_SrTilfaPathInfo
+u1Pad	inc/srtdefs.h	/^    UINT1         u1Pad;$/;"	m	struct:_SrRlfaPathInfo
+u1Pad	inc/srtdefs.h	/^    UINT1       u1Pad[3];$/;"	m	struct:_SrTeLabelStack
+u1Pad	inc/srtdefs.h	/^    UINT1       u1Pad[3];$/;"	m	struct:_StaticSrLabelStack
+u1Pad	inc/srtdefs.h	/^ UINT1         u1Pad[2];                    \/* Padding Object *\/$/;"	m	struct:SrRtrEntry
+u1PrefixConflictAlarm	inc/srtdefs.h	/^    UINT1              u1PrefixConflictAlarm;$/;"	m	struct:_SrRtrInfo
+u1PrefixConflictMPLSDel	inc/srtdefs.h	/^    UINT1              u1PrefixConflictMPLSDel;$/;"	m	struct:_SrRtrInfo
+u1Prefixlen	inc/srtdefs.h	/^    UINT1               u1Prefixlen;\/* The number of significant bits in$/;"	m	struct:_SrNetIpv6LfaRtInfo
+u1RebootMode	inc/srtdefs.h	/^    UINT1               u1RebootMode; \/* On receiving warm reboot mode message from RM,$/;"	m	struct:_SrGlobalInfo
+u1Reserved	inc/srtdefs.h	/^    UINT1          u1Reserved; \/* Added for alignment purpose *\/$/;"	m	struct:_SrRmEvtInfo
+u1RowStatus	inc/srtdefs.h	/^    UINT1                   u1RowStatus;          \/* SNMP Row Status for this Entry *\/$/;"	m	struct:_SrStaticEntryInfo
+u1RowStatus	inc/srtdefs.h	/^    UINT1              u1RowStatus;				\/* Row status of SID *\/$/;"	m	struct:_SrSidInterfaceInfo
+u1RowStatus	inc/srtdefs.h	/^    UINT1              u1RowStatus;             \/* SNMP Row Status for this Entry *\/$/;"	m	struct:_SrRlfaPathInfo
+u1RowStatus	inc/srtdefs.h	/^    UINT1              u1RowStatus;             \/* SNMP Row Status for this Entry *\/$/;"	m	struct:_SrTilfaPathInfo
+u1RowStatus	inc/srtdefs.h	/^    UINT1              u1RowStatus;          \/* SNMP Row Status for this Entry *\/$/;"	m	struct:_SrTeRtEntryInfo
+u1RowStatus	inc/srtdefs.h	/^ UINT1         u1RowStatus;                 \/* SNMP Row Status for this Entry *\/$/;"	m	struct:SrRtrEntry
+u1RtrSrAttrFlags	inc/srtdefs.h	/^    UINT1              u1RtrSrAttrFlags; \/*Flag to check SRGB\/PREFIX_SID\/ADJ_SID presence*\/$/;"	m	struct:_SrRtrInfo
+u1RtrType	inc/srtdefs.h	/^    UINT1              u1RtrType;$/;"	m	struct:_SrRtrInfo
+u1SIDConflictAlarm	inc/srtdefs.h	/^    UINT1              u1SIDConflictAlarm;$/;"	m	struct:_SrRtrInfo
+u1SIDConflictMPLSDel	inc/srtdefs.h	/^    UINT1              u1SIDConflictMPLSDel;$/;"	m	struct:_SrRtrInfo
+u1SIDConflictWin	inc/srtdefs.h	/^    UINT1              u1SIDConflictWin;$/;"	m	struct:_SrRtrInfo
+u1SIDExceedsSRGBAlarm	inc/srtdefs.h	/^    UINT1                   u1SIDExceedsSRGBAlarm;$/;"	m	struct:_SrStaticEntryInfo
+u1SIDStatus	inc/srtdefs.h	/^    UINT1              u1SIDStatus;$/;"	m	struct:_SrRtrInfo
+u1SidConflictPopDel	inc/srtdefs.h	/^    UINT1              u1SidConflictPopDel;$/;"	m	struct:_SrSidInterfaceInfo
+u1SidIndexType	inc/srtdefs.h	/^	UINT1			   u1SidIndexType;$/;"	m	struct:_SrRtrInfo
+u1SidIndexType	inc/srtdefs.h	/^	UINT1			   u1SidIndexType;$/;"	m	struct:_SrSidInterfaceInfo
+u1SrInitialised	inc/srtdefs.h	/^    UINT1               u1SrInitialised;$/;"	m	struct:_SrGlobalInfo
+u1SrOspfDisable	inc/srtdefs.h	/^    UINT1               u1SrOspfDisable;	$/;"	m	struct:_SrGlobalInfo
+u1SrOspfRegState	inc/srtdefs.h	/^    UINT1               u1SrOspfRegState[SYS_DEF_MAX_NUM_CONTEXTS];	$/;"	m	struct:_SrGlobalInfo
+u1SrOspfV3Disable	inc/srtdefs.h	/^    UINT1               u1SrOspfV3Disable;	$/;"	m	struct:_SrGlobalInfo
+u1SrOspfV3RegState	inc/srtdefs.h	/^    UINT1               u1SrOspfV3RegState[SYS_DEF_MAX_NUM_CONTEXTS];$/;"	m	struct:_SrGlobalInfo
+u1SrRegStatus	inc/srtdefs.h	/^    UINT1               u1SrRegStatus;$/;"	m	struct:_SrGlobalInfo
+u1StackSize	inc/srtdefs.h	/^    UINT1       u1StackSize;$/;"	m	struct:_SrTeLabelStack
+u1StackSize	inc/srtdefs.h	/^    UINT1       u1StackSize;$/;"	m	struct:_StaticSrLabelStack
+u1StartupExtLinkLSASent	inc/srtdefs.h	/^    UINT1               u1StartupExtLinkLSASent; \/* Indicates Extended Link LSA sent*\/$/;"	m	struct:_SrGlobalInfo
+u1StartupExtPrfLSASent	inc/srtdefs.h	/^    UINT1               u1StartupExtPrfLSASent;  \/* Indicates Extended prefix LSA sent*\/$/;"	m	struct:_SrGlobalInfo
+u1StartupRILSASent	inc/srtdefs.h	/^    UINT1               u1StartupRILSASent;      \/* Indicates Router Info LSA sent*\/$/;"	m	struct:_SrGlobalInfo
+u1Storage	inc/srtdefs.h	/^ UINT1         u1Storage;                   \/* Storage Type *\/$/;"	m	struct:SrRtrEntry
+u1TeSwapStatus	inc/srtdefs.h	/^    UINT1              u1TeSwapStatus;          \/* TRUE\/FALSE*\/ $/;"	m	struct:_SrRtrInfo
+u1UnknownSIDAlarm	inc/srtdefs.h	/^    UINT1                   u1UnknownSIDAlarm;$/;"	m	struct:_SrStaticEntryInfo
+u1Weight	inc/srtdefs.h	/^    UINT1               u1Weight;$/;"	m	struct:_AdjSidNode
+u1stale	inc/srdb.h	/^  UINT1   u1stale;$/;"	m	struct:_SRTnlIfTable
+u2AddrFmly	inc/srtdefs.h	/^    UINT2               u2AddrFmly;             \/* SR_IPV4_ADDR_TYPE \/ SR_IPV6_ADDR_TYPE*\/$/;"	m	struct:_FEC
+u2AddrType	inc/srtdefs.h	/^	UINT2			   u2AddrType;				\/* Ipv4 or Ipv6*\/$/;"	m	struct:_SrRtrInfo
+u2AddrType	inc/srtdefs.h	/^    UINT2               u2AddrType;$/;"	m	struct:_LfaRouteEntryInfo
+u2AddrType	inc/srtdefs.h	/^    UINT2               u2AddrType;$/;"	m	struct:_SrRouteEntryInfo
+u2Length	inc/srtdefs.h	/^    UINT2          u2Length;   \/* Length of message given by RM module. *\/$/;"	m	struct:_SrRmEvtInfo
+u2RtProto	inc/srtdefs.h	/^       UINT2    u2RtProto;      \/* Routing Mechanism via$/;"	m	struct:_SrNetIpLfaRtInfo
+u2SrLblGroupId	inc/srtdefs.h	/^        UINT2                   u2SrLblGroupId;     \/* Label Space Group ID *\/$/;"	m	struct:_SrContext
+u4AddrlessIf	inc/srtdefs.h	/^     UINT4     u4AddrlessIf;$/;"	m	struct:_SrOs3NbrInfo
+u4AddrlessIf	inc/srtdefs.h	/^    UINT4  u4AddrlessIf;$/;"	m	struct:_SrV4OspfNbrInfo
+u4AdjSid	inc/srtdefs.h	/^ UINT4         u4AdjSid;              \/* Adj SID advertised by P for PQ link*\/$/;"	m	struct:_SrTilfaAdjInfo
+u4AltCost	inc/srtdefs.h	/^    UINT4               u4AltCost;  \/* Alternate Lfa route cost *\/$/;"	m	struct:_SrNetIpv6LfaRtInfo
+u4AltIfIndex	inc/srtdefs.h	/^    UINT4               u4AltIfIndex; \/* Interface Index of a Alternate route*\/$/;"	m	struct:_SrNetIpv6LfaRtInfo
+u4AltIfIndx	inc/srtdefs.h	/^       UINT4    u4AltIfIndx;   \/* Interface Index of Alternate LFA *\/$/;"	m	struct:_SrNetIpLfaRtInfo
+u4AreaId	inc/srtdefs.h	/^	UINT4              u4AreaId;$/;"	m	struct:_SrareaLinkInfo
+u4AreaId	inc/srtdefs.h	/^    UINT4              u4AreaId;                \/* Area ID of OSPF in which this SID configured *\/$/;"	m	struct:_SrSidInterfaceInfo
+u4AreaId	inc/srtdefs.h	/^    UINT4         u4AreaId;	            \/* Area ID of the Node *\/$/;"	m	struct:_SrLfaNodeInfo
+u4AreaId	inc/srtdefs.h	/^    UINT4         u4AreaId;	     \/* Area ID of the Node *\/$/;"	m	struct:_SrLfaAdjInfo
+u4AreaId	inc/srtdefs.h	/^    UINT4  u4AreaId;$/;"	m	struct:_SrV4OspfNbrInfo
+u4AreaId	inc/srtdefs.h	/^ UINT4         u4AreaId;              \/* area Id of the Node *\/$/;"	m	struct:_SrTilfaAdjInfo
+u4BitMap	inc/srtdefs.h	/^    UINT4   u4BitMap;$/;"	m	struct:__anon11
+u4BitMap	inc/srtdefs.h	/^    UINT4   u4BitMap;$/;"	m	struct:__anon5
+u4CliCmdMode	inc/srtdefs.h	/^    UINT4               u4CliCmdMode;	$/;"	m	struct:_SrGlobalInfo
+u4ContextId	inc/srtdefs.h	/^       UINT4    u4ContextId;   \/* Vrf context id *\/$/;"	m	struct:_SrNetIpLfaRtInfo
+u4ContextId	inc/srtdefs.h	/^    UINT4               u4ContextId;\/* RTM6 Context ID *\/$/;"	m	struct:_SrNetIpv6LfaRtInfo
+u4DestAddr	inc/srtdefs.h	/^    UINT4               u4DestAddr;     \/* The destination address *\/$/;"	m	struct:_LfaRouteEntryInfo
+u4DestLabel	inc/srtdefs.h	/^    UINT4              u4DestLabel;      \/* Label to reach destinaiton from Q node *\/$/;"	m	struct:_SrTilfaPathInfo
+u4DestLabel	inc/srtdefs.h	/^    UINT4              u4DestLabel;$/;"	m	struct:_SrRlfaPathInfo
+u4DestMask	inc/srtdefs.h	/^	UINT4		       u4DestMask; 				\/*LFA Dest mask hop*\/$/;"	m	struct:_SrRtrInfo
+u4DestMask	inc/srtdefs.h	/^       UINT4    u4DestMask;    \/* Net Mask *\/$/;"	m	struct:_SrNetIpLfaRtInfo
+u4DestMask	inc/srtdefs.h	/^    UINT4	           u4DestMask;				\/* Destination Mask *\/$/;"	m	struct:_SrRlfaPathInfo
+u4DestMask	inc/srtdefs.h	/^    UINT4                   u4DestMask;           \/* Destination Mask *\/$/;"	m	struct:_SrStaticEntryInfo
+u4DestMask	inc/srtdefs.h	/^    UINT4               u4DestMask;     \/* The net mask to be applied to$/;"	m	struct:_LfaRouteEntryInfo
+u4DestMask	inc/srtdefs.h	/^    UINT4               u4DestMask;     \/* The net mask to be applied to$/;"	m	struct:_SrRouteEntryInfo
+u4DestMask	inc/srtdefs.h	/^    UINT4              u4DestMask;           \/* Destination Mask *\/$/;"	m	struct:_SrTeRtEntryInfo
+u4DestMask	inc/srtdefs.h	/^    UINT4      u4DestMask;   \/* destination mask *\/$/;"	m	struct:_SrTeOspfRtInfo
+u4DestNet	inc/srtdefs.h	/^      UINT4    u4DestNet;     \/* Destination Address *\/$/;"	m	struct:_SrNetIpLfaRtInfo
+u4DynBulkUpdatStatus	inc/srtdefs.h	/^		UINT4  u4DynBulkUpdatStatus;$/;"	m	struct:_SrRMInfo
+u4ExtLsaToBeSent	inc/srtdefs.h	/^    UINT4              u4ExtLsaToBeSent;$/;"	m	struct:_SrRtrInfo
+u4FRRIlmIfIndex	inc/srtdefs.h	/^    UINT4              u4FRRIlmIfIndex;         \/* SR FRR ILM interface index *\/$/;"	m	struct:_SrTeRtEntryInfo
+u4Flag	inc/srtdefs.h	/^    UINT4               u4Flag;        \/* Indicates reachablity of route,Best route & Hardware status *\/$/;"	m	struct:_LfaRouteEntryInfo
+u4Flag	inc/srtdefs.h	/^    UINT4               u4Flag;        \/* Indicates reachablity of route,Best route & Hardware status *\/$/;"	m	struct:_SrRouteEntryInfo
+u4FtnTunIndex	inc/srtdefs.h	/^    UINT4              u4FtnTunIndex;          \/* FTN Tunnel index *\/$/;"	m	struct:_SrTilfaPathInfo
+u4GblSrAdminStatus	inc/srtdefs.h	/^    UINT4               u4GblSrAdminStatus;     \/* Indicates if SR is enabled globally *\/ $/;"	m	struct:_SrGlobalInfo
+u4GenLblSpaceMaxLbl	inc/srtdefs.h	/^    UINT4		u4GenLblSpaceMaxLbl;$/;"	m	struct:_SrGlobalInfo
+u4GenLblSpaceMinLbl	inc/srtdefs.h	/^    UINT4		u4GenLblSpaceMinLbl; $/;"	m	struct:_SrGlobalInfo
+u4IfIndex	inc/srtdefs.h	/^    UINT4              u4IfIndex;    			\/* CFA-If Index *\/$/;"	m	struct:_SrSidInterfaceInfo
+u4IfIndex	inc/srtdefs.h	/^    UINT4   u4IfIndex;$/;"	m	struct:__anon11
+u4IfIndex	inc/srtdefs.h	/^    UINT4   u4IfIndex;$/;"	m	struct:__anon5
+u4IfIpAddr	inc/srtdefs.h	/^    UINT4  u4IfIpAddr;$/;"	m	struct:_SrV4OspfNbrInfo
+u4IlmTunIndex	inc/srtdefs.h	/^    UINT4              u4IlmTunIndex;        \/* ILM Tunnel Index *\/$/;"	m	struct:_SrTilfaPathInfo
+u4InIfIndex	inc/srtdefs.h	/^    UINT4       u4InIfIndex;$/;"	m	struct:_SrInSegInfo
+u4InLabel	inc/srtdefs.h	/^    UINT4       u4InLabel;$/;"	m	struct:_SrInSegInfo
+u4Index	inc/srtdefs.h	/^    UINT4               u4Index;    \/* Route Interface Index *\/$/;"	m	struct:_SrNetIpv6LfaRtInfo
+u4Index	inc/srtdefs.h	/^    UINT4          u4Index;                 \/* Table Index *\/$/;"	m	struct:_SrTeRtrEntry
+u4Index	inc/srtdefs.h	/^    UINT4          u4Index;                 \/* Table Index *\/$/;"	m	struct:_StaticSrLblListEntry
+u4InterfaceId	inc/srtdefs.h	/^     UINT4     u4InterfaceId;$/;"	m	struct:_SrOs3NbrInfo
+u4IpAddr	inc/srtdefs.h	/^    tGenU4Addr  u4IpAddr;$/;"	m	struct:__anon11
+u4IpAddr	inc/srtdefs.h	/^    tGenU4Addr  u4IpAddr;$/;"	m	struct:__anon5
+u4Ipv4AddrFamily	inc/srtdefs.h	/^    UINT4               u4Ipv4AddrFamily;       \/* Indicates if SR is configured for IPv4 *\/$/;"	m	struct:_SrGlobalInfo
+u4Ipv6AddrFamily	inc/srtdefs.h	/^    UINT4               u4Ipv6AddrFamily;       \/* Indicates if SR is configured for IPv6 *\/$/;"	m	struct:_SrGlobalInfo
+u4Ipv6NodeSid	inc/srtdefs.h	/^    UINT4               u4Ipv6NodeSid;	$/;"	m	struct:_SrGlobalInfo
+u4Label	inc/srtdefs.h	/^	UINT4				u4Label;$/;"	m	struct:_AdjSidNode
+u4Label	inc/srtdefs.h	/^    UINT4         u4Label;                    \/* Padding Object *\/$/;"	m	struct:StaticSrLbl
+u4LabelStack	inc/srtdefs.h	/^    UINT4       u4LabelStack[MAX_MPLSDB_LABELS_PER_ENTRY];$/;"	m	struct:_SrTeLabelStack
+u4LabelStack	inc/srtdefs.h	/^    UINT4       u4LabelStack[MAX_MPLSDB_LABELS_PER_ENTRY];$/;"	m	struct:_StaticSrLabelStack
+u4LblIndex	inc/srtdefs.h	/^    UINT4         u4LblIndex;                  \/* Label Index in a Index Group *\/$/;"	m	struct:StaticSrLbl
+u4LfaCost	inc/srtdefs.h	/^       UINT4    u4LfaCost;     \/* LFA Route Cost *\/$/;"	m	struct:_SrNetIpLfaRtInfo
+u4LfaInLabel	inc/srtdefs.h	/^    UINT4              u4LfaInLabel;           \/* LFA Insegment Label *\/$/;"	m	struct:_SrRtrInfo
+u4LfaNextHop	inc/srtdefs.h	/^	UINT4		       u4LfaNextHop; 			\/*LFA next hop*\/$/;"	m	struct:_SrRtrInfo
+u4LfaNextHop	inc/srtdefs.h	/^       UINT4    u4LfaNextHop;  \/* LFA NextHop *\/$/;"	m	struct:_SrNetIpLfaRtInfo
+u4LfaNexthopRtrId	inc/srtdefs.h	/^    UINT4              u4LfaNexthopRtrId;     \/* TI-LFA Next hop node Router Id*\/$/;"	m	struct:_SrTilfaPathInfo
+u4LfaOutIfIndex	inc/srtdefs.h	/^    UINT4              u4LfaOutIfIndex;         \/* LFA Tunnel Index *\/$/;"	m	struct:_SrRtrInfo
+u4LfaSwapOutIfIndex	inc/srtdefs.h	/^    UINT4              u4LfaSwapOutIfIndex;     \/* LFA ILM Tunnel Index*\/$/;"	m	struct:_SrRtrInfo
+u4LinkData	inc/srtdefs.h	/^    UINT4              u4LinkData;     \/* OSPF router LSA link data  corresponding to this Ext LSA*\/$/;"	m	struct:_SrLinkInfoKey
+u4LinkId	inc/srtdefs.h	/^	UINT4               u4LinkId;$/;"	m	struct:_AdjSidNode
+u4LinkId	inc/srtdefs.h	/^    UINT4              u4LinkId;       \/* OSPF router LSA link id corresponding to this Ext LSA*\/$/;"	m	struct:_SrLinkInfoKey
+u4LsaId	inc/srtdefs.h	/^    UINT4              u4LsaId;	          \/* LSA ID of the Ext Link LSA if generated for the link *\/$/;"	m	struct:_SrExtLinkLSAInfo
+u4LspId	inc/srtdefs.h	/^    UINT4                   u4LspId;$/;"	m	struct:_SrStaticEntryInfo
+u4MaskOrPrefixLen	inc/srtdefs.h	/^    UINT4               u4MaskOrPrefixLen;      \/* Mask or Prefix Length (\/24, \/32)*\/$/;"	m	struct:_FEC
+u4Metric	inc/srtdefs.h	/^    UINT4               u4Metric;   \/* Primary Cost *\/$/;"	m	struct:_SrNetIpv6LfaRtInfo
+u4MplsTnlInterface	inc/srtdefs.h	/^	UINT4			   u4MplsTnlInterface;		\/* MPLS Tunnel interface for the corresponding MPLS entry*\/$/;"	m	struct:_SrSidInterfaceInfo
+u4MplsTunIndex	inc/srtdefs.h	/^    UINT4                   u4MplsTunIndex;$/;"	m	struct:_SrStaticEntryInfo
+u4MsgType	inc/srtdefs.h	/^   UINT4            u4MsgType;$/;"	m	struct:_SrQMsg
+u4NbrIpAddr	inc/srtdefs.h	/^     UINT4     u4NbrIpAddr;$/;"	m	struct:_SrOs4NbrInfo
+u4NbrRtrId	inc/srtdefs.h	/^	UINT4				u4NbrRtrId;$/;"	m	struct:_AdjSidNode
+u4NbrRtrId	inc/srtdefs.h	/^     UINT4     u4NbrRtrId;     $/;"	m	struct:_SrOs4NbrInfo
+u4NextHop	inc/srdb.h	/^  UINT4   u4NextHop;      \/* key2 *\/$/;"	m	struct:_SRTnlIfTable
+u4NextHop	inc/srtdefs.h	/^       UINT4    u4NextHop;     \/* NextHop Address *\/$/;"	m	struct:_SrNetIpLfaRtInfo
+u4NextHop	inc/srtdefs.h	/^    UINT4               u4NextHop;      \/* The nexthop address to which any$/;"	m	struct:_LfaRouteEntryInfo
+u4NextHopIfIndx	inc/srtdefs.h	/^       UINT4    u4NextHopIfIndx;  \/* Interface Index of Primary Next hop*\/$/;"	m	struct:_SrNetIpLfaRtInfo
+u4OldNextHop	inc/srtdefs.h	/^    UINT4               u4OldNextHop;   \/* Old Next Hop Address *\/$/;"	m	struct:_SrRouteEntryInfo
+u4OldOutIfIndex	inc/srtdefs.h	/^    UINT4              u4OldOutIfIndex;         \/* Previous Next-Hop Address Out Interface in case of NH modify*\/    $/;"	m	struct:_SrRtrNextHopInfo
+u4OldRtIfIndx	inc/srtdefs.h	/^    UINT4               u4OldRtIfIndx;   \/* Old Next hop Route index *\/$/;"	m	struct:_SrRouteEntryInfo
+u4OspfCxtId	inc/srtdefs.h	/^   UINT4            u4OspfCxtId;$/;"	m	struct:_SrQMsg
+u4OspfRtrID	inc/srtdefs.h	/^    UINT4               u4OspfRtrID; \/* Router-Id for OSPF v3 *\/$/;"	m	struct:_SrGlobalInfo
+u4Ospfv2RtrID	inc/srtdefs.h	/^    UINT4               u4Ospfv2RtrID; \/* Router-Id for OSPF v2 *\/$/;"	m	struct:_SrGlobalInfo
+u4OutIfIndex	inc/srtdefs.h	/^	UINT4		u4OutIfIndex; 					\/* To handle out interface in case of Static SR*\/$/;"	m	struct:_SrInSegInfo
+u4OutIfIndex	inc/srtdefs.h	/^    UINT4		       u4OutIfIndex;$/;"	m	struct:_SrTilfaPathInfo
+u4OutIfIndex	inc/srtdefs.h	/^    UINT4              u4OutIfIndex;            \/* Out Interface to reach nextHop*\/$/;"	m	struct:_SrRtrNextHopInfo
+u4OutLabel	inc/srtdefs.h	/^    UINT4              u4OutLabel;$/;"	m	struct:_SrRtrInfo
+u4OutLfaIfIndex	inc/srtdefs.h	/^    UINT4              u4OutLfaIfIndex;         \/* SR TE LFA mpls index *\/$/;"	m	struct:_SrTeRtEntryInfo
+u4PRtrId	inc/srtdefs.h	/^    UINT4              u4PRtrId;	         \/* P Node Router Id *\/$/;"	m	struct:_SrTilfaPathInfo
+u4PaQAdjLocAddr	inc/srtdefs.h	/^       UINT4    u4PaQAdjLocAddr; \/* P&Q adjacency local address, applicable if LFA type is TI-LFA *\/$/;"	m	struct:_SrNetIpLfaRtInfo
+u4PaQAdjLocAddr	inc/srtdefs.h	/^    UINT4               u4PaQAdjLocAddr;  \/* P&Q adjacency local address, applicable if LFA type is TI-LFA *\/$/;"	m	struct:_SrNetIpv6LfaRtInfo
+u4PeerCount	inc/srtdefs.h	/^		UINT4  u4PeerCount;$/;"	m	struct:_SrRMInfo
+u4Prefix	inc/srdb.h	/^  UINT4   u4Prefix;       \/* key1 *\/$/;"	m	struct:_SRTnlIfTable
+u4PrefixSidLabelIndex	inc/srtdefs.h	/^    UINT4              u4PrefixSidLabelIndex;   \/* Prefix SID Value : It can be assigned label value or Index *\/$/;"	m	struct:_SrSidInterfaceInfo
+u4PrimaryCost	inc/srtdefs.h	/^       UINT4    u4PrimaryCost;   \/* Primary Route Cost *\/$/;"	m	struct:_SrNetIpLfaRtInfo
+u4QNodeRouterId	inc/srtdefs.h	/^        UINT4           u4QNodeRouterId; \/* Q node router id, applicable if LFA type is$/;"	m	union:_SrNetIpv6LfaRtInfo::__anon7
+u4QNodeRouterId	inc/srtdefs.h	/^       UINT4    u4QNodeRouterId; \/* Q node router id, applicable if LFA type is$/;"	m	union:_SrNetIpLfaRtInfo::__anon9
+u4QRtrId	inc/srtdefs.h	/^    UINT4              u4QRtrId;           \/* Q Node Router Id *\/$/;"	m	struct:_SrTilfaPathInfo
+u4RemNodeRouterId	inc/srtdefs.h	/^        UINT4           u4RemNodeRouterId; \/* Remote Router Id for RLFA or TI-LFA Tunnel, $/;"	m	union:_SrNetIpv6LfaRtInfo::__anon6
+u4RemNodeRouterId	inc/srtdefs.h	/^       UINT4    u4RemNodeRouterId; \/* Remote Router Id for RLFA or TI-LFA Tunnel, $/;"	m	union:_SrNetIpLfaRtInfo::__anon8
+u4RemoteLabel	inc/srtdefs.h	/^    UINT4              u4RemoteLabel;    \/* Label to reach to the P node *\/$/;"	m	struct:_SrTilfaPathInfo
+u4RemoteLabel	inc/srtdefs.h	/^    UINT4              u4RemoteLabel;$/;"	m	struct:_SrRlfaPathInfo
+u4RlfaIlmTunIndex	inc/srtdefs.h	/^    UINT4              u4RlfaIlmTunIndex;        \/* ILM Tunnel Index *\/$/;"	m	struct:_SrRlfaPathInfo
+u4RlfaTunIndex	inc/srtdefs.h	/^    UINT4              u4RlfaTunIndex;          \/* FTN Tunnel index *\/$/;"	m	struct:_SrRlfaPathInfo
+u4RowStatus	inc/srtdefs.h	/^    UINT4               u4RowStatus;   \/* Status of the row *\/$/;"	m	struct:_LfaRouteEntryInfo
+u4RowStatus	inc/srtdefs.h	/^    UINT4               u4RowStatus;   \/* Status of the row *\/$/;"	m	struct:_SrRouteEntryInfo
+u4RtIfIndx	inc/srtdefs.h	/^    UINT4               u4RtIfIndx;     \/* The interface through which the$/;"	m	struct:_LfaRouteEntryInfo
+u4RtIfIndx	inc/srtdefs.h	/^    UINT4               u4RtIfIndx;     \/* The interface through which the$/;"	m	struct:_SrRouteEntryInfo
+u4RtNxtHopAS	inc/srtdefs.h	/^    UINT4               u4RtNxtHopAS;   \/* The autonomous system number of$/;"	m	struct:_LfaRouteEntryInfo
+u4RtNxtHopAS	inc/srtdefs.h	/^    UINT4               u4RtNxtHopAS;   \/* The autonomous system number of$/;"	m	struct:_SrRouteEntryInfo
+u4RtrId	inc/srtdefs.h	/^    UINT4         u4RtrId;	            \/* Router Id of the Node *\/$/;"	m	struct:_SrLfaNodeInfo
+u4RtrIndex	inc/srtdefs.h	/^ UINT4         u4RtrIndex;                  \/* RtrId Index in a Index Group *\/$/;"	m	struct:SrRtrEntry
+u4SidType	inc/srtdefs.h	/^    UINT4              u4SidType;   			\/* Prefix-SID\/Adjacency-SID\/LAN Adjacency-SID\/Binding-SID *\/$/;"	m	struct:_SrRtrInfo
+u4SidType	inc/srtdefs.h	/^    UINT4              u4SidType;   			\/* Prefix-SID\/Adjacency-SID\/LAN Adjacency-SID\/Binding-SID *\/$/;"	m	struct:_SrSidInterfaceInfo
+u4SidTypeV3	inc/srtdefs.h	/^    UINT4              u4SidTypeV3;   			\/* Prefix-SID\/Adjacency-SID\/LAN Adjacency-SID\/Binding-SID *\/$/;"	m	struct:_SrSidInterfaceInfo
+u4SidValue	inc/srtdefs.h	/^    UINT4              u4SidValue; 				\/* Prefix SID Value : It can be assigned label value or Index *\/$/;"	m	struct:_SrRtrInfo
+u4SrDbgLvl	inc/srtdefs.h	/^    UINT4               u4SrDbgLvl; $/;"	m	struct:_SrGlobalInfo
+u4SrDumpDirn	inc/srtdefs.h	/^    UINT4               u4SrDumpDirn;$/;"	m	struct:_SrGlobalInfo
+u4SrDumpLvl	inc/srtdefs.h	/^    UINT4               u4SrDumpLvl;	$/;"	m	struct:_SrGlobalInfo
+u4SrDumpType	inc/srtdefs.h	/^    UINT4               u4SrDumpType;$/;"	m	struct:_SrGlobalInfo
+u4SrGbMaxIndex	inc/srtdefs.h	/^	UINT4                 u4SrGbMaxIndex; \/* MAX SRGB value *\/$/;"	m	struct:_SrGb
+u4SrGbMaxIndex	inc/srtdefs.h	/^     UINT4	        u4SrGbMaxIndex;$/;"	m	struct:_SrOsRiLsInfo
+u4SrGbMinIndex	inc/srtdefs.h	/^	UINT4                 u4SrGbMinIndex; \/* MIN SRGB Value *\/$/;"	m	struct:_SrGb
+u4SrGbMinIndex	inc/srtdefs.h	/^     UINT4	        u4SrGbMinIndex;$/;"	m	struct:_SrOsRiLsInfo
+u4SrGbV3MaxIndex	inc/srtdefs.h	/^    UINT4                 u4SrGbV3MaxIndex; \/* MAX SRGB V3 value *\/$/;"	m	struct:_SrGb
+u4SrGbV3MinIndex	inc/srtdefs.h	/^	UINT4                 u4SrGbV3MinIndex; \/* MIN SRGB V3 Value *\/$/;"	m	struct:_SrGb
+u4SrMode	inc/srtdefs.h	/^    UINT4               u4SrMode;               \/* Indiactes the modes on which SR is enabled$/;"	m	struct:_SrGlobalInfo
+u4SrRmGoActiveReason	inc/srtdefs.h	/^		UINT4  u4SrRmGoActiveReason;$/;"	m	struct:_SrRMInfo
+u4SrRmState	inc/srtdefs.h	/^		UINT4  u4SrRmState;$/;"	m	struct:_SrRMInfo
+u4SrTnlIfIndex	inc/srdb.h	/^  UINT4   u4SrTnlIfIndex; \/* data *\/$/;"	m	struct:_SRTnlIfTable
+u4SrTrcFlag	inc/srtdefs.h	/^    UINT4               u4SrTrcFlag;$/;"	m	struct:_SrGlobalInfo
+u4SrV4ModuleStatus	inc/srtdefs.h	/^    UINT4               u4SrV4ModuleStatus;  \/* Indicates the Admin status of SR IPv4 *\/$/;"	m	struct:_SrGlobalInfo
+u4SrV6ModuleStatus	inc/srtdefs.h	/^    UINT4               u4SrV6ModuleStatus;  \/* Indicates the Admin Status of SR IPv6 *\/$/;"	m	struct:_SrGlobalInfo
+u4StartupLSASent	inc/srtdefs.h	/^    UINT4               u4StartupLSASent;$/;"	m	struct:_SrGlobalInfo
+u4Status	inc/srtdefs.h	/^   UINT4            u4Status;$/;"	m	struct:_SrQMsg
+u4SwapOutIfIndex	inc/srtdefs.h	/^    UINT4              u4SwapOutIfIndex;        \/* Out Interface to reach nextHop for Swap Outseg*\/$/;"	m	struct:_SrRtrNextHopInfo
+u4TeSwapOutIfIndex	inc/srtdefs.h	/^    UINT4              u4TeSwapOutIfIndex;     	\/* Out Interface to reach nextHop for TeSwap*\/$/;"	m	struct:_SrRtrInfo
+u4TeSwapOutLabel	inc/srtdefs.h	/^    UINT4              u4TeSwapOutLabel;$/;"	m	struct:_SrRtrInfo
+u4TopLabel	inc/srtdefs.h	/^    UINT4       u4TopLabel;$/;"	m	struct:_SrTeLabelStack
+u4TopLabel	inc/srtdefs.h	/^    UINT4       u4TopLabel;$/;"	m	struct:_StaticSrLabelStack
+u4areaId	inc/srtdefs.h	/^	UINT4              u4areaId;				\/* Area-ID of the LSA received*\/$/;"	m	struct:_SrRtrInfo
+u4areaId	inc/srtdefs.h	/^        UINT4                   u4areaId;$/;"	m	struct:_SrContext
+u4rtrId	inc/srtdefs.h	/^    UINT4		u4rtrId;$/;"	m	struct:_SrGlobalInfo
+uQNodeId	inc/srtdefs.h	/^       }uQNodeId;$/;"	m	struct:_SrNetIpLfaRtInfo	typeref:union:_SrNetIpLfaRtInfo::__anon9
+uQNodeId	inc/srtdefs.h	/^    }uQNodeId;$/;"	m	struct:_SrNetIpv6LfaRtInfo	typeref:union:_SrNetIpv6LfaRtInfo::__anon7
+uRemoteNodeId	inc/srtdefs.h	/^       }uRemoteNodeId;$/;"	m	struct:_SrNetIpLfaRtInfo	typeref:union:_SrNetIpLfaRtInfo::__anon8
+uRemoteNodeId	inc/srtdefs.h	/^    }uRemoteNodeId;$/;"	m	struct:_SrNetIpv6LfaRtInfo	typeref:union:_SrNetIpv6LfaRtInfo::__anon6
+ulFlags	inc/srtdefs.h	/^	UINT1              ulFlags;           \/* stale flag, originate flag and other flags *\/$/;"	m	struct:_SrExtLinkLSAInfo
